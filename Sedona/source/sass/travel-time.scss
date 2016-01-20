@@ -1,0 +1,23 @@
+.travel-time {
+
+  &--duration {
+    display: inline;
+  }
+
+  &--days {
+    display: none;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .travel-time {
+
+    &--duration {
+      display: none;
+    }
+
+    &--days {
+      display: inline;
+    }
+  }
+}

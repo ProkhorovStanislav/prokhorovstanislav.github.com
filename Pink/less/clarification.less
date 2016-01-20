@@ -1,0 +1,32 @@
+.clarification {
+  text-align: center;
+  .font-small;
+  text-transform: uppercase;
+  color: @color-main-1;
+
+  &--another-color {
+    color: @color-main-2;
+  }
+
+  &--hidden {
+    display: none;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .clarification {
+    margin-top: 40px;
+    margin-right: 20px;
+    float: right;
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .clarification {
+    margin-right: 10px;
+
+    &--hidden {
+      display: inline-block;
+    }
+  }
+}

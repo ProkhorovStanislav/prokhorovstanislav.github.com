@@ -1,0 +1,11 @@
+.page-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 40px;
+  @include fontBold;
+  text-align: center;
+
+  &--popup {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>write-us</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="flex-wrapper flex-wrapper--header">
+      <div class="center-wrapper center-wrapper--header-top clearfix">
+        <a href="index.html" class="main-logo">Техномарт</a>
+        <div class="main-search__wrapper">
+          <form action="" method="post" class="main-search">
+            <label for="search" class="main-search__label">
+              <input type="search" id="search" class="main-search__input-search" placeholder="Поиск:"/>
+              <i class="icon-search"></i>
+            </label>
+          </form>
+        </div>
+        <div class="header-top-item">
+          <i class="header-top-item__icon icon-bookmark"></i>
+          <a class="header-top-item__unit">Закладки: <span class="header-top-item__value">0</span></a>
+        </div>
+        <div class="header-top-item">
+          <i class="header-top-item__icon icon-basket"></i>
+          <a class="header-top-item__unit">Корзина: <span class="header-top-item__value">0</span></a>
+        </div>
+        <input type="submit" class="btn header-top-btn" value="Оформить заказ">
+      </div>
+    </div>
+    <div class="center-wrapper clearfix">
+      <div class="header-wrapper">
+        <div class="description-item">Интернет-магазин строительных материалов и инстументов для ремонта</div>
+        <div class="contacts">
+          <a href="tel:+7(812) 555-05-55" class="contacts__phone-number"><i class="contacts__icon icon-phone"></i>+7 (812) 555-05-55</a>
+          <div class="contacts__adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+        </div>
+        <div class="user-block user-block--unlogged">
+          <a href="#" class="user-block__item user-block__item--sign-in">
+            <i class="user-block__icon icon-login"></i><span class="user-block__text">Войти</span>
+          </a>
+          <a href="#" class="user-block__item user-block__item--sign-up"><span class="user-block__text">Регистрация</span></a>
+        </div>
+        <div class="user-block user-block--logged user-block--hidden">
+          <a href="#" class="user-block__item user-block__item--logged">
+            <i class="user-block__icon icon-user"></i>
+            <span class="user-block__text">Равшан Джамшутович</span>
+          </a>
+          <a href="#" class="user-block__item user-block__item--logout">
+            <i class="user-block__icon icon-logout"></i>
+          </a>
+          <a href="#" class="user-block__link user-block__link--left">Мои заказы</a>
+          <a href="#" class="user-block__link">Личный кабинет</a>
+        </div>
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-navigation__list">
+          <li class="main-navigation__item"><a href="index.html" class="main-navigation__link">Главная</a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Компания</a></li>
+          <li class="main-navigation__item"><a href="catalog.html" class="main-navigation__link">Каталог</a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Новости</a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Спецпредложения</a></li>
+          <li class="main-navigation__item"><a href="#" class="main-navigation__link">Доставка</a></li>
+          <li class="main-navigation__item"><a href="contacts.html" class="main-navigation__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="center-wrapper clearfix">
+      <nav class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a href="index.html" class="breadcrumbs__link breadcrumbs__link--home">
+              <i class="breadcrumbs__icon icon-home"></i>
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a href="#" class="breadcrumbs__link">Форма обратной связи</a>
+          </li>
+        </ul>
+      </nav>
+      <h2 class="content-big-title">Форма обратной связи</h2>
+      <form action="/echo" class="modal modal--no-js">
+        <div class="modal__top-wrapper">
+          <div class="modal__item-wrapper">
+            <label for="your-name" class="modal__item-name">Ваше имя:</label>
+              <input type="text" id="your-name" class="modal__input" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="modal__item-wrapper">
+            <label for="your-mail" class="modal__item-name">Ваш e-mail:</label>
+              <input type="text" id="your-mail" class="modal__input" placeholder="Для отправки ответа">
+          </div>
+          <div class="modal__item-wrapper modal__item-wrapper--big-size">
+            <label for="message-text" class="modal__item-name">Текст письма:
+              <textarea id="message-text" class="modal__textarea" rows="5" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+        </div>
+        <div class="modal__control">
+          <button type="submit" class="btn modal__btn modal__btn--left">Отправить</button>
+          <button type="reset" class="btn modal__btn modal__btn--right">Отмена</button>
+        </div>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-top-wrapper">
+      <div class="center-wrapper center-wrapper--footer-top clearfix">
+        <div class="footer-top-left-wrapper">
+          <a href="index.html" class="main-logo main-logo--footer">Техномарт</a>
+          <div class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          <div class="footer-contacts">+7 (812) 555-05-55</div>
+        </div>
+        <nav class="footer-navigation">
+          <ul class="footer-navigation__list footer-navigation__list--top">
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Компания</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Новости</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Каталог</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Доставка</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Контакты</a>
+            </li>
+          </ul>
+          <ul class="footer-navigation__list footer-navigation__list--bottom">
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Материалы</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Техника</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Инструмент</a>
+            </li>
+            <li class="footer-navigation__item">
+              <a href="#" class="footer-navigation__link">Спецпредложения</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom-wrapper">
+      <div class="center-wrapper center-wrapper--footer-bottom">
+        <div class="copyright">
+          <span class="copyright__item">© 2010–2015 Компания «Техномарт»</span>
+          <span class="copyright__item">Все права защищены</span>
+        </div>
+        <div class="socials">
+          <a href="#" class="socials__link socials__link--vk"><i class="socials__icon icon-vk">vkontakte</i>vkontakte</a>
+          <a href="#" class="socials__link socials__link--fb"><i class="socials__icon icon-fb">facebook</i></a>
+          <a href="#" class="socials__link socials__link--instagramm"><i class="socials__icon icon-instagramm">instagramm</i></a>
+        </div>
+        <div class="write-us">
+          <span class="write-us__text">Обратная связь:</span>
+          <a href="mailtomail@htmlacademy.ru" class="write-us__adress">mail@htmlacademy.ru</a>
+        </div>
+        <div class="write-us write-us--right">
+          <span class="write-us__text">Разработано:</span>
+          <a href="http://htmlacademy.ru" class="write-us__adress">htmlacademy.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+</body>
+</html>

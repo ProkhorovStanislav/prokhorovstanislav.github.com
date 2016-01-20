@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSansRegular.eot");
+    src: url("../fonts/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSansItalic.eot");
+    src: url("../fonts/PTSansItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansItalic.woff") format("woff"),
+    url("../fonts/PTSansItalic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PTSans";
+    src: url("../fonts/PTSansBold.eot");
+    src: url("../fonts/PTSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSansBold.woff") format("woff"),
+    url("../fonts/PTSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "PTSans";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+main {
+  background: #fff;
+}
+
+@media (min-width: $screenDesktop) {
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $colorGrey;
+    box-shadow: 0 0 5px 5px #ccc;
+  }
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after { clear: both; }
+
+input[type="file"] {
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  @include fontBold;
+  text-transform: none;
+}
+
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label::before {
+  top: -16px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background: $colorGrey;
+  cursor: pointer;
+}
+
+input[type="radio"] + label:hover::before {
+  background: #e5e5e5;
+}
+
+input[type="radio"]:checked + label::after {
+  left: 17px;
+  width: 23px;
+  height: 23px;
+  background: #333;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  @include fontBold;
+  text-transform: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: -13px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background: $colorGrey;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label:hover::before {
+  background: #e5e5e5;
+}
+
+input[type="checkbox"]:checked + label::before {
+  background: $colorGrey url("#{$imgSource}checkbox__checked.png") no-repeat center;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
+  background: #e5e5e5 url("#{$imgSource}checkbox__checked.png") no-repeat center;
+}
+
+input[type=number] {
+  padding-bottom: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

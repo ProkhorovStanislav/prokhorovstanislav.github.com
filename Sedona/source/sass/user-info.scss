@@ -1,0 +1,13 @@
+@media (min-width: $screenTablet) {
+  .user-info {
+    display: flex;
+    width: 545px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .user-info {
+    width: 890px;
+  }
+}

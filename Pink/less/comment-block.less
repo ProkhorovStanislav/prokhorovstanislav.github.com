@@ -1,0 +1,52 @@
+.comment-block  {
+  &__quotes-wrapper {
+    display: none;
+  }
+
+  &__arrow {
+    display: none;
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .comment-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+
+    &__center-wrapper {
+      width: 940px;
+      margin: 0 auto;
+    }
+
+    &__quotes-wrapper {
+      display: block;
+      width: 100%;
+      margin: 0 auto 30px;
+      text-align: center;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__arrow {
+      display: block;
+      padding-top: 35px;
+      opacity: 0.3;
+
+      svg {
+        fill: @color-main-1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 0.1;
+      }
+    }
+  }
+}

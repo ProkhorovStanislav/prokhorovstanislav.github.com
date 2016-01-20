@@ -1,0 +1,76 @@
+.date-of-travel {
+  border: none;
+  padding: 0 20px 20px;
+  margin: 0;
+
+  &__title {
+    margin-bottom: 37px;
+    .font-small;
+    color: @color-main-2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & label {
+    display: block;
+    margin-bottom: 20px;
+    .font-small;
+    color: @color-main-2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    .font-middle;
+    border: 2px solid @color-main-3;
+
+    &:hover {
+      border-color: @color-main-1;
+    }
+
+    &:focus {
+    	border-color: @color-main-2;
+    	outline: none;
+    }
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .date-of-travel {
+    margin: 0 20px 30px;
+    padding: 15px 35px 20px 50px;
+    border: 2px solid @color-main-3;
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item-wrapper {
+      width: 240px;
+      margin-right: 15px;
+    }
+
+    &__title {
+      padding: 20px;
+      margin-bottom: 0;
+    }
+
+    & input[type="text"] {
+      min-width: 180px;
+      max-width: 100%;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .date-of-travel {
+    width: 832px;
+    padding-bottom: 0;
+    margin: 0 auto 30px;
+  }
+}

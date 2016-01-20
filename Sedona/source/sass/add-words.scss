@@ -1,0 +1,9 @@
+.add-words {
+  display: none;
+}
+
+@media (min-width: $screenTablet) {
+  .add-words {
+    display: inline;
+  }
+}

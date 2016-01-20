@@ -1,0 +1,86 @@
+.advantages-list {
+    padding: 45px 20px 38px 70px;
+    background: #fff;
+
+  &__advantage {
+    position: relative;
+    margin-bottom: 33px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -48px;
+      top: -11px;
+      width: 37px;
+      min-height: 37px;
+    }
+
+    &--accommodation::before {
+      background: url("#{$imgSource}icon-house.svg") #{$bgParams};
+      background-size: contain;
+    }
+
+    &--souvenirs::before {
+      background: url("#{$imgSource}icon-gift.svg") #{$bgParams};
+      background-size: contain;
+    }
+
+    &--food::before {
+      background: url("#{$imgSource}icon-burger.svg") #{$bgParams};
+      background-size: contain;
+    }
+  }
+
+  &__advantage-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 15px;
+    @include fontBold;
+  }
+
+  &__advantage-text {
+    font-size: $fontMain;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .advantages-list {
+    display: flex;
+    justify-content: space-around;
+
+    &__advantage {
+      width: 29%;
+      margin-right: 2%;
+      text-align: center;
+
+      &::before {
+        position: static;
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        margin-bottom: 18px;
+        vertical-align: bottom;
+      }
+
+      &--accommodation::before {
+        background: url("#{$imgSource}icon-house.svg") #{$bgParams};
+        background-position: 3px 2px;
+      }
+
+      &--souvenirs::before {
+        background: url("#{$imgSource}icon-gift.svg") #{$bgParams};
+        background-position: 10px 0;
+      }
+
+      &--food::before {
+        background: url("#{$imgSource}icon-burger.svg") #{$bgParams};
+        background-position: 0 4px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.download-file {
+  clear: both;
+  margin-bottom: 55px;
+  padding: 16px 0px;
+  font-size: 21px;
+  line-height: 26px;
+  @include fontBold;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.3);
+  background: $colorGrey;
+  cursor: pointer;
+
+  &:hover {
+    background: #e5e5e5;
+    color: rgba(51, 51, 51, 0.6);
+  }
+
+  &:active {
+    background: #d5d5d5;
+    color: rgba(51, 51, 51, 0.3);
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .download-file {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .download-file{
+    display: none;
+  }
+}

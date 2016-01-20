@@ -1,0 +1,46 @@
+.post-content {
+  padding: 0 20px 35px 20px;
+  line-height: 26px;
+  border-bottom: 2px solid #dbdbdb;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  p {
+    margin-bottom: 25px;
+    color: #333333;
+  }
+
+  ul {
+    @include listClear;
+    color: #333333;
+  }
+
+  a {
+    font-size: $fontMain;
+    line-height: 24px;
+    color: $colorBrown;
+  }
+
+  li::before {
+    content: "";
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+    background: $colorBlueMain;
+    vertical-align: middle;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .post-content {
+  padding: 0 45px 35px 45px;
+  border-bottom: none;
+  }
+}

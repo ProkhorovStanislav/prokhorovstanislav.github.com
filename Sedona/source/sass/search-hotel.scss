@@ -1,0 +1,33 @@
+.search-hotel {
+  padding: 28px 20px;
+  text-align: center;
+  background: #fff;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 26px;
+    @include fontBold;
+  }
+
+  &__text {
+    margin-bottom: 33px;
+    font-size: $fontMain;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .search-hotel {
+    padding: 50px 20px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__text {
+      max-width: 500px;
+      margin: 0 auto 33px;
+    }
+  }
+}

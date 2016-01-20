@@ -1,0 +1,112 @@
+.features-item {
+  color: #333;
+  background: #eee;
+
+  &__intro{
+    padding: 48px 20px 26px 20px;
+    text-align: center;
+    border-bottom: 1px solid #d5d5d5;
+
+    &--active {
+      color: #fff;
+      background: $colorBlueMain;
+      border: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 21px;
+    font-size: 18px;
+    line-height: 26px;
+    @include fontBold;
+  }
+
+  &__num {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    padding: 0 14px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 10px;
+      border-bottom: 1px solid #333;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &--active::before,
+    &--active::after {
+      border-color: #fff;
+    }
+  }
+
+  &__image {
+    min-width: 320px;
+    min-height: 256px;
+    @include textOut;
+
+    &--city {
+      background: #c9cebd url("#{$imgSource}photo-city@1x.jpg") #{$bgParams};
+      background-size: cover;
+    }
+
+    &--devils-bridge {
+      background: #c9cebd url("#{$imgSource}photo-bridge@1x.jpg") #{$bgParams};
+      background-size: cover;
+    }
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .features-item {
+    flex-grow: 1;
+
+    &__intro {
+      border-bottom: none;
+    }
+
+    &__title {
+      font-size: 21px;
+    }
+
+    &__intro--active {
+      flex-grow: 1;
+    }
+
+    &__intro--right {
+      order: 1;
+    }
+
+    &__image {
+      flex-grow: 2;
+    }
+  }
+}
+
+@media (min-resolution: 1.5dppx) {
+  .features-item {
+
+    &__image {
+
+      &--city {
+        background-image: url("#{$imgSource}photo-city@2x.jpg");
+        background-size: cover;
+      }
+
+      &--devils-bridge {
+        background-image: url("#{$imgSource}photo-bridge@2x.jpg");
+        background-size: cover;
+      }
+    }
+  }
+}

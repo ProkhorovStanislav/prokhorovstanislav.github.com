@@ -1,0 +1,73 @@
+.button {
+  display: block;
+  padding: 16px 0;
+  @include fontBold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #fff;
+  background: $colorBlueMain;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $colorBlueMain - #1b1512;
+  }
+
+  &:active {
+    background: $colorBlueMain - #2d1d15;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--search-hotel {
+    width: 100%;
+    margin-bottom: 19px;
+  }
+
+  &--popup-success {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &--review {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &--popup-failure {
+    width: 100%;
+  }
+
+  &--drag-and-drop {
+    display: none;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .button {
+    &--search-hotel {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 19px;
+    }
+
+    &--review {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .button {
+    &--review {
+      width: 48%;
+    }
+
+    &--drag-and-drop {
+      display: block;
+      margin-bottom: 90px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.search-hotel-map {
+  position: relative;
+  min-height: 350px;
+  @include textOut;
+  background: #d1ddb8 url("#{$imgSource}search-hotel-map-bg.jpg") #{$bgParams};
+  background-position: -200px 0;
+  background-size: cover;
+
+  & svg {
+    position: absolute;
+    left: 170px;
+    top: 160px;
+  }
+}
+
+@media (min-width: 550px) {
+	.search-hotel-map {
+		background-position: 0 0;
+
+		& svg{
+			left: 365px;
+      top: 160px;
+		}
+	}
+}
+
+@media (min-width: $screenTablet) {
+	.search-hotel-map {
+    & svg {
+    	left: 47%;
+      top: 47%;
+    }
+	}
+}
+
+@media (min-width: $screenDesktop) {
+	.search-hotel-map {
+    & svg {
+    	left: 48%;
+      top: 75%;
+    }
+	}
+}

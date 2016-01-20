@@ -1,0 +1,34 @@
+.copyright {
+  position: relative;
+  display: inline-block;
+  min-width: 130px;
+  min-height: 50px;
+  text-align: left;
+
+  & svg {
+    position: absolute;
+    top: -5px;
+    right: 0;
+    cursor: pointer;
+
+    &:hover {
+      fill: $colorBlueMain;
+    }
+
+    &:active {
+      fill: #b2b2b2;
+    }
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .copyright {
+    line-height: 47px;
+    margin-bottom: 0;
+
+    & svg {
+      top: 5px;
+      right: 0;
+    }
+  }
+}

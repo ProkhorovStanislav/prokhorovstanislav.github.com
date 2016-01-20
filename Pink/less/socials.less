@@ -1,0 +1,44 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin: 0 auto 40px;
+
+  &__link {
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    border: 2px solid @color-main-3;
+    border-radius: 50%;
+
+    &:hover {
+      border-color: @color-main-5;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--index {
+    display: none;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .socials {
+    margin: 0;
+    margin-bottom: 50px;
+
+    &--index {
+      display: flex;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .socials {
+    margin-top: 10px;
+  }
+}

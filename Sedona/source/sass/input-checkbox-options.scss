@@ -1,0 +1,16 @@
+@media (min-width: $screenTablet) {
+  .input-checkbox-options {
+    width: 200px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (min-width: $screenDesktop) {
+  .input-checkbox-options {
+    display: inline-block;
+    margin-right: 52px;
+    margin-bottom: 20px;
+  }
+}

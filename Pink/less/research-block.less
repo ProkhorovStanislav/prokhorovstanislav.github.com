@@ -1,0 +1,117 @@
+.research-block {
+	display: none;
+}
+
+@media(min-width: @screen-tablet) {
+	.research-block {
+		display: flex;
+    justify-content: space-between;
+		padding: 0 20px 60px;
+
+		&__img-wrapper {
+			position: relative;
+      width: 270px;
+      height: 305px;
+      background: url('../img/timer-dark.svg') no-repeat left center;
+      background-size: 100% 100%;
+		}
+
+    &__timer-number {
+      display: block;
+      position: absolute;
+      box-sizing: border-box;
+      width: 195px;
+      height: 195px;
+      top: 75px;
+      left: 38px;
+      padding-top: 10px;
+      border-radius: 50%;
+      border: 10px solid @color-main-2;
+      font-size: 105px;
+      font-weight: bold;
+      color: @color-main-2;
+    }
+
+    &__content-wrapper {
+      width: 300px;
+      padding: 45px 10px 0;
+    }
+
+    &__title {
+      padding-right: 130px;
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    &__text {
+      margin-bottom: 20px;
+      .font-small;
+      text-align: left;
+    }
+
+    &__link-wrapper {
+      text-align: left;
+    }
+
+    &__link {
+      .font-small;
+      color: @color-main-2;
+
+      &:hover {
+        color: @color-main-5;
+      }
+
+      &:active {
+       opacity: 0.3;
+      }
+    }
+	}
+}
+
+@media(min-width: @screen-desktop) {
+  .research-block {
+    width: 900px;
+    margin: 0 auto 70px;
+
+    &__background-wrapper {
+      background: @color-main-6;
+    }
+
+    &__img-wrapper {
+      width: 300px;
+      height: 350px;
+      background-size: 100% 100%;
+    }
+
+    &__timer-number {
+      width: 224px;
+      height: 224px;
+      top: 87px;
+      left: 37px;
+      padding-top: 12px;
+      border: 12px solid @color-main-2;
+      font-size: 120px;
+    }
+
+    &__content-wrapper {
+      width: 520px;
+      padding-top: 90px;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      .font-middle;
+      line-height: 30px;
+    }
+
+    &__link {
+      .font-middle;
+    }
+  }
+}

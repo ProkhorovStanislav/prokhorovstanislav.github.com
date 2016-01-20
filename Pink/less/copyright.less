@@ -1,0 +1,52 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  margin: 0 auto 30px;
+
+  &--index {
+    display: none;
+  }
+
+  &__text {
+    .font-small;
+    line-height: 35px;
+    color: @color-main-1;
+  }
+
+  &__logo {
+    display: block;
+    fill: @color-main-2;
+
+    &:hover {
+
+      & svg {
+        fill: @color-main-5;
+      }
+    }
+
+    &:active {
+
+      & svg {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .copyright {
+    margin: 0;
+    margin-bottom: 30px;
+
+    &--index {
+      display: flex;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .copyright {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,46 @@
+.fellow-travelers {
+  border: none;
+  padding: 35px 0;
+  margin: 0;
+  background: @color-main-6;
+
+  &__wrapper {
+    padding: 0 20px;
+  }
+
+  &__title {
+    width: 100%;
+    padding: 35px 0 0;
+    .font-small;
+    color: @color-main-2;
+    background: @color-main-6;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .fellow-travelers {
+    margin: 0 20px 30px;
+    padding: 10px 30px 30px;
+    border: 2px solid @color-main-3;
+    background: none;
+
+    &__counter-wrapper {
+    	text-align: left;
+    }
+
+    &__title {
+      width: auto;
+      padding: 20px;
+      background: none;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .fellow-travelers {
+    width: 858px;
+    margin: 0 auto 30px;
+  }
+}

@@ -1,0 +1,22 @@
+.sprite, .icon_pass, .icon_user{
+	background: url(sprites.png) no-repeat;
+}
+
+.sprite{
+	background-position: 0 0;
+	width: 39px;
+	height: 470px;
+}
+
+.icon_pass{
+	background-position: 0 -349px ;
+	width: 15px;
+	height: 17px;
+}
+
+.icon_user{
+	background-position: 0 -314px ;
+	width: 15px;
+	height: 15px;
+}
+

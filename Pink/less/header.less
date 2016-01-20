@@ -1,0 +1,42 @@
+header {
+  margin-bottom: 40px;
+
+  &.header-blog {
+	  margin-bottom: 10px;
+  }
+
+  &.header-post {
+	  margin-bottom: 10px;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+	header {
+	  margin-bottom: 50px;
+
+	  &.header-form {
+      margin-bottom: 90px;
+	  }
+
+	  &.header-blog {
+	    margin-bottom: 95px;
+    }
+
+    &.header-post {
+	    margin-bottom: 75px;
+
+    }
+	}
+}
+
+@media(min-width: @screen-desktop) {
+  header {
+    &.header-form {
+      margin-bottom: 75px;
+    }
+
+    &.header-blog {
+      margin-bottom: 80px;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.controls {
+  padding: 45px 10% 25px 10%;
+  border-bottom: 2px solid #dbdbdb;
+  font-size: 0;
+
+  &__btn {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 45%;
+    margin-bottom: 20px;
+    padding: 15px 5px;
+    font-size: 21px;
+    line-height: 26px;
+    @include fontBold;
+    color: #000;
+    text-align: center;
+    border: 2px solid $colorBlueMain;
+    cursor:pointer;
+
+    &-prev {
+      margin-right: 10%;
+    }
+
+    &-list {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (min-width: $screenTablet) {
+  .controls {
+    display: flex;
+    padding: 45px 5% 25px 5%;
+    border-bottom: none;
+
+    &__btn {
+      width: 30%;
+
+      &-prev {
+        margin-right: 5%;
+      }
+
+      &-list {
+        margin-right: 5%;
+      }
+
+      &-next {
+        order: 1;
+      }
+    }
+  }
+}

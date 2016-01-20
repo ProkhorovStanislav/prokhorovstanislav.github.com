@@ -1,0 +1,84 @@
+.travel-achievements {
+  padding: 0 20px;
+  border: none;
+
+  &__wrapper {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding: 30px;
+    margin-bottom: 20px;
+    .font-small;
+    line-height: 18px;
+    color: @color-main-2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  & input {
+    display: none;
+  }
+
+  & label {
+    position: relative;
+    display: block;
+    padding-left: 60px;
+    margin-bottom: 52px;
+    .font-middle;
+    line-height: 30px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 35px;
+      height: 35px;
+      left: 0;
+      top: -5px;
+      border: 2px solid @color-main-3;
+    }
+
+    &:hover::before {
+    	border-color: @color-main-1;
+    }
+
+    &:active::before {
+    	border-color: @color-main-2;
+    }
+  }
+
+  & input:checked + label::before {
+    background: url('../img/icon_checked.svg') no-repeat 5px 10px;
+    background-size: 70%;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .travel-achievements {
+    margin: 0 20px 50px;
+    border: 2px solid @color-main-3;
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .travel-achievements {
+    width: 918px;
+    padding: 0;
+    margin: 0 auto 65px;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 830px;
+      margin-left: 50px;
+      margin-right: 0;
+    }
+
+    & label {
+      width: 25%;
+      padding-left: 55px;
+    }
+  }
+}

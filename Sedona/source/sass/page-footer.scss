@@ -1,0 +1,12 @@
+.page-footer {
+  padding-top: 36px;
+  text-align: center;
+  background: #fff;
+}
+
+@media (min-width: $screenTablet) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

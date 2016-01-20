@@ -1,0 +1,39 @@
+.promo {
+  text-align: center;
+
+  &__intro {
+    margin-bottom: 25px;
+    .font-big;
+    font-weight: 300;
+    color: @color-main-1;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .promo {
+    &__intro {
+      padding: 0 20px;
+      margin-bottom: 0;
+      font-size: 40px;
+      line-height: 50px;
+
+      &--narrow {
+        padding: 0 140px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .promo {
+    &__intro {
+      font-size: 50px;
+      line-height: 60px;
+
+      &--narrow {
+        margin-bottom: 70px;
+      }
+    }
+  }
+}

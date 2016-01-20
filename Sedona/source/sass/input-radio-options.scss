@@ -1,0 +1,17 @@
+.input-radio-options {
+  position: relative;
+  margin-bottom: 45px;
+  padding-left: 80px;
+  font-size: 18px;
+  clear: both;
+
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $screenTablet) {
+.input-radio-options {
+  margin-bottom: 0;
+  }
+}

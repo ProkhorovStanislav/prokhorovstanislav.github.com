@@ -1,0 +1,104 @@
+.choose-quantity {
+  clear: both;
+  margin-bottom: 37px;
+
+  &__change {
+    display: inline-block;
+    width: 60px;
+    height: 58px;
+    background: $colorGrey;
+    vertical-align: top;
+    cursor: pointer;
+
+    &--decrease {
+      position: relative;
+      background: $colorGrey;
+
+      & svg {
+        position: absolute;
+        top: 27px;
+        left: 20px;
+        fill: #b8b8b8;
+      }
+
+      &:hover {
+        background: #e5e5e5;
+
+        & svg {
+          fill: #8c8c8c;
+        }
+      }
+
+      &:active {
+        background: #d5d5d5;
+
+        & svg {
+          fill: #c4c4c4;
+        }
+      }
+    }
+
+    &--increase {
+      position: relative;
+      background: $colorGrey;
+
+      & svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        fill: #b8b8b8;
+      }
+
+      &:hover {
+        background: #e5e5e5;
+
+        & svg {
+          fill: #8c8c8c;
+        }
+      }
+
+      &:active {
+        background: #d5d5d5;
+
+        & svg {
+          fill: #c4c4c4;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screenTablet) {
+
+  .choose-quantity {
+    max-width: 400px;
+    margin-bottom: 0;
+    font-size: 0;
+
+    & label {
+      font-size: 14px;
+    }
+
+    &--travelers {
+      max-width: 180px;
+      margin: 0 auto;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .choose-quantity {
+    max-width: 280px;
+    width: 280px;
+
+    &__change {
+      width: 60px;
+      height: 58px;
+    }
+
+    &--travelers {
+      margin: 0;
+    }
+  }
+}

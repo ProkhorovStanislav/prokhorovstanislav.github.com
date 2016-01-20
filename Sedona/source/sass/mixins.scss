@@ -1,0 +1,15 @@
+@mixin fontBold {
+  font-weight: bold;
+}
+
+@mixin listClear {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@mixin textOut {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}

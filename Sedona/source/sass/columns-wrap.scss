@@ -1,0 +1,40 @@
+
+@media (min-width: $screenTablet) {
+  .columns-wrap{
+    display: flex;
+    clear: both;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &--sights {
+      justify-content: center;
+    }
+
+    &--nowrap {
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .columns-wrap {
+
+    &--radio-options {
+      justify-content: center;
+    }
+
+    & .input-radio-options:first-child {
+      margin-right: 100px;
+    }
+
+    &--sights {
+      display: inline-block;
+
+      &:last-child {
+        & .input-checkbox-options:last-child {
+          margin-right: -20px;
+        }
+      }
+    }
+  }
+}

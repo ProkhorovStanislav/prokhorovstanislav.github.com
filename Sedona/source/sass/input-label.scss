@@ -1,0 +1,44 @@
+.input-label {
+  display: block;
+  margin-bottom: 6px;
+  clear: both;
+
+  &--required {
+    position: relative;
+
+    &::after {
+      content: "*";
+      margin-left: 7px;
+      color: red;
+    }
+  }
+
+  &--checkbox {
+  margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .input-label {
+    text-align: center;
+
+    &--travelers {
+      max-width: 210px;
+      margin: 0 auto;
+      margin-bottom: 6px;
+    }
+
+    &--checkbox {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .input-label {
+
+    &--travelers {
+      margin: 0;
+    }
+  }
+}

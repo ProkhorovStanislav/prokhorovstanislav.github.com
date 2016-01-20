@@ -1,0 +1,206 @@
+.change-package {
+  display: table;
+  position: relative;
+  margin: 0 auto 30px;
+  border-collapse: collapse;
+  overflow: hidden;
+
+  &__wrapper {
+    padding-top: 93px;
+    background: @color-main-6 url('../img/triangle-white.svg') no-repeat 0 0;
+    background-size: 100% 10%;
+    border-bottom: 1px solid @color-main-6;
+  }
+
+  &__row-wrapper {
+    display: table-row;
+    background: @color-main-4;
+  }
+
+  &__package-name {
+    display: table-cell;
+    position: relative;
+    width: 100%;
+    padding: 17px 10px 20px;
+    background: @color-main-1;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  & .always-hidden {
+    display: none;
+  }
+
+  & .mobile-hidden {
+    display: none;
+  }
+
+  &__type {
+    display: block;
+    margin: 0 auto;
+    .font-middle;
+    line-height: 30px;
+    color: @color-main-4;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    display: block;
+    margin: 0 auto;
+    .font-big;
+    line-height: 30px;
+    color: @color-main-4;
+    font-weight: 100;
+  }
+
+  &__label {
+    position: absolute;
+    display: block;
+    width: 45px;
+    height: 30px;
+    top: 7px;
+    left: 0px;
+    background: @color-main-2;
+    transform:rotate(-45deg);
+    .font-small;
+    line-height: 30px;
+    font-weight: 500;
+    color: @color-main-4;
+    text-transform: uppercase;
+
+    &::before {
+      content:'';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom: 15px solid @color-main-2;
+      border-right: 15px solid @color-main-2;
+      left: -29px;
+      top: 0px;
+    }
+
+    &::after {
+      content:'';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border: 15px solid transparent;
+      border-bottom: 15px solid @color-main-2;
+      border-left: 15px solid @color-main-2;
+      right: -29px;
+      top: 0px;
+    }
+  }
+
+  &__option-name {
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 14px 40px;
+    .font-small;
+    line-height: 30px;
+    text-transform: uppercase;
+    border: 2px solid @color-main-3;
+    border-right: none;
+  }
+
+  &__option-availability {
+    display: table-cell;
+    padding-right: 35px;
+    border: 2px solid @color-main-3;
+    border-left: none;
+    border-collapse: collapse;
+    font-size: 0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  &__toggle {
+    margin-top: 40px;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .change-package {
+  	width: 630px;
+    margin: 0 auto 70px;
+
+    &__wrapper {
+      padding-top: 70px;
+      background-size: 100% 10%;
+    }
+
+    &__package-name {
+      width: 25%;
+      padding: 10px 10px 10px;
+    }
+
+    & .always-hidden {
+      display: table-cell;
+      visibility: hidden;
+    }
+
+    & .mobile-hidden {
+      display: table-cell;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__row-wrapper {
+      display: table-row;
+      background: @color-main-4;
+    }
+
+    &__option-name {
+      padding: 7px 20px;
+      text-transform: none;
+    }
+
+    &__option-availability {
+      padding-right: 0;
+      border-left: 2px solid @color-main-3;
+    }
+
+    &__type {
+      font-size: 16px;
+    }
+
+    &__price {
+      .font-middle;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .change-package {
+    width: 940px;
+    margin-bottom: 90px;
+
+    &__wrapper {
+      padding-top: 150px;
+    }
+
+    &__package-name {
+      padding: 20px 10px 20px;
+    }
+
+    &__type {
+      .font-middle;
+      line-height: 30px;
+    }
+
+    &__price {
+      .font-big;
+      line-height: 30px;
+    }
+
+    &__option-name {
+    	padding: 14px 20px;
+    	.font-middle;
+    	line-height: 30px;
+    }
+  }
+}

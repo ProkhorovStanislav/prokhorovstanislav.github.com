@@ -1,0 +1,68 @@
+.post-preview {
+  position: relative;
+  padding: 30px 20px;
+  text-align: center;
+  border-top: 2px solid #e7e7e7;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      width: 20px;
+      border-bottom: 3px solid #fff;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+  &__title {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 35px;
+  @include fontBold;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .post-preview-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      left: 50%;
+      top: 0;
+      background: #e7e7e7;
+    }
+  }
+
+  .post-preview {
+    width: 295px;
+
+    &--post-page {
+      width: auto;
+      border-top: none;
+
+      & .post-preview__title {
+        margin-top: 30px;
+      }
+    }
+
+    &__title--post-page {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+}

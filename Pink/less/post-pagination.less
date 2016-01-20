@@ -1,0 +1,53 @@
+.post-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 20px;
+  padding-bottom: 0;
+
+  &__prev-page {
+    max-width: 45%;
+  }
+
+  &__next-page {
+    max-width: 45%;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .post-pagination {
+    &__prev-page {
+      order: 1;
+      max-width: 25%;
+    }
+
+    &__back-to-list {
+      order: 2;
+      max-width: 45%;
+    }
+
+    &__next-page {
+      order: 3;
+      max-width: 25%;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .post-pagination {
+    width: 820px;
+    padding: 40px 60px 0;
+    margin: 0 auto;
+    &__prev-page {
+      max-width: 30%;
+    }
+
+    &__back-to-list {
+      max-width: 35%;
+    }
+
+    &__next-page {
+      max-width: 30%;
+    }
+  }
+}

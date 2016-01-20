@@ -1,0 +1,58 @@
+.header-title {
+  width: 280px;
+  padding: 30px 20px 50px;
+  margin: 0 auto 30px;
+  .font-big;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+
+  &--index {
+    margin-bottom: 295px;
+    padding: 20px 20px;
+  }
+
+  &--post {
+  	margin-bottom: 20px;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .header-title {
+    width: 480px;
+    padding: 20px 40px 20px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 60px;
+
+    &--index {
+      width: 220px;
+      padding: 0 40px;
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &--blog {
+    	width: 600px;
+    }
+
+    &--post {
+  	  width: 600px;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .header-title {
+    width: 800px;
+    padding: 0 10px;
+    font-size: 50px;
+
+    &--index {
+      width: 300px;
+      padding: 0 10px;
+      margin-bottom: 25px;
+      line-height: 60px;
+    }
+  }
+}

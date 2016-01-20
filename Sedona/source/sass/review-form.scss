@@ -1,0 +1,223 @@
+.review-form {
+  width: 320px;
+  margin: 0 auto;
+  padding: 10px 0 26px;
+
+  &__item {
+    outline: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px;
+    line-height: 26px;
+    border: none;
+  }
+
+  &__title {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 18px;
+    @include fontBold;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%;
+      border-bottom: 1px solid #dadada;
+    }
+  }
+
+
+  &__traveler-card {
+    display: flex;
+  }
+
+  &__traveler-card-num {
+    max-width: 60px;
+    margin-right: 7px;
+    text-align: center;
+  }
+
+  &__traveler-card-label {
+    padding: 16px 27px;
+    background: $colorGrey;
+    text-align: center;
+    @include fontBold;
+  }
+
+  &__items-wrap {
+    width: 280px;
+    font-size: 0;
+    margin: 0 auto;
+  }
+
+  &__downloaded-item {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 35px;
+    margin-bottom: 22px;
+    vertical-align: top;
+
+    &:nth-of-type(3n) {
+        margin-right: 0;
+    }
+  }
+
+  &__downloaded-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  &__delete-item {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 27%;
+    width: 30px;
+    height: 30px;
+    @include textOut;
+    border-radius: 50%;
+    background: $colorGrey url("#{$imgSource}icon-cross.svg") no-repeat center;
+    background-size: 35%;
+    cursor: pointer;
+
+    &:hover {
+      background: #e5e5e5 url("#{$imgSource}icon-cross.svg") no-repeat center;
+      background-size: 35%;
+    }
+
+    &:active {
+      background: #d5d5d5 url("#{$imgSource}icon-cross.svg") no-repeat center;
+      background-size: 35%;
+    }
+  }
+
+
+  &__image-name {
+    display: none;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .review-form {
+    width: 655px;
+
+    &__item {
+      margin-bottom: 12px;
+      border: none;
+    }
+
+    &__title {
+      position: relative;
+      font-size: 21px;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 18%;
+        border-bottom: 1px solid #dadada;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+
+      &--impression {
+        margin-bottom: 53px;
+      }
+
+      &--sights {
+        box-sizing: border-box;
+        margin-bottom: 53px;
+        padding: 0 150px;
+      }
+    }
+
+    &__items-wrap {
+      width: 550px;
+      margin: 0 auto;
+    }
+
+    &__downloaded-item {
+      width: 140px;
+      height: 140px;
+      margin-right: 65px;
+      margin-bottom: 68px;
+
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
+    }
+
+    &__downloaded-item img {
+      width: 140px;
+      height: 140px;
+    }
+
+    &__delete-item {
+      left: 80%;
+      width: 60px;
+      height: 60px;
+    }
+
+    &__image-name {
+      display: block;
+    }
+  }
+}
+
+
+@media (min-width: $screenDesktop) {
+  .review-form {
+    width: 1000px;
+
+    &__title {
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 29%;
+        border-bottom: 1px solid #dadada;
+      }
+
+      &--sights {
+        padding: 0 300px;
+      }
+    }
+
+    &__items-wrap {
+      width: 960px;
+      margin: 0 auto;
+    }
+
+    &__downloaded-item {
+      margin-right: 65px;
+      margin-bottom: 68px;
+
+      &:nth-of-type(3n) {
+        margin-right: 65px;
+      }
+
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

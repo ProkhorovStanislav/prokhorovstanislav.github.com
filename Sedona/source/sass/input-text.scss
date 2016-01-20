@@ -1,0 +1,74 @@
+.input-text {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 13px;
+  display: inline-block;
+  padding: 17px 20px 18px;
+  font-size: 18px;
+  color: #000;
+  @include fontBold;
+  background: $colorGrey;
+  border: none;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 15px 20px 16px;
+    outline: none;
+    background: none;
+    border: 2px solid #d0d0d0;
+  }
+
+  &--choose-quantity {
+    width: 145px;
+    margin: 0 3px;
+    text-align: center;
+  }
+
+  &--traveler-card {
+    width: 210px;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .input-text {
+    width: 176px;
+    padding: 17px 8px 18px;
+
+    &--choose-quantity {
+      width: 58px;
+      margin: 0;
+
+      &:focus {
+        width: 58px;
+      }
+    }
+
+    &--traveler-card {
+      width: 177px;
+    }
+  }
+}
+
+@media (min-width: $screenDesktop) {
+  .input-text {
+    width: 280px;
+    padding: 17px 8px 18px;
+
+    &--choose-quantity {
+      width: 143px;
+      margin: 0 7px;
+
+      &:focus {
+        width: 143px;
+        padding: 16px 8px 15px;
+      }
+    }
+
+    &--traveler-card[name^="lastname"] {
+      width: 210px;
+    }
+  }
+}

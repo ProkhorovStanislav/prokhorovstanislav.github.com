@@ -1,0 +1,53 @@
+.page-tag {
+  margin-right: 30px;
+  font-style: italic;
+  line-height: 21px;
+  color: #999;
+  text-decoration: none;
+
+  &--rubric {
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+    width: 11px;
+    height: 11px;
+    vertical-align: baseline;
+  }
+
+  &--date::before {
+    background: url("#{$imgSource}page-tag--date.png") #{$bgParams};
+  }
+
+  &--rubric::before {
+  background: url("#{$imgSource}page-tag--rubric.png") #{$bgParams};
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .post-preview--post-page>.page-tag {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 30%;
+      height: 2px;
+      background: #999;
+    }
+
+    &--date::after {
+      float: left;
+      margin-top: 8px;
+    }
+
+    &--rubric::after {
+      float: right;
+      margin-top: 8px;
+
+    }
+
+  }
+}

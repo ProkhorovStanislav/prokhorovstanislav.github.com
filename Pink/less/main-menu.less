@@ -1,0 +1,165 @@
+.main-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+
+  &__logo {
+    line-height: 0;
+
+    & svg {
+      fill: @color-main-4;
+    }
+
+    &:hover svg{
+      fill: @color-main-2;
+    }
+
+    &:active svg{
+      fill: @color-main-4;
+      opacity: 0.3;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none;
+  }
+
+  &__logo-glasses {
+    display: none;
+  }
+
+  &__logo-glasses-stars {
+    display: none;
+  }
+
+  &__hamburger {
+    display: block;
+    line-height: 0;
+
+    & svg {
+      fill: @color-main-4;
+    }
+
+    &:hover svg {
+      fill: @color-main-2;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    display: inline-block;
+    vertical-align: middle;
+    width: 50px;
+    height: 4px;
+    .hide-text;
+    background: @color-main-4;
+  }
+
+  &__close-nav {
+    display: none;
+
+    & svg {
+      fill: @color-main-4;
+    }
+
+    &:hover svg {
+      fill: @color-main-2;
+    }
+
+    &:active svg {
+      opacity: 0.3;
+    }
+
+    &--show {
+      display: block;
+    }
+  }
+
+  &--nav-open {
+    padding: 20px 20px 15px;
+    background: @color-main-1;
+    border-bottom: 1px solid @color-main-5;
+
+    /*& .main-menu__hamburger {
+      display: none;
+    }
+
+    & .main-menu__close-nav {
+      display: block;
+    }*/
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .main-menu {
+    padding: 20px 20px 45px;
+    margin-bottom: 40px;
+    align-items: flex-end;
+
+    &--index {
+      margin-bottom: 90px;
+    }
+
+    &__logo-glasses {
+      display: inline-block;
+      margin-right: 5px;
+      fill: @color-main-4;
+    }
+
+    &--nav-open {
+      padding: 20px 20px 44px;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .main-menu {
+    position: static;
+    padding: 20px 10px 45px;
+    margin-bottom: 55px;
+    background: none;
+
+    &__logo-glasses {
+      display: none;
+    }
+
+    &__logo-glasses-stars {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    &__logo-text {
+      display: none;
+    }
+
+    &__hamburger {
+      display: none;
+    }
+
+    &__stretch-wrapper {
+      width: 100%;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    &__center-wrapper {
+      position: relative;
+      width: 920px;
+      margin: 0 auto;
+    }
+
+    &--index {
+      margin-bottom: 10px;
+    }
+  }
+}

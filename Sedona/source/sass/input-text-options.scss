@@ -1,0 +1,10 @@
+.input-text-options {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: $screenTablet) {
+  .input-text-options {
+    margin: 0;
+  }
+}

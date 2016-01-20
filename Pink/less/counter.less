@@ -1,0 +1,92 @@
+.counter {
+	box-sizing: border-box;
+  width: 280px;
+  margin: 0 auto 10px;
+  font-size: 0;
+
+  & input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 110px;
+    padding: 20px;
+    .font-middle;
+    text-align: center;
+    border: 2px solid @color-main-3;
+    border-left: none;
+    border-right: none;
+
+    &:focus {
+      outline: 2px solid @color-main-2;
+    }
+  }
+
+  &__change {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    width: 61px;
+    height:61px;
+    background: @color-main-4;
+    border: 2px solid @color-main-3;
+
+    &--minus::before {
+      content: '';
+      position: absolute;
+      width: 27px;
+      height: 3px;
+      left: 17px;
+      top: 29px;
+      background: @color-main-5;
+
+    }
+
+    &--plus::before {
+      content: '';
+      position: absolute;
+      width: 27px;
+      height: 3px;
+      left: 17px;
+      top: 29px;
+      background: @color-main-5;
+    }
+
+    &--plus::after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 27px;
+      left: 29px;
+      top: 17px;
+      background: @color-main-5;
+    }
+
+    &:hover {
+      border-color: @color-main-1;
+    }
+
+    &:active {
+      background: @color-main-1;
+
+      &::before,
+      &::after {
+      	background: @color-main-4;
+      }
+    }
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .counter {
+  	width: 240px;
+    margin-right: 15px;
+
+    & input {
+      width: 70px;
+      padding: 20px 5px;
+    }
+
+    &--travelers-counter {
+      display: inline-block;
+    }
+  }
+}

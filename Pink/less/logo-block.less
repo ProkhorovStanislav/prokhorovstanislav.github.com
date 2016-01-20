@@ -1,0 +1,72 @@
+.logo-block {
+  display: block;
+  width: 180px;
+  margin: 0 auto 40px;
+  text-align: center;
+  text-decoration: none;
+
+  &__logo-text-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+
+    & svg {
+      fill: @color-main-1;
+    }
+  }
+
+  &__glasses-wrapper {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 10px;
+    font-size: 0;
+
+    & svg {
+      fill: @color-main-2;
+    }
+  }
+
+  &__glasses-stars-wrapper {
+    display: none;
+  }
+
+  &--index {
+    display: none;
+  }
+
+  &:hover svg {
+    fill: @color-main-2;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .logo-block {
+    width: 160px;
+    margin: 0;
+    margin-bottom: 30px;
+
+    &--index {
+      display: block;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .logo-block {
+    &__logo-text-wrapper {
+      display: none;
+    }
+
+    &__glasses-wrapper {
+      display: none;
+    }
+
+    &__glasses-stars-wrapper {
+      display: block;
+      width: 150px;
+    }
+  }
+}

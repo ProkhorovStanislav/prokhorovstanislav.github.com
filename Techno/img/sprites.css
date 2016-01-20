@@ -1,0 +1,34 @@
+.image-icon-delivery, .image-icon-discount, .image-icon-equipment, .image-icon-instruments, .image-icon-matherials{
+	background: url(sprites.png) no-repeat;
+}
+
+.image-icon-delivery{
+	background-position: 0 -415px ;
+	width: 78px;
+	height: 63px;
+}
+
+.image-icon-discount{
+	background-position: 0 -557px ;
+	width: 59px;
+	height: 72px;
+}
+
+.image-icon-equipment{
+	background-position: 0 -279px ;
+	width: 78px;
+	height: 62px;
+}
+
+.image-icon-instruments{
+	background-position: 0 -137px ;
+	width: 75px;
+	height: 61px;
+}
+
+.image-icon-matherials{
+	background-position: 0 0;
+	width: 44px;
+	height: 65px;
+}
+

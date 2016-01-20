@@ -1,0 +1,56 @@
+.comment-item {
+  display: flex;
+  flex-direction: column;
+	text-align: center;
+  padding: 0 20px;
+
+  &__title {
+    margin-bottom: 0;
+    .font-middle;
+    line-height: 24px;
+  }
+
+  &__text {
+    .font-small;
+    line-height: 30px;
+    color: @color-main-1;
+    margin-bottom: 0;
+  }
+
+  &__author {
+  	.font-small;
+  	line-height: 30px;
+    display: none;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .comment-item {
+    width: 640px;
+    padding: 0;
+    margin: 0 auto;
+
+    &__title {
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__text {
+    	margin-bottom: 15px;
+      order: -1;
+      .font-middle;
+  }
+
+    &__author {
+      display: block;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .comment-item {
+    width: 760px;
+    padding: 0 10px;
+  }
+}

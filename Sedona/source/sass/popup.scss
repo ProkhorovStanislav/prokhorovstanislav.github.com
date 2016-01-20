@@ -1,0 +1,55 @@
+.popup {
+  display: none;
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  min-height: 200px;
+  padding: 50px 50px;
+  transform: translateX(-50%);
+  color: #000;
+  background: #fff;
+  box-shadow: 0 6px 16px -4px #333;
+  z-index: 1;
+
+  &--failure {
+    width: 220px;
+
+    &.popup--visible {
+      display: block;
+    }
+  }
+
+  &--success {
+    width: 320px;
+    padding: 0;
+
+    &.popup--visible {
+      display: block;
+    }
+  }
+
+  &__top-row {
+    padding: 50px 50px 0;
+  }
+
+  &__bottom-row {
+    padding: 50px 50px;
+    background: #f2f2f2;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .popup {
+
+    &--failure {
+    width: 320px;
+    }
+
+    &--success {
+      width: 540px;
+      padding: 0;
+    }
+  }
+}
+
+

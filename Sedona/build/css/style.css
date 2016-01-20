@@ -1,0 +1,2455 @@
+@font-face {
+	font-family: "PTSans";
+	src: url("../fonts/PTSansRegular.eot");
+	src: url("../fonts/PTSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansRegular.woff") format("woff"), url("../fonts/PTSansRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PTSans";
+	src: url("../fonts/PTSansItalic.eot");
+	src: url("../fonts/PTSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansItalic.woff") format("woff"), url("../fonts/PTSansItalic.ttf") format("truetype");
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "PTSans";
+	src: url("../fonts/PTSansBold.eot");
+	src: url("../fonts/PTSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/PTSansBold.woff") format("woff"), url("../fonts/PTSansBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
+
+body {
+	position: relative;
+	min-width: 320px;
+	margin: 0;
+	padding: 0;
+	font-family: "PTSans";
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+main {
+	background: #fff;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: table;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label {
+	font-weight: bold;
+	text-transform: none;
+}
+
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	border-radius: 50%;
+}
+
+input[type="radio"] + label::before {
+	top: -16px;
+	left: 0;
+	width: 56px;
+	height: 56px;
+	background: #f2f2f2;
+	cursor: pointer;
+}
+
+input[type="radio"] + label:hover::before {
+	background: #e5e5e5;
+}
+
+input[type="radio"]:checked + label::after {
+	left: 17px;
+	width: 23px;
+	height: 23px;
+	background: #333;
+	cursor: pointer;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + label {
+	position: relative;
+	display: block;
+	padding-left: 80px;
+	font-weight: bold;
+	text-transform: none;
+}
+
+input[type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+	top: -13px;
+	left: 0;
+	width: 56px;
+	height: 56px;
+	background: #f2f2f2;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+input[type="checkbox"] + label:hover::before {
+	background: #e5e5e5;
+}
+
+input[type="checkbox"]:checked + label::before {
+	background: #f2f2f2 url("../img/checkbox__checked.png") no-repeat center;
+}
+
+input[type="checkbox"]:checked + label:hover::before {
+	background: #e5e5e5 url("../img/checkbox__checked.png") no-repeat center;
+}
+
+input[type=number] {
+	padding-bottom: 18px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+
+.button {
+	display: block;
+	padding: 16px 0;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	background: #81b3d2;
+	outline: none;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.button:hover {
+	background: #669ec0;
+}
+
+.button:active {
+	background: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button--search-hotel {
+	width: 100%;
+	margin-bottom: 19px;
+}
+
+.button--popup-success {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.button--review {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.button--popup-failure {
+	width: 100%;
+}
+
+.button--drag-and-drop {
+	display: none;
+}
+
+.choose-quantity {
+	clear: both;
+	margin-bottom: 37px;
+}
+
+.choose-quantity__change {
+	display: inline-block;
+	width: 60px;
+	height: 58px;
+	background: #f2f2f2;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.choose-quantity__change--decrease {
+	position: relative;
+	background: #f2f2f2;
+}
+
+.choose-quantity__change--decrease svg {
+	position: absolute;
+	top: 27px;
+	left: 20px;
+	fill: #b8b8b8;
+}
+
+.choose-quantity__change--decrease:hover {
+	background: #e5e5e5;
+}
+
+.choose-quantity__change--decrease:hover svg {
+	fill: #8c8c8c;
+}
+
+.choose-quantity__change--decrease:active {
+	background: #d5d5d5;
+}
+
+.choose-quantity__change--decrease:active svg {
+	fill: #c4c4c4;
+}
+
+.choose-quantity__change--increase {
+	position: relative;
+	background: #f2f2f2;
+}
+
+.choose-quantity__change--increase svg {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	fill: #b8b8b8;
+}
+
+.choose-quantity__change--increase:hover {
+	background: #e5e5e5;
+}
+
+.choose-quantity__change--increase:hover svg {
+	fill: #8c8c8c;
+}
+
+.choose-quantity__change--increase:active {
+	background: #d5d5d5;
+}
+
+.choose-quantity__change--increase:active svg {
+	fill: #c4c4c4;
+}
+
+.close-icon {
+	position: absolute;
+	top: 17px;
+	right: 20px;
+	width: 23px;
+	height: 22px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: url("../img/close-icon.png") no-repeat 0 0;
+	cursor: pointer;
+}
+
+.close-icon--hidden {
+	display: none;
+}
+
+.controls {
+	padding: 45px 10% 25px 10%;
+	border-bottom: 2px solid #dbdbdb;
+	font-size: 0;
+}
+
+.controls__btn {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 45%;
+	margin-bottom: 20px;
+	padding: 15px 5px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	border: 2px solid #81b3d2;
+	cursor: pointer;
+}
+
+.controls__btn-prev {
+	margin-right: 10%;
+}
+
+.controls__btn-list {
+	width: 100%;
+}
+
+.copyright {
+	position: relative;
+	display: inline-block;
+	min-width: 130px;
+	min-height: 50px;
+	text-align: left;
+}
+
+.copyright svg {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	cursor: pointer;
+}
+
+.copyright svg:hover {
+	fill: #81b3d2;
+}
+
+.copyright svg:active {
+	fill: #b2b2b2;
+}
+
+.description {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 30px 20px 0;
+	line-height: 26px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.description__title {
+	margin-bottom: 25px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.description__title--blog {
+	font-size: 30px;
+	line-height: 26px;
+}
+
+.download-file {
+	clear: both;
+	margin-bottom: 55px;
+	padding: 16px 0px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-align: center;
+	color: rgba(51, 51, 51, 0.3);
+	background: #f2f2f2;
+	cursor: pointer;
+}
+
+.download-file:hover {
+	background: #e5e5e5;
+	color: rgba(51, 51, 51, 0.6);
+}
+
+.download-file:active {
+	background: #d5d5d5;
+	color: rgba(51, 51, 51, 0.3);
+}
+
+.features-item {
+	color: #333;
+	background: #eee;
+}
+
+.features-item__intro {
+	padding: 48px 20px 26px 20px;
+	text-align: center;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.features-item__intro--active {
+	color: #fff;
+	background: #81b3d2;
+	border: none;
+}
+
+.features-item__title {
+	margin-bottom: 21px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.features-item__num {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	padding: 0 14px;
+}
+
+.features-item__num::before,
+.features-item__num::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 10px;
+	border-bottom: 1px solid #333;
+}
+
+.features-item__num::before {
+	left: 0;
+}
+
+.features-item__num::after {
+	right: 0;
+}
+
+.features-item__num--active::before,
+.features-item__num--active::after {
+	border-color: #fff;
+}
+
+.features-item__image {
+	min-width: 320px;
+	min-height: 256px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.features-item__image--city {
+	background: #c9cebd url("../img/photo-city@1x.jpg") no-repeat 0 0;
+	background-size: cover;
+}
+
+.features-item__image--devils-bridge {
+	background: #c9cebd url("../img/photo-bridge@1x.jpg") no-repeat 0 0;
+	background-size: cover;
+}
+
+.hashtag {
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.page-header {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	position: relative;
+	-webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+
+.page-header__toggle {
+	width: 23px;
+	padding-top: 20px;
+	padding-bottom: 17px;
+	padding-right: 20px;
+	height: 22px;
+	cursor: pointer;
+}
+
+.page-header__toggle--hidden {
+	display: none;
+}
+
+.page-header__toggle-btn {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 14px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-top: 4px solid #81b3d2;
+	border-bottom: 4px solid #81b3d2;
+}
+
+.page-header__toggle-btn::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 4px;
+	margin-top: -2px;
+	background: #81b3d2;
+}
+
+.input-label {
+	display: block;
+	margin-bottom: 6px;
+	clear: both;
+}
+
+.input-label--required {
+	position: relative;
+}
+
+.input-label--required::after {
+	content: "*";
+	margin-left: 7px;
+	color: red;
+}
+
+.input-label--checkbox {
+	margin-bottom: 45px;
+}
+
+.input-radio-options {
+	position: relative;
+	margin-bottom: 45px;
+	padding-left: 80px;
+	font-size: 18px;
+	clear: both;
+}
+
+.input-radio-options:last-of-type {
+	margin-bottom: 10px;
+}
+
+.input-text {
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 13px;
+	display: inline-block;
+	padding: 17px 20px 18px;
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	background: #f2f2f2;
+	border: none;
+}
+
+.input-text:hover {
+	background: #e5e5e5;
+}
+
+.input-text:focus {
+	padding: 15px 20px 16px;
+	outline: none;
+	background: none;
+	border: 2px solid #d0d0d0;
+}
+
+.input-text--choose-quantity {
+	width: 145px;
+	margin: 0 3px;
+	text-align: center;
+}
+
+.input-text--traveler-card {
+	width: 210px;
+}
+
+.intro {
+	position: relative;
+	height: 110px;
+	padding-top: 50px;
+	background: url("../img/photo-background@1x.jpg") no-repeat 0 -50px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.intro::before,
+.intro::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	width: 65%;
+	min-height: 70px;
+	background: #fff;
+}
+
+.intro::before {
+	bottom: 0;
+	-webkit-transform-origin: left bottom;
+	        transform-origin: left bottom;
+	-webkit-transform: rotate(-170deg);
+	        transform: rotate(-170deg);
+}
+
+.intro::after {
+	bottom: -70px;
+	-webkit-transform-origin: left top;
+	        transform-origin: left top;
+	-webkit-transform: rotate(-10deg);
+	        transform: rotate(-10deg);
+}
+
+.intro--main-page {
+	height: 360px;
+	padding-top: 45px;
+	background-size: auto;
+}
+
+.intro--main-page::before {
+	bottom: 0;
+}
+
+.intro--main-page::after {
+	bottom: -70px;
+}
+
+.intro__text {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.intro__text--font-style-1 {
+	width: 145px;
+	height: 35px;
+	margin-bottom: 10px;
+	background: url("../img/text-welcome.svg") no-repeat 0 0;
+	background-size: 145px 35px;
+}
+
+.intro__text--font-style-2 {
+	width: 196px;
+	height: 18px;
+	margin-bottom: 70px;
+	background: url("../img/text-tothegorgeous.svg") no-repeat 0 0;
+	background-size: 196px 18px;
+}
+
+.intro__text--font-style-3 {
+	width: 280px;
+	height: 45px;
+	margin-bottom: 70px;
+	background: url("../img/text-sedona.svg") no-repeat 0 0;
+	background-size: 280px 45px;
+}
+
+.intro__text--font-style-4 {
+	width: 196px;
+	height: 55px;
+	background: url("../img/text-becausecanyon.svg") no-repeat 0 0;
+	background-size: 196px 55px;
+}
+
+.intro__text span {
+	display: none;
+}
+
+.navigation {
+	display: none;
+	position: relative;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+.navigation__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 18px;
+	line-height: 40px;
+	background: #81b3d2;
+}
+
+.navigation__item {
+	text-align: center;
+	border-top: 1px solid #9ac2db;
+	border-bottom: 1px solid #678fa8;
+}
+
+.navigation__item:first-of-type {
+	border-top: 0;
+}
+
+.navigation__item:last-of-type {
+	border-bottom: 0;
+	box-shadow: inset 0px -6px 26px -17px #000;
+}
+
+.navigation__item:hover {
+	background: #669ec0;
+}
+
+.navigation__item:active {
+	background: #5496bd;
+}
+
+.navigation__item:active a {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation__item--logo {
+	position: absolute;
+	bottom: -7px;
+	left: 50%;
+	width: 138px;
+	height: 70px;
+	margin-bottom: -63px;
+	margin-left: -69px;
+	border: none;
+	z-index: 2;
+}
+
+.navigation__item--logo a {
+	width: 138px;
+	height: 70px;
+	background: url("../img/logo-sedona@1x.png") no-repeat 35px 0, url("../img/form-logo-triangle.svg") no-repeat 0 0;
+	z-index: 3;
+}
+
+.navigation__item--logo:hover {
+	background: none;
+}
+
+.navigation__item--logo:active {
+	background: none;
+}
+
+.navigation__item--logo:active a {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation__link {
+	display: inline-block;
+	padding: 7px 0;
+	text-align: center;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.navigation--show {
+	display: block;
+}
+
+.navigation--show-logo {
+	margin-bottom: 0;
+	display: block;
+}
+
+.navigation--show-logo .navigation__item {
+	display: none;
+}
+
+.navigation--show-logo .navigation__item--logo {
+	display: block;
+}
+
+.page-footer {
+	padding-top: 36px;
+	text-align: center;
+	background: #fff;
+}
+
+.page-quote blockquote {
+	padding: 0;
+	padding-left: 20px;
+	margin: 0;
+	border-left: 2px solid #81b3d2;
+}
+
+.page-quote span {
+	display: block;
+	color: #766357;
+	text-transform: none;
+	font-style: italic;
+}
+
+.page-tag {
+	margin-right: 30px;
+	font-style: italic;
+	line-height: 21px;
+	color: #999;
+	text-decoration: none;
+}
+
+.page-tag--rubric {
+	margin-right: 0;
+}
+
+.page-tag::before {
+	content: "";
+	display: inline-block;
+	margin-right: 7px;
+	width: 11px;
+	height: 11px;
+	vertical-align: baseline;
+}
+
+.page-tag--date::before {
+	background: url("../img/page-tag--date.png") no-repeat 0 0;
+}
+
+.page-tag--rubric::before {
+	background: url("../img/page-tag--rubric.png") no-repeat 0 0;
+}
+
+.page-text {
+	font-size: 14px;
+}
+
+.page-text--post {
+	margin-bottom: 0;
+	text-transform: none;
+	color: #766357;
+}
+
+.page-text--popup {
+	text-align: center;
+}
+
+.paginator { /*margin-right: -16px;
+  display: flex;*/
+	padding: 45px 20px;
+	font-size: 0;
+	border-top: 2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
+}
+
+.paginator__item {
+	display: inline-block;
+	width: 48px;
+	margin-right: 16px;
+	margin-bottom: 16px;
+	padding: 16px 5px;
+	font-size: 21px;
+	line-height: 26px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background: #81b3d2;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.paginator__item--active {
+	color: #000;
+	background: #e5e5e5;
+	cursor: auto;
+}
+
+.paginator-items-wrap {
+	min-width: 60px;
+	max-width: 370px;
+	margin: 0 auto;
+}
+
+.post-content {
+	padding: 0 20px 35px 20px;
+	line-height: 26px;
+	border-bottom: 2px solid #dbdbdb;
+}
+
+.post-content h2 {
+	margin-top: 0;
+	margin-bottom: 30px;
+	font-size: 30px;
+	line-height: 26px;
+}
+
+.post-content p {
+	margin-bottom: 25px;
+	color: #333333;
+}
+
+.post-content ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	color: #333333;
+}
+
+.post-content a {
+	font-size: 14px;
+	line-height: 24px;
+	color: #766357;
+}
+
+.post-content li::before {
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	margin-right: 10px;
+	margin-bottom: 2px;
+	background: #81b3d2;
+	vertical-align: middle;
+}
+
+.post-preview {
+	position: relative;
+	padding: 30px 20px;
+	text-align: center;
+	border-top: 2px solid #e7e7e7;
+}
+
+.post-preview::before,
+.post-preview::after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	width: 20px;
+	border-bottom: 3px solid #fff;
+}
+
+.post-preview::before {
+	left: 0;
+}
+
+.post-preview::after {
+	right: 0;
+}
+
+.post-preview__title {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	line-height: 35px;
+	font-weight: bold;
+}
+
+.review-form {
+	width: 320px;
+	margin: 0 auto;
+	padding: 10px 0 26px;
+}
+
+.review-form__item {
+	outline: none;
+	margin: 0;
+	margin-top: 20px;
+	padding: 20px;
+	line-height: 26px;
+	border: none;
+}
+
+.review-form__title {
+	position: relative;
+	width: 100%;
+	margin-bottom: 24px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.review-form__title::before {
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid #dadada;
+}
+
+.review-form__traveler-card {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.review-form__traveler-card-num {
+	max-width: 60px;
+	margin-right: 7px;
+	text-align: center;
+}
+
+.review-form__traveler-card-label {
+	padding: 16px 27px;
+	background: #f2f2f2;
+	text-align: center;
+	font-weight: bold;
+}
+
+.review-form__items-wrap {
+	width: 280px;
+	font-size: 0;
+	margin: 0 auto;
+}
+
+.review-form__downloaded-item {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	margin-right: 35px;
+	margin-bottom: 22px;
+	vertical-align: top;
+}
+
+.review-form__downloaded-item:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.review-form__downloaded-item img {
+	width: 70px;
+	height: 70px;
+}
+
+.review-form__delete-item {
+	content: "";
+	position: absolute;
+	top: -20%;
+	left: 27%;
+	width: 30px;
+	height: 30px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 50%;
+	background: #f2f2f2 url("../img/icon-cross.svg") no-repeat center;
+	background-size: 35%;
+	cursor: pointer;
+}
+
+.review-form__delete-item:hover {
+	background: #e5e5e5 url("../img/icon-cross.svg") no-repeat center;
+	background-size: 35%;
+}
+
+.review-form__delete-item:active {
+	background: #d5d5d5 url("../img/icon-cross.svg") no-repeat center;
+	background-size: 35%;
+}
+
+.review-form__image-name {
+	display: none;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+}
+
+.search-hotel {
+	padding: 28px 20px;
+	text-align: center;
+	background: #fff;
+}
+
+.search-hotel__title {
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.search-hotel__text {
+	margin-bottom: 33px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.socials {
+	margin-bottom: 45px;
+	font-size: 0;
+}
+
+.socials__link {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 47px;
+	height: 47px;
+	margin-right: 6px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-color: #81b3d2;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.socials__link svg {
+	position: absolute;
+	fill: #fff;
+}
+
+.socials__link--tw svg {
+	top: 16px;
+	left: 15px;
+}
+
+.socials__link--fb svg {
+	top: 15px;
+	left: 19px;
+}
+
+.socials__link--youtube svg {
+	top: 17px;
+	left: 14px;
+}
+
+.socials__link:hover {
+	background: #669ec0;
+}
+
+.socials__link:active {
+	background: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.socials__link:active svg {
+	opacity: .3;
+}
+
+.advantages-list {
+	padding: 45px 20px 38px 70px;
+	background: #fff;
+}
+
+.advantages-list__advantage {
+	position: relative;
+	margin-bottom: 33px;
+}
+
+.advantages-list__advantage:last-child {
+	margin-bottom: 0;
+}
+
+.advantages-list__advantage::before {
+	content: "";
+	position: absolute;
+	left: -48px;
+	top: -11px;
+	width: 37px;
+	min-height: 37px;
+}
+
+.advantages-list__advantage--accommodation::before {
+	background: url("../img/icon-house.svg") no-repeat 0 0;
+	background-size: contain;
+}
+
+.advantages-list__advantage--souvenirs::before {
+	background: url("../img/icon-gift.svg") no-repeat 0 0;
+	background-size: contain;
+}
+
+.advantages-list__advantage--food::before {
+	background: url("../img/icon-burger.svg") no-repeat 0 0;
+	background-size: contain;
+}
+
+.advantages-list__advantage-title {
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 15px;
+	font-weight: bold;
+}
+
+.advantages-list__advantage-text {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.search-hotel-map {
+	position: relative;
+	min-height: 350px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background: #d1ddb8 url("../img/search-hotel-map-bg.jpg") no-repeat 0 0;
+	background-position: -200px 0;
+	background-size: cover;
+}
+
+.search-hotel-map svg {
+	position: absolute;
+	left: 170px;
+	top: 160px;
+}
+
+.input-text-options {
+	max-width: 280px;
+	margin: 0 auto;
+}
+
+.travel-time--duration {
+	display: inline;
+}
+
+.travel-time--days {
+	display: none;
+}
+
+.popup {
+	display: none;
+	position: absolute;
+	bottom: 200px;
+	left: 50%;
+	min-height: 200px;
+	padding: 50px 50px;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	color: #000;
+	background: #fff;
+	box-shadow: 0 6px 16px -4px #333;
+	z-index: 1;
+}
+
+.popup--failure {
+	width: 220px;
+}
+
+.popup--failure.popup--visible {
+	display: block;
+}
+
+.popup--success {
+	width: 320px;
+	padding: 0;
+}
+
+.popup--success.popup--visible {
+	display: block;
+}
+
+.popup__top-row {
+	padding: 50px 50px 0;
+}
+
+.popup__bottom-row {
+	padding: 50px 50px;
+	background: #f2f2f2;
+}
+
+.page-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.page-title--popup {
+	font-size: 18px;
+}
+
+.add-words {
+	display: none;
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+	margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+	display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -0.5em;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+	border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+	overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+	overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+	line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+	font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+
+.features-item__image--city {
+	background-image: url("../img/photo-city@2x.jpg");
+	background-size: cover;
+}
+
+.features-item__image--devils-bridge {
+	background-image: url("../img/photo-bridge@2x.jpg");
+	background-size: cover;
+}
+
+.intro {
+	background-image: url("../img/photo-background@2x.jpg");
+	background-size: cover;
+}
+
+.navigation__item--logo a {
+	background: url("../img/logo-sedona@2x.png") no-repeat 35px 0, url("../img/form-logo-triangle.svg") no-repeat 0 0;
+	background-size: 50%, 100%;
+}
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 2.5dppx) {
+
+.navigation__item--logo a {
+	background: url("../img/logo-sedona@3x.png") no-repeat 35px 0, url("../img/form-logo-triangle.svg") no-repeat 0 0;
+	background-size: 50%, 100%;
+}
+
+}
+
+@media (min-width: 550px) {
+
+.search-hotel-map {
+	background-position: 0 0;
+}
+
+.search-hotel-map svg {
+	left: 365px;
+	top: 160px;
+}
+
+}
+
+@media (min-width: 768px) {
+
+.button--search-hotel {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 19px;
+}
+
+.button--review {
+	width: 60%;
+}
+
+.choose-quantity {
+	max-width: 400px;
+	margin-bottom: 0;
+	font-size: 0;
+}
+
+.choose-quantity label {
+	font-size: 14px;
+}
+
+.choose-quantity--travelers {
+	max-width: 180px;
+	margin: 0 auto;
+	margin-bottom: 28px;
+}
+
+.close-icon {
+	display: none;
+}
+
+.controls {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 45px 5% 25px 5%;
+	border-bottom: none;
+}
+
+.controls__btn {
+	width: 30%;
+}
+
+.controls__btn-prev {
+	margin-right: 5%;
+}
+
+.controls__btn-list {
+	margin-right: 5%;
+}
+
+.controls__btn-next {
+	-webkit-order: 1;
+	    -ms-flex-order: 1;
+	        order: 1;
+}
+
+.copyright {
+	line-height: 47px;
+	margin-bottom: 0;
+}
+
+.copyright svg {
+	top: 5px;
+	right: 0;
+}
+
+.description {
+	padding: 55px 20px 40px;
+}
+
+.description__title {
+	font-size: 21px;
+}
+
+.download-file {
+	width: 65%;
+	margin: 0 auto;
+	margin-bottom: 55px;
+}
+
+.features-item {
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+.features-item__intro {
+	border-bottom: none;
+}
+
+.features-item__title {
+	font-size: 21px;
+}
+
+.features-item__intro--active {
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+.features-item__intro--right {
+	-webkit-order: 1;
+	    -ms-flex-order: 1;
+	        order: 1;
+}
+
+.features-item__image {
+	-webkit-flex-grow: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+}
+
+.hashtag {
+	line-height: 47px;
+	margin-bottom: 0;
+}
+
+.page-header {
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	padding-bottom: 0;
+}
+
+.page-header__toggle {
+	display: none;
+}
+
+.input-label {
+	text-align: center;
+}
+
+.input-label--travelers {
+	max-width: 210px;
+	margin: 0 auto;
+	margin-bottom: 6px;
+}
+
+.input-label--checkbox {
+	margin-bottom: 40px;
+}
+
+.input-radio-options {
+	margin-bottom: 0;
+}
+
+.input-text {
+	width: 176px;
+	padding: 17px 8px 18px;
+}
+
+.input-text--choose-quantity {
+	width: 58px;
+	margin: 0;
+}
+
+.input-text--choose-quantity:focus {
+	width: 58px;
+}
+
+.input-text--traveler-card {
+	width: 177px;
+}
+
+.intro {
+	height: 185px;
+	padding-top: 105px;
+}
+
+.intro::before {
+	content: "";
+	width: 100%;
+	left: 0;
+	min-height: 40px;
+	background: url("../img/intro-triangle.svg") no-repeat 0 0;
+	background-size: cover;
+	-webkit-transform: rotate(0);
+	        transform: rotate(0);
+}
+
+.intro::after {
+	display: none;
+}
+
+.intro--main-page {
+	height: 440px;
+	padding-top: 75px;
+}
+
+.intro__text {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.intro__text--font-style-1 {
+	width: 188px;
+	height: 45px;
+	margin-bottom: 10px;
+	background-size: 188px 45px;
+}
+
+.intro__text--font-style-2 {
+	width: 256px;
+	height: 29px;
+	margin-bottom: 60px;
+	background-size: 256px 29px;
+}
+
+.intro__text--font-style-3 {
+	width: 460px;
+	height: 80px;
+	margin-bottom: 60px;
+	background-size: 460px 80px;
+}
+
+.intro__text--font-style-4 {
+	width: 294px;
+	height: 80px;
+	background-size: 294px 80px;
+}
+
+.navigation {
+	display: block;
+	margin-bottom: 0;
+}
+
+.navigation__list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: -13px;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+	font-size: 14px;
+	background: #fff;
+}
+
+.navigation__item {
+	border: none;
+	box-shadow: none;
+	vertical-align: middle;
+}
+
+.navigation__item--map {
+	-webkit-order: 4;
+	    -ms-flex-order: 4;
+	        order: 4;
+}
+
+.navigation__item--info {
+	-webkit-order: 1;
+	    -ms-flex-order: 1;
+	        order: 1;
+}
+
+.navigation__item--photo {
+	-webkit-order: 2;
+	    -ms-flex-order: 2;
+	        order: 2;
+}
+
+.navigation__item--hotels {
+	-webkit-order: 5;
+	    -ms-flex-order: 5;
+	        order: 5;
+}
+
+.navigation__item:last-of-type {
+	box-shadow: none;
+}
+
+.navigation__item--logo {
+	margin: 0 2%;
+	position: static;
+	-webkit-order: 3;
+	    -ms-flex-order: 3;
+	        order: 3;
+}
+
+.navigation__item:hover {
+	background: none;
+}
+
+.navigation__item:hover a {
+	color: #81b3d2;
+}
+
+.navigation__item:active {
+	background: none;
+}
+
+.navigation__item:active a {
+	color: #766357;
+}
+
+.navigation__link {
+	color: #000;
+}
+
+.navigation--show-logo .navigation__item {
+	display: block;
+}
+
+.page-footer {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.post-preview--post-page > .page-tag {
+	position: relative;
+}
+
+.post-preview--post-page > .page-tag::after {
+	content: "";
+	width: 30%;
+	height: 2px;
+	background: #999;
+}
+
+.post-preview--post-page > .page-tag--date::after {
+	float: left;
+	margin-top: 8px;
+}
+
+.post-preview--post-page > .page-tag--rubric::after {
+	float: right;
+	margin-top: 8px;
+}
+
+.page-text--post {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.paginator {
+	border: none;
+}
+
+.paginator__text {
+	font-size: 21px;
+	line-height: 58px;
+	font-weight: bold;
+	display: inline;
+	float: left;
+}
+
+.paginator__item:last-child {
+	margin-right: 0;
+}
+
+.paginator-items-wrap {
+	vertical-align: middle;
+	max-width: 356px;
+}
+
+.post-content {
+	padding: 0 45px 35px 45px;
+	border-bottom: none;
+}
+
+.post-preview-wrap {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.post-preview-wrap::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	left: 50%;
+	top: 0;
+	background: #e7e7e7;
+}
+
+.post-preview {
+	width: 295px;
+}
+
+.post-preview--post-page {
+	width: auto;
+	border-top: none;
+}
+
+.post-preview--post-page .post-preview__title {
+	margin-top: 30px;
+}
+
+.post-preview__title--post-page {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.review-form {
+	width: 655px;
+}
+
+.review-form__item {
+	margin-bottom: 12px;
+	border: none;
+}
+
+.review-form__title {
+	position: relative;
+	font-size: 21px;
+}
+
+.review-form__title::before,
+.review-form__title::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 18%;
+	border-bottom: 1px solid #dadada;
+}
+
+.review-form__title::before {
+	left: 0;
+}
+
+.review-form__title::after {
+	right: 0;
+}
+
+.review-form__title--impression {
+	margin-bottom: 53px;
+}
+
+.review-form__title--sights {
+	box-sizing: border-box;
+	margin-bottom: 53px;
+	padding: 0 150px;
+}
+
+.review-form__items-wrap {
+	width: 550px;
+	margin: 0 auto;
+}
+
+.review-form__downloaded-item {
+	width: 140px;
+	height: 140px;
+	margin-right: 65px;
+	margin-bottom: 68px;
+}
+
+.review-form__downloaded-item:nth-of-type(3n) {
+	margin-right: 0;
+}
+
+.review-form__downloaded-item img {
+	width: 140px;
+	height: 140px;
+}
+
+.review-form__delete-item {
+	left: 80%;
+	width: 60px;
+	height: 60px;
+}
+
+.review-form__image-name {
+	display: block;
+}
+
+.search-hotel {
+	padding: 50px 20px;
+}
+
+.search-hotel__title {
+	font-size: 30px;
+}
+
+.search-hotel__text {
+	max-width: 500px;
+	margin: 0 auto 33px;
+}
+
+.socials { /*margin-bottom: 36px;*/
+}
+
+.user-info {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	width: 545px;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.advantages-list {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-justify-content: space-around;
+	    -ms-flex-pack: distribute;
+	        justify-content: space-around;
+}
+
+.advantages-list__advantage {
+	width: 29%;
+	margin-right: 2%;
+	text-align: center;
+}
+
+.advantages-list__advantage::before {
+	position: static;
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin-bottom: 18px;
+	vertical-align: bottom;
+}
+
+.advantages-list__advantage--accommodation::before {
+	background: url("../img/icon-house.svg") no-repeat 0 0;
+	background-position: 3px 2px;
+}
+
+.advantages-list__advantage--souvenirs::before {
+	background: url("../img/icon-gift.svg") no-repeat 0 0;
+	background-position: 10px 0;
+}
+
+.advantages-list__advantage--food::before {
+	background: url("../img/icon-burger.svg") no-repeat 0 0;
+	background-position: 0 4px;
+}
+
+.search-hotel-map svg {
+	left: 47%;
+	top: 47%;
+}
+
+.columns-wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	clear: both;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.columns-wrap--sights {
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.columns-wrap--nowrap {
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+}
+
+.input-text-options {
+	margin: 0;
+}
+
+.travel-time--duration {
+	display: none;
+}
+
+.travel-time--days {
+	display: inline;
+}
+
+.input-checkbox-options {
+	width: 200px;
+	margin-right: 30px;
+	margin-bottom: 20px;
+}
+
+.popup--failure {
+	width: 320px;
+}
+
+.popup--success {
+	width: 540px;
+	padding: 0;
+}
+
+.add-words {
+	display: inline;
+}
+
+}
+
+@media (min-width: 1200px) {
+
+body {
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+	box-shadow: 0 0 5px 5px #ccc;
+}
+
+.button--review {
+	width: 48%;
+}
+
+.button--drag-and-drop {
+	display: block;
+	margin-bottom: 90px;
+}
+
+.choose-quantity {
+	max-width: 280px;
+	width: 280px;
+}
+
+.choose-quantity__change {
+	width: 60px;
+	height: 58px;
+}
+
+.choose-quantity--travelers {
+	margin: 0;
+}
+
+.download-file {
+	display: none;
+}
+
+.input-label--travelers {
+	margin: 0;
+}
+
+.input-text {
+	width: 280px;
+	padding: 17px 8px 18px;
+}
+
+.input-text--choose-quantity {
+	width: 143px;
+	margin: 0 7px;
+}
+
+.input-text--choose-quantity:focus {
+	width: 143px;
+	padding: 16px 8px 15px;
+}
+
+.input-text--traveler-card[name^="lastname"] {
+	width: 210px;
+}
+
+.intro::before {
+	min-height: 57px;
+}
+
+.review-form {
+	width: 1000px;
+}
+
+.review-form__title::before,
+.review-form__title::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 29%;
+	border-bottom: 1px solid #dadada;
+}
+
+.review-form__title--sights {
+	padding: 0 300px;
+}
+
+.review-form__items-wrap {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.review-form__downloaded-item {
+	margin-right: 65px;
+	margin-bottom: 68px;
+}
+
+.review-form__downloaded-item:nth-of-type(3n) {
+	margin-right: 65px;
+}
+
+.review-form__downloaded-item:nth-of-type(5n) {
+	margin-right: 0;
+}
+
+.user-info {
+	width: 890px;
+}
+
+.search-hotel-map svg {
+	left: 48%;
+	top: 75%;
+}
+
+.columns-wrap--radio-options {
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.columns-wrap .input-radio-options:first-child {
+	margin-right: 100px;
+}
+
+.columns-wrap--sights {
+	display: inline-block;
+}
+
+.columns-wrap--sights:last-child .input-checkbox-options:last-child {
+	margin-right: -20px;
+}
+
+.input-checkbox-options {
+	display: inline-block;
+	margin-right: 52px;
+	margin-bottom: 20px;
+}
+
+}
+

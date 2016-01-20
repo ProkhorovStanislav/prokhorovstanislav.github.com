@@ -1,0 +1,184 @@
+.navigation {
+  display: none;
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+
+  &__list {
+    @include listClear;
+    font-size: 18px;
+    line-height: 40px;
+    background: $colorBlueMain;
+    }
+
+  &__item {
+    text-align: center;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+    &:last-of-type {
+      border-bottom: 0;
+      box-shadow: inset 0px -6px 26px -17px #000;
+    }
+
+    &:hover {
+      background: $colorBlueMain - #1b1512;
+    }
+
+    &:active {
+      background: $colorBlueMain - #2d1d15;
+      & a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &--logo {
+      position: absolute;
+      bottom: -7px;
+      left: 50%;
+      width: 138px;
+      height: 70px;
+      margin-bottom: -63px;
+      margin-left: -69px;
+      border: none;
+      z-index: 2;
+
+      & a {
+        width: 138px;
+        height: 70px;
+        background: url("#{$imgSource}logo-sedona@1x.png") no-repeat 35px 0,
+                    url("#{$imgSource}form-logo-triangle.svg") #{$bgParams};
+        z-index: 3;
+
+        @media (min-resolution: 1.5dppx) {
+          background: url("#{$imgSource}logo-sedona@2x.png") no-repeat 35px 0,
+                      url("#{$imgSource}form-logo-triangle.svg") #{$bgParams};
+          background-size: 50%, 100%;
+        }
+
+        @media (min-resolution: 2.5dppx) {
+          background: url("#{$imgSource}logo-sedona@3x.png") no-repeat 35px 0,
+                      url("#{$imgSource}form-logo-triangle.svg") #{$bgParams};
+          background-size: 50%, 100%;
+        }
+      }
+
+      &:hover {
+        background: none;
+      }
+
+      &:active {
+        background: none;
+
+        & a {
+          color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 7px 0;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  &--show-logo {
+    margin-bottom: 0;
+    display: block;
+
+    & .navigation__item {
+      display: none;
+
+      &--logo {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $screenTablet) {
+
+  .navigation {
+    display: block;
+    margin-bottom: 0;
+
+    &__list {
+      display: flex;
+      margin-bottom: -13px;
+      justify-content: space-around;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    &__item {
+      border: none;
+      box-shadow: none;
+      vertical-align: middle;
+
+      &--map {
+        order: 4;
+      }
+
+      &--info {
+        order: 1;
+      }
+
+      &--photo {
+        order: 2;
+      }
+
+      &--hotels {
+        order: 5;
+      }
+
+      &:last-of-type{
+        box-shadow: none;
+      }
+
+      &--logo {
+        margin: 0 2%;
+        position: static;
+        order: 3;
+      }
+
+      &:hover {
+        background: none;
+
+        & a {
+          color: $colorBlueMain;
+        }
+      }
+
+      &:active {
+        background: none;
+
+        & a {
+          color: #766357;
+        }
+      }
+    }
+
+    &__link {
+      color: #000;
+    }
+
+    &--show-logo {
+
+      & .navigation__item {
+        display: block;
+      }
+    }
+  }
+}

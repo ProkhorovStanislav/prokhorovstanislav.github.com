@@ -1,0 +1,19 @@
+@media(min-width: @screen-tablet) {
+  .send-form-wrapper {
+    width: 620px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      display: block;
+      height: 0;
+      clear: both;
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .send-form-wrapper {
+    width: 940px;
+  }
+}

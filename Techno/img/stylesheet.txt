@@ -1,0 +1,30 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-image-icon-delivery {
+        .stitches-sprite(-5px, -5px, 78px, 63px);
+    }
+
+    &.sprite-image-icon-discount {
+        .stitches-sprite(-93px, -5px, 59px, 72px);
+    }
+
+    &.sprite-image-icon-equipment {
+        .stitches-sprite(-162px, -5px, 78px, 62px);
+    }
+
+    &.sprite-image-icon-instruments {
+        .stitches-sprite(-250px, -5px, 75px, 61px);
+    }
+
+    &.sprite-image-icon-matherials {
+        .stitches-sprite(-335px, -5px, 44px, 65px);
+    }
+}

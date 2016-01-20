@@ -1,0 +1,20 @@
+.page-text {
+  font-size: $fontMain;
+
+  &--post {
+  margin-bottom:0;
+  text-transform: none;
+  color: $colorBrown;
+  }
+
+  &--popup {
+    text-align: center;
+  }
+}
+
+@media (min-width: $screenTablet) {
+  .page-text--post {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}

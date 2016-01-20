@@ -1,0 +1,20 @@
+.close-icon {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  @include textOut;
+  background: url("#{$imgSource}close-icon.png") #{$bgParams};
+  cursor: pointer;
+}
+
+.close-icon--hidden {
+  display: none;
+}
+
+@media (min-width: $screenTablet) {
+  .close-icon {
+    display: none;
+  }
+}

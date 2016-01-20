@@ -1,0 +1,177 @@
+.contact-us {
+  text-align: center;
+
+  &__intro {
+    width: 240px;
+    padding: 0 20px;
+    margin: 0 auto 30px;
+    .font-big;
+    font-weight: 300;
+    color: @color-main-1;
+  }
+
+  &__items-wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__item-wrapper {
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__method {
+    display: block;
+    padding: 0 20px;
+    .font-middle;
+    line-height: 27px;
+    font-weight: 700;
+  }
+
+  &__details {
+    display: block;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    .font-big;
+    color: @color-main-2;
+    text-decoration: none;
+
+    &--tel:hover {
+      color: @color-main-5;
+      text-decoration: underline;
+    }
+
+    &--e-mail:hover {
+      color: @color-main-5;
+      text-decoration: underline;
+    }
+
+    &--e-mail:active {
+      opacity: 0.3;
+    }
+
+    &--tel:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__map {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-image: url('../img/map-mobile@1x.jpg');
+    background-repeat:  no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      background: url('../img/triangle-white-footer.svg') no-repeat 0 0;
+      background-size: 100%;
+      z-index: 2;
+    }
+  }
+
+  &__map-bullet {
+    position: absolute;
+    margin: -15px 0 0 -15px;
+    left: 50%;
+    top: 60%;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+  .contact-us {
+
+    &__intro {
+      width: 460px;
+      font-size: 40px;
+      line-height: 40px;
+      margin: 0 auto 50px;
+    }
+
+    &__items-wrapper {
+      margin-bottom: 10px;
+    }
+
+    &__item-wrapper {
+      display: inline-block;
+
+      &--tel {
+        width: 45%;
+      }
+
+      &--e-mail {
+        width: 45%;
+      }
+
+      &--adress {
+        width: 260px;
+        margin-top: 30px;
+      }
+    }
+
+    &__map {
+      min-height: 380px;
+      margin-bottom: 30px;
+      background-image: url('../img/map-tablet@1x.jpg');
+      background-size: cover;
+
+      &:before {
+        height: 120px;
+      }
+    }
+  }
+}
+
+@media(min-width: @screen-desktop) {
+  .contact-us {
+
+    &__intro {
+      width: 500px;
+      font-size: 50px;
+      line-height: 60px;
+    }
+
+    &__items-wrapper {
+      width: 940px;
+      margin: 0 auto;
+      display: flex;
+    }
+
+    &__method {
+    	margin-bottom: 20px;
+    }
+
+    &__item-wrapper {
+      width: 270px;
+
+      &--tel {
+        order: 1;
+      }
+
+      &--e-mail {
+        order: 3;
+      }
+
+      &--adress {
+        order: 2;
+        margin-top: 0;
+      }
+    }
+
+    &__map {
+      min-height: 520px;
+      margin-bottom: 40px;
+
+      &:before {
+        height: 195px;
+      }
+    }
+  }
+}

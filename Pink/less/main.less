@@ -1,0 +1,45 @@
+main {
+  margin-bottom: 50px;
+
+  &.post-page {
+    margin-bottom: 20px;
+  }
+
+  &.blog-page {
+    margin-bottom: 40px;
+  }
+
+  &.form-page {
+    margin-bottom: 60px;
+  }
+}
+
+@media(min-width: @screen-tablet) {
+	main {
+		&.form-page {
+      margin-bottom: 70px;
+    }
+
+    &.post-page {
+      margin-bottom: 40px;
+    }
+	}
+}
+
+@media(min-width: @screen-desktop) {
+  main {
+    padding-top: 20px;
+
+    &.index-page {
+    	margin-bottom: 70px;
+    }
+
+    &.form-page {
+      margin-bottom: 30px;
+    }
+
+    &.blog-page {
+      margin-bottom: 80px;
+    }
+  }
+}
