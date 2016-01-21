@@ -1,3 +1,33 @@
-body {
-	background: #ccc;
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container-center {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.main-hdr {
+	background: #3685b5;
+}
+
+.main-nav__list {
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+.main-nav__link { 
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 20px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+main {
+	background: #e7f1f8;
 }
