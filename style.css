@@ -33,6 +33,10 @@ html {
   opacity: 0.1;
 }
 
+main {
+  margin-bottom: 50px;
+}
+
 .content-block {
   padding: 30px 0;
 }
@@ -187,7 +191,7 @@ html {
 
 .main-ftr {
   padding: 30px 0;
-  background: #294e82;
+  background: #344B8E;
 }
 
 .social {
@@ -199,6 +203,16 @@ html {
 .social__link {
   color: #fff;
   text-decoration: none;
+}
+
+.social__link svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.social__link svg:hover {
+  fill: #3685b5;
 }
 
 
