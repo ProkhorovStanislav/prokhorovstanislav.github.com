@@ -4,8 +4,9 @@
 }
 
 body {
+  padding-top: 8px;
   background: #E1E0DE;
-  padding-top: 10px;
+  background-image: repeating-linear-gradient(75deg, transparent 0, transparent 0.16%, #ccc 0.16%, #eee 0.2%);
 }
 
 body:before {
@@ -15,14 +16,14 @@ body:before {
   height: 8px;
   top: 0;
   left: 0;
-  background-image: repeating-linear-gradient(to right, #84A982 0%, #84A982 4%, #6C2005 4%, #6C2005 8%, #C74D0A 8%, #C74D0A 12%, #E59F21 12%, #E59F21 16%);     
-}  
+  background-image: repeating-linear-gradient(to right, #84A982 0%, #84A982 4%, #6C2005 4%, #6C2005 8%, #C74D0A 8%, #C74D0A 12%, #E59F21 12%, #E59F21 16%);
+}
 
 header {
   position: relative;
-  min-height: 150px;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 45px;
   background: #D9D5CC;
 }
 
@@ -34,15 +35,16 @@ header:after {
   height: 10px;
   top: 0px;
   background-image: linear-gradient(135deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(225deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
-  background-size: 10px 10px; 
+  background-size: 10px 10px;
   background-repeat: repeat no-repeat;
-}  
+}
 
 header:after {
+  height: 5px;
   top: auto;
   bottom: 0;
   background-image: linear-gradient(315deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(45deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
-}
+  }
 
 .container-center {
   width: 1200px;
@@ -71,10 +73,10 @@ footer {
 .small-header:after {
   content: '';
   position: absolute;
-  width: 430px;
+  width: 470px;
   height: 2px;
   left: 0;
-  top: 11px;
+  top: 7px;
   background: #8B827B;
 }
 
@@ -94,6 +96,7 @@ footer {
 
 .content-header {
   position: relative;
+  margin-bottom: 50px;
   color: #8B827B;
   font-size: 35px;
   text-align: center;
@@ -104,16 +107,56 @@ footer {
 .content-header:after {
   content: '';
   position: absolute;
-  width: 430px;
+  width: 500px;
   height: 2px;
   left: 0;
-  top: 11px;
+  top: 17px;
   background: #8B827B;
 }
 
 .content-header:after {
   left: auto;
   right: 0;
+}
+
+.projects-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project-item {
+  position: relative;
+  width: 320px;
+  height: 230px;
+  margin: 0 30px 60px;
+  border: 1px solid #8B827B;
+  background: #D9D5CC;
+  background-size: contain;
+  border-radius: 0 0 60px 60px / 0 0 5px 5px;
+  background-image: url('img/2barbershop-s.png'), linear-gradient(102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px), linear-gradient(-102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px);
+}
+
+.project-item:before,
+.project-item:after {
+  content: '';
+  position:absolute;
+  bottom: 25px;
+  z-index:-1;
+  width: 100px;
+  height: 100px;
+}
+
+.project-item:before {
+  left: 20px;
+  box-shadow: -10px 10px 10px rgba(0,0,0,.5);
+  transform: rotate(-2deg) skew(-20deg);
+}
+.project-item:after{
+ right: 20px;
+ box-shadow: 10px 10px 10px rgba(0,0,0,.5);
+ -webkit-transform: rotate(2deg) skew(20deg);
+ transform: rotate(2deg) skew(20deg);
 }
 
 
@@ -198,7 +241,7 @@ footer {
 @media (min-width: 1200px) {
   .main-nav__link {
     position: relative;
-    min-width: 120px; 
+    min-width: 120px;
     padding: 95px 0 10px;
     font-size: 20px;
     border: none;
@@ -335,7 +378,7 @@ main {
   .content-block__list {
     width: 600px;
     padding-left: 50px;
-  }  
+  }
 }
 
 .content-block__list-item {
@@ -365,11 +408,11 @@ main {
     content: url('img/Submit-01-24.png');
     left: -35px;
     top: -5px;
-  }  
+  }
 }
 
 @media (min-width: 760px) {
-  .projects-wrapper { 
+  .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -424,7 +467,7 @@ main {
   }
 
   .photo-wrapper:after {
-    right:5px; 
+    right:5px;
     left:auto;
     transform: rotate(3deg);
   }
@@ -482,7 +525,7 @@ main {
   .send-mail {
     max-width: 1200px;
     margin: 0 auto;
-  }  
+  }
 }
 
 .send-mail__input {
@@ -530,7 +573,7 @@ main {
   .social {
     width: 50%;
     margin: 0 auto;
-  }  
+  }
 }
 
 .social__link {
@@ -556,7 +599,7 @@ main {
 
   .main-ftr {
     padding: 50px 0;
-  }  
+  }
 
   .social__link svg {
     width: 60px;
