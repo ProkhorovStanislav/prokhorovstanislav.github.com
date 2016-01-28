@@ -5,18 +5,20 @@
 
 body {
   padding-top: 8px;
+  padding-bottom: 3px;
   background: #E1E0DE;
   background-image: repeating-linear-gradient(75deg, transparent 0, transparent 0.16%, #ccc 0.16%, #eee 0.2%);
 }
 
 body:before {
-  position: absolute;
+  position: fixed;
   content: '';
   width: 100%;
   height: 8px;
   top: 0;
   left: 0;
   background-image: repeating-linear-gradient(to right, #84A982 0%, #84A982 4%, #6C2005 4%, #6C2005 8%, #C74D0A 8%, #C74D0A 12%, #E59F21 12%, #E59F21 16%);
+  z-index: 2;
 }
 
 header {
@@ -44,7 +46,7 @@ header:after {
   top: auto;
   bottom: 0;
   background-image: linear-gradient(315deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(45deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
-  }
+}
 
 .container-center {
   width: 1200px;
@@ -54,11 +56,6 @@ header:after {
 main {
   min-height: 500px;
   padding-top: 50px;
-}
-
-footer {
-  min-height: 200px;
-  background: #D9D5CC;
 }
 
 .small-header {
@@ -120,21 +117,45 @@ footer {
 }
 
 .projects-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.projects-wrapper:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 50%;
+  bottom: 0;
+  margin-left: -25%;
+  background: #8B827B;
 }
 
 .project-item {
   position: relative;
   width: 320px;
-  height: 230px;
   margin: 0 30px 60px;
-  border: 1px solid #8B827B;
+  border: 2px solid #8B827B;
   background: #D9D5CC;
   background-size: contain;
   border-radius: 0 0 60px 60px / 0 0 5px 5px;
-  background-image: url('img/2barbershop-s.png'), linear-gradient(102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px), linear-gradient(-102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px);
+  background-image: linear-gradient(78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px), linear-gradient(-78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px);
+  /*background-image: url('img/2barbershop-s.png'), linear-gradient(102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px), linear-gradient(-102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px);*/
+  cursor: pointer;
+}
+
+.project-item__photo-wrapper {
+  min-height: 230px;
+  line-height: 230px;
+}
+
+.project-item__photo {
+  width: 100%;
+  vertical-align: middle;
 }
 
 .project-item:before,
@@ -155,9 +176,150 @@ footer {
 .project-item:after{
  right: 20px;
  box-shadow: 10px 10px 10px rgba(0,0,0,.5);
- -webkit-transform: rotate(2deg) skew(20deg);
  transform: rotate(2deg) skew(20deg);
 }
+
+.project-item:hover {
+  line-height: 15px;
+  transition-duration: 0.5s;
+  transform: scale(1.3);
+  background-image: none;
+  background: #D9D5CC;
+  border-radius: 0;
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  /*background: rgba(217, 213, 204, .2);
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
+}
+
+.project-item:hover:after,
+.project-item:hover:before {
+  box-shadow: 0 0 0 0;
+}
+
+.project-item:hover .project-item__photo{
+  transition-duration: 0.5s;
+  opacity: 0.05;
+}
+
+.project-item__content-wrapper {
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 230px;
+  top: 0;
+  left: 0;
+}
+
+.project-item:hover .project-item__content-wrapper {
+  display: block;
+}
+
+.my-skills {
+  position: relative;
+  min-height: 500px;
+  padding-top: 60px;
+  background: #ccc;
+}
+
+.my-skills:before,
+.my-skills:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 10px;
+  top: 0px;
+  background-image: linear-gradient(135deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(225deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
+  background-size: 10px 10px;
+  background-repeat: repeat no-repeat;
+}
+
+.my-skills:after {
+  height: 5px;
+  top: auto;
+  bottom: 0;
+  background-image: linear-gradient(315deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(45deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
+}
+
+.about-me {
+  position: relative;
+  z-index: 2;
+  min-height: 500px;
+  margin-top: -50px;
+  margin-bottom: -50px;
+  padding-top: 60px;
+  background: #E1E0DE;
+  background-image: repeating-linear-gradient(90deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px), repeating-linear-gradient(180deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px);
+  /*background-image: repeating-linear-gradient(115deg, transparent 0, transparent 0.16%, #ccc 0.16%, #eee 0.2%);*/
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.main-ftr {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  background: #D9D5CC;
+}
+
+.main-ftr:before,
+.main-ftr:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 10px;
+  top: 0px;
+  background-image: linear-gradient(135deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(225deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
+  background-size: 10px 10px;
+  background-repeat: repeat no-repeat;
+}
+
+.main-ftr:after {
+  height: 5px;
+  top: auto;
+  bottom: 0;
+  background-image: linear-gradient(315deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(45deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*.project-item:hover:after,
+.project-item:hover:before {
+  bottom: 7px;
+  width: 150px;
+  height: 10px;
+  transform: rotate(2deg) skew(0);
+}
+
+.project-item:hover:before {
+  transform: rotate(-2deg) skew(0);
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*html {
