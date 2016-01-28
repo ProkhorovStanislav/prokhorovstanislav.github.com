@@ -313,6 +313,7 @@ main {
 }
 
 .img-wrapper {
+  position: relative;
   float: left;
   border: 2px solid #6C2005;
   border-radius: 10%;
@@ -321,7 +322,20 @@ main {
   transform: rotate(-5deg);
 }
 
+.img-wrapper:before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -5px;
+  left: 150px;
+  transform: rotate(180deg);
+  background: url('img/i1135-2.png');
+  background-size: 100%;
+}
+
 .text-wrapper {
+  position: relative;
   float: right;
   width: 800px;
   min-height: 200px;
@@ -329,6 +343,25 @@ main {
   border-radius: 10%;
   transform: rotate(1.5deg);
   background: #D9D5CC;
+}
+
+.text-wrapper:before,
+.text-wrapper:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 28px;
+  top: 30px;
+  left: 30px;
+  background: url('img/icon0000.png');
+  background-size: 100%;
+}
+
+.text-wrapper:after {
+  left: auto;
+  top: 20px;
+  right: 20px;
+  transform: rotate(10deg);
 }
 
 
