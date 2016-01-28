@@ -340,7 +340,7 @@ main {
   width: 800px;
   min-height: 200px;
   border: 2px solid #6C2005;
-  border-radius: 10%;
+  border-radius: 30px;
   transform: rotate(1.5deg);
   background: #D9D5CC;
 }
