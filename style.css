@@ -220,7 +220,9 @@ main {
   position: relative;
   min-height: 500px;
   padding-top: 60px;
+  padding-bottom: 120px;
   background: #ccc;
+  background-image: repeating-linear-gradient(60deg, transparent 0, transparent 29px, #c3c3c3 29px, #c3c3c3 30px), repeating-linear-gradient(-60deg, transparent 0, transparent 29px, #c3c3c3 29px, #c3c3c3 30px);
 }
 
 .my-skills:before,
@@ -245,9 +247,8 @@ main {
 .about-me {
   position: relative;
   z-index: 2;
-  min-height: 500px;
+  min-height: 470px;
   margin-top: -50px;
-  margin-bottom: -50px;
   padding-top: 60px;
   background: #E1E0DE;
   background-image: repeating-linear-gradient(90deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px), repeating-linear-gradient(180deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px);
@@ -282,7 +283,53 @@ main {
   background-image: linear-gradient(315deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%), linear-gradient(45deg, #E1E0DE 0, #E1E0DE 50%, transparent 50%, transparent 100%);
 }
 
+.my-skills__list {
+  width: 780px;
+  margin: 0 auto;
+  padding: 30px 10px 30px 80px;
+  font-family: Georgia;
+  color: #6C2005;
+  list-style: none;
+  text-transform: uppercase;
+  background: #ccc;
+  border: 2px solid #6C2005;
+  border-radius: 10px;
+} 
 
+.my-skills__list-item {
+  position: relative;
+  line-height: 2;
+} 
+
+.my-skills__list-item:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 7px;
+  left: -50px;
+  top: 12px;
+  background: #6C2005;
+  transform: rotate(-9deg) skew(68deg);
+}
+
+.img-wrapper {
+  float: left;
+  border: 2px solid #6C2005;
+  border-radius: 10%;
+  line-height: 0;
+  overflow: hidden;
+  transform: rotate(-5deg);
+}
+
+.text-wrapper {
+  float: right;
+  width: 800px;
+  min-height: 200px;
+  border: 2px solid #6C2005;
+  border-radius: 10%;
+  transform: rotate(1.5deg);
+  background: #D9D5CC;
+}
 
 
 
