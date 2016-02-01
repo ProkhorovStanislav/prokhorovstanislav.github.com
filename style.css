@@ -159,6 +159,7 @@ main {
   background-image: linear-gradient(78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px), linear-gradient(-78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px);
   /*background-image: url('img/2barbershop-s.png'), linear-gradient(102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px), linear-gradient(-102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px);*/
   cursor: pointer;
+  text-align: center;
 }
 
 .project-item__photo-wrapper {
@@ -219,13 +220,47 @@ main {
   position: absolute;
   display: none;
   width: 100%;
-  height: 230px;
+  height: 210px;
+  padding: 20px 0;
   top: 0;
   left: 0;
 }
 
 .project-item:hover .project-item__content-wrapper {
   display: block;
+}
+
+.project-item__header {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 10px;
+  color: #6C2005;
+  text-transform: uppercase;
+}
+
+.project-item__header:before,
+.project-item__header:after {
+  content: '';
+  position: absolute;
+  width: 31px;
+  height: 20px;
+  left: -40px;
+  top: -3px;
+  background-image: repeating-linear-gradient(45deg, #6C2005 0,  #6C2005 1px, transparent 2px, transparent 10px), repeating-linear-gradient(-45deg, #6C2005 0, #6C2005 1px, transparent 2px, transparent 10px);
+  background-size: 100px 100px;
+  background-position: 1px -4px;
+}
+
+.project-item__header:after {
+  left: auto;
+  right: -40px;
+}
+
+.project-item__content {
+  width: 95%;
+  margin: 0 auto;
+  color: #333;
+  text-indent: 10px;
 }
 
 .my-skills {
