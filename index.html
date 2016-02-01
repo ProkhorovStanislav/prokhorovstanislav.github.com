@@ -74,7 +74,7 @@
       </section>
       <section class="my-skills">
         <div class="container-center">
-          <div class="content-header">My skills</div>
+          <div class="content-header content-header--skills">My skills</div>
           <ul class="my-skills__list">
             <li class="my-skills__list-item">high-quality code writing on html5, css3;</li>
             <li class="my-skills__list-item">adaptive layouts;</li>
@@ -95,11 +95,30 @@
       </section>
       <section class="about-me">
         <div class="container-center">
-          <div class="content-header">About me</div>
+          <div class="content-header content-header--about-me">About me</div>
           <div class="img-wrapper">
             <img src="img/Portrait1_1.jpg" alt="Portrait">
+            <div class="ololo ololo--center"></div>
           </div>
           <div class="text-wrapper">
+            <h2>Dossier</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum earum quasi quidem aliquam quos adipisci ipsam, ipsa, recusandae eius suscipit error. Reiciendis atque reprehenderit amet, fugiat unde rerum neque repellendus!</p>
+            <div class="ololo ololo--left"></div>
+            <div class="ololo ololo--right"></div>  
+          </div>   
+        </div>  
+      </section>
+      <section class="get-in-touch">
+        <div class="container-center">
+          <div class="content-header content-header--get-in-touch">Get in touch</div>
+          <form action="post.php" method="post" class="send-mail">
+          <div class="send-mail__wrapper">
+            <input class="send-mail__input send-mail__input--name" type="text" name="your-name" id="enter-name" required placeholder="Enter Your name, please">
+            <input class="send-mail__input send-mail__input--email" type="email" name="your-email" id="enter-email" required placeholder="Enter Your email, please">
+            <textarea class="send-mail__input send-mail__input-textarea" name="message-text" required id="enter-message-text" placeholder="Enter message, please" rows="7"></textarea>
+          </div>
+          <input type="submit" class="send-mail__btn" value="Send message">
+        </for
             
           </div>   
         </div>  
@@ -107,8 +126,37 @@
       
     </main>
     <footer class="main-ftr">
-      <div class="container-center">
-    
+      <div class="social">
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#codepen"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link">
+          <svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </body>
