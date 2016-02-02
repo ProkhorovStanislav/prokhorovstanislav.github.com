@@ -593,15 +593,24 @@ main {
   0% {
     transform: rotate(0deg);
   }
-  33% {
-    transform: rotate(10deg);
+
+  10% {
+    transform: rotate(24deg);
   }
 
-  66% {
-    transform: rotate(-10deg);
+  40% {
+    transform: rotate(-16deg);
   }
 
-  100% {
+  60% {
+    transform: rotate(5deg);
+  }
+
+  72% {
+    transform: rotate(-2deg);
+  }
+
+  74% {
     transform: rotate(0deg);
   }
 }
