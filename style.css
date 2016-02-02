@@ -233,8 +233,9 @@ main {
 .project-item__header {
   position: relative;
   display: inline-block;
-  margin: 0 auto 10px;
-  color: #6C2005;
+  margin: 0 auto 15px;
+  color: #8B827B;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -242,25 +243,72 @@ main {
 .project-item__header:after {
   content: '';
   position: absolute;
-  width: 31px;
-  height: 20px;
-  left: -40px;
-  top: -3px;
-  background-image: repeating-linear-gradient(45deg, #6C2005 0,  #6C2005 1px, transparent 2px, transparent 10px), repeating-linear-gradient(-45deg, #6C2005 0, #6C2005 1px, transparent 2px, transparent 10px);
+  height: 11px;
+  top: 2px;
+  background-image: repeating-linear-gradient(45deg, #8B827B 0,  #8B827B 1px, transparent 2px, transparent 5px), repeating-linear-gradient(-45deg, #8B827B 0, #8B827B 1px, transparent 2px, transparent 5px);
   background-size: 100px 100px;
   background-position: 1px -4px;
 }
 
-.project-item__header:after {
-  left: auto;
-  right: -40px;
+.project-item__header--barbershop:before {
+  width: 80px;
+  left: -90px;
+}
+
+.project-item__header--barbershop:after {
+  width: 80px;
+  right: -90px;
+}
+
+.project-item__header--nerds:before {
+  width: 110px;
+  left: -120px;
+}
+
+.project-item__header--nerds:after {
+  width: 110px;
+  right: -120px;
+}
+
+.project-item__header--technomart:before {
+  width: 70px;
+  left: -80px;
+}
+
+.project-item__header--technomart:after {
+  width: 70px;
+  right: -80px;
+}
+
+.project-item__header--pink:before {
+  width: 120px;
+  left: -130px;
+}
+
+.project-item__header--pink:after {
+  width: 120px;
+  right: -130px;
+}
+
+.project-item__header--sedona:before {
+  width: 100px;
+  left: -110px;
+}
+
+.project-item__header--sedona:after {
+  width: 100px;
+  right: -110px;
 }
 
 .project-item__content {
   width: 95%;
   margin: 0 auto;
-  color: #333;
+  font-family: Georgia;
+  font-size: 12px;
+  text-indent: 5px;
+  color: #444;
   text-indent: 10px;
+  text-align: left;
 }
 
 .my-skills {
@@ -342,12 +390,12 @@ main {
   background: #ccc;
   border: 2px solid #6C2005;
   border-radius: 10px;
-} 
+}
 
 .my-skills__list-item {
   position: relative;
   line-height: 2;
-} 
+}
 
 .my-skills__list-item:before {
   content: '';
@@ -511,10 +559,10 @@ main {
 
 .send-mail__input::-webkit-input-placeholder {
     color: #6C2005;
-   } 
+   }
 .send-mail__input::-moz-placeholder {
     color: #6C2005;
-}    
+}
 
 .social {
   width: 960px;
@@ -527,7 +575,7 @@ main {
   .social {
     width: 50%;
     margin: 0 auto;
-  }  
+  }
 }
 
 .social__link {
