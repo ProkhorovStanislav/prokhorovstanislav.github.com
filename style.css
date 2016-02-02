@@ -297,6 +297,7 @@ main {
   min-height: 470px;
   margin-top: -50px;
   padding-top: 60px;
+  padding-bottom: 60px;
   background: #E1E0DE;
   background-image: repeating-linear-gradient(90deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px), repeating-linear-gradient(180deg, transparent 0, transparent 2px, #ccc 2px, #eee 4px);
   /*background-image: repeating-linear-gradient(115deg, transparent 0, transparent 0.16%, #ccc 0.16%, #eee 0.2%);*/
@@ -371,7 +372,7 @@ main {
   overflow: hidden;
   background: #D9D5CC;
   transform-origin: 163px 13px;
-  transform: rotate(-5deg);
+  cursor: pointer;
 }
 
 .text-wrapper {
@@ -380,6 +381,7 @@ main {
   width: 720px;
   min-height: 120px;
   padding: 10px 40px 10px;
+  margin-top: 80px;
   border: 2px solid #6C2005;
   border-radius: 30px;
   transform: rotate(1.5deg);
@@ -451,7 +453,9 @@ main {
   transform: rotate(5deg);
 }
 
-.get-in-touch {}
+.get-in-touch {
+  padding-top: 40px;
+}
 
 .send-mail {
   width: 800px;
@@ -587,10 +591,14 @@ main {
 
 @keyframes rotate {
   0% {
-    transform: rotate(-5deg);
-  }
-  1% {
     transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(10deg);
+  }
+
+  66% {
+    transform: rotate(-10deg);
   }
 
   100% {
@@ -608,13 +616,13 @@ main {
   z-index: 2;
   box-shadow: 7em 13.5em #fff, 14em 13.5em #fff, 16em 13.5em #55686C, 9em 13.5em #55686C;
   animation-name: eyes;
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 
 .img-wrapper:hover {
   animation-name: rotate;
-  animation-duration: 100s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
 }
 
