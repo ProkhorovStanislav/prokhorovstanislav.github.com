@@ -362,10 +362,15 @@ main {
 .img-wrapper {
   position: relative;
   float: left;
+  width: 300px;
+  height: 360px;
   border: 2px solid #6C2005;
   border-radius: 10%;
   line-height: 0;
+  font-size: 10px;
   overflow: hidden;
+  background: #D9D5CC;
+  transform-origin: 163px 13px;
   transform: rotate(-5deg);
 }
 
@@ -541,3 +546,82 @@ main {
   transition: fill linear .3s, transform linear .3s;
   transform: scale(1.2);
 }
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  z-index: 1;
+  box-shadow: 10em 2.5em #674539, 11em 2.5em #674539, 12em 2.5em #674539, 13em 2.5em #674539, 14em 2.5em #674539, 15em 2.5em #674539, 16em 2.5em #5B3A2E, 8em 3.5em #674539, 9em 3.5em #674539, 10em 3.5em #674539, 11em 3.5em #674539, 12em 3.5em #674539, 13em 3.5em #674539, 14em 3.5em #5B3A2E, 15em 3.5em #5B3A2E, 16em 3.5em #5B3A2E, 17em 3.5em #5B3A2E, 18em 3.5em #5B3A2E, 7em 4.5em #5B3A2E, 8em 4.5em #5B3A2E, 9em 4.5em #5B3A2E, 10em 4.5em #674539, 11em 4.5em #5B3A2E, 12em 4.5em #5B3A2E, 13em 4.5em #674539, 14em 4.5em #5B3A2E, 15em 4.5em #5B3A2E, 16em 4.5em #5B3A2E, 17em 4.5em #5B3A2E, 18em 4.5em #5B3A2E, 19em 4.5em #674539, 6em 5.5em #674539, 7em 5.5em #5B3A2E, 8em 5.5em #5B3A2E, 9em 5.5em #674539, 10em 5.5em #5B3A2E, 11em 5.5em #5B3A2E, 12em 5.5em #674539, 13em 5.5em #5B3A2E, 14em 5.5em #5B3A2E, 15em 5.5em #5B3A2E, 16em 5.5em #5B3A2E, 17em 5.5em #5B3A2E, 18em 5.5em #5B3A2E, 19em 5.5em #5B3A2E, 20em 5.5em #674539, 5em 6.5em #674539, 6em 6.5em #5B3A2E, 7em 6.5em #5B3A2E, 8em 6.5em #674539, 9em 6.5em #5B3A2E, 10em 6.5em #5B3A2E, 11em 6.5em #674539, 12em 6.5em #5B3A2E, 13em 6.5em #5B3A2E, 14em 6.5em #5B3A2E, 15em 6.5em #5B3A2E, 16em 6.5em #FECBBC, 17em 6.5em #5B3A2E, 18em 6.5em #5B3A2E, 19em 6.5em #5B3A2E, 20em 6.5em #674539, 5em 7.5em #674539, 6em 7.5em #5B3A2E, 7em 7.5em #5B3A2E, 8em 7.5em #674539, 9em 7.5em #5B3A2E, 10em 7.5em #674539, 11em 7.5em #5B3A2E, 12em 7.5em #5B3A2E, 13em 7.5em #5B3A2E, 14em 7.5em #5B3A2E, 15em 7.5em #FECBBC, 16em 7.5em #FECBBC, 17em 7.5em #FCC4B2, 18em 7.5em #5B3A2E, 19em 7.5em #5B3A2E, 20em 7.5em #5B3A2E, 21em 7.5em #5B3A2E, 5em 8.5em #5B3A2E, 6em 8.5em #5B3A2E, 7em 8.5em #674539, 8em 8.5em #5B3A2E, 9em 8.5em #5B3A2E, 10em 8.5em #5B3A2E, 11em 8.5em #5B3A2E, 12em 8.5em #5B3A2E, 13em 8.5em #5B3A2E, 14em 8.5em #FECBBC, 15em 8.5em #FECBBC, 16em 8.5em #FECBBC, 17em 8.5em #FCC4B2, 18em 8.5em #FCC4B2, 19em 8.5em #5B3A2E, 20em 8.5em #5B3A2E, 21em 8.5em #5B3A2E, 5em 9.5em #5B3A2E, 6em 9.5em #5B3A2E, 7em 9.5em #5B3A2E, 8em 9.5em #5B3A2E, 9em 9.5em #5B3A2E, 10em 9.5em #5B3A2E, 11em 9.5em #FECBBC, 12em 9.5em #5B3A2E, 13em 9.5em #FECBBC, 14em 9.5em #FECBBC, 15em 9.5em #FECBBC, 16em 9.5em #FECBBC, 17em 9.5em #FECBBC, 18em 9.5em #FCC4B2, 19em 9.5em #5B3A2E, 20em 9.5em #5B3A2E, 21em 9.5em #5B3A2E, 5em 10.5em #5B3A2E, 6em 10.5em #5B3A2E, 7em 10.5em #5B3A2E, 8em 10.5em #5B3A2E, 9em 10.5em #FCC4B2, 10em 10.5em #FCC4B2, 11em 10.5em #FCC4B2, 12em 10.5em #FCC4B2, 13em 10.5em #FCC4B2, 14em 10.5em #FCC4B2, 15em 10.5em #FCC4B2, 16em 10.5em #FCC4B2, 17em 10.5em #FCC4B2, 18em 10.5em #FCC4B2, 19em 10.5em #FCC4B2, 20em 10.5em #5B3A2E, 21em 10.5em #5B3A2E, 5em 11.5em #5B3A2E, 6em 11.5em #5B3A2E, 7em 11.5em #3D221E, 8em 11.5em #3D221E, 9em 11.5em #3D221E, 10em 11.5em #FCC4B2, 11em 11.5em #FCC4B2, 12em 11.5em #FCC4B2, 13em 11.5em #FCC4B2, 14em 11.5em #3D221E, 15em 11.5em #3D221E, 16em 11.5em #3D221E, 17em 11.5em #3D221E, 18em 11.5em #FCC4B2, 19em 11.5em #FCC4B2, 20em 11.5em #5B3A2E, 21em 11.5em #5B3A2E, 4em 12.5em #080405, 5em 12.5em #080405, 6em 12.5em #080405, 7em 12.5em #080405, 8em 12.5em #080405, 9em 12.5em #080405, 10em 12.5em #080405, 11em 12.5em #FCC4B2, 12em 12.5em #080405, 13em 12.5em #080405, 14em 12.5em #080405, 15em 12.5em #080405, 16em 12.5em #080405, 17em 12.5em #080405, 18em 12.5em #080405, 19em 12.5em #080405, 20em 12.5em #FCC4B2, 21em 12.5em #5B3A2E, 5em 13.5em #080405, 6em 13.5em #B6B5B3, 7em 13.5em #55686C, 8em 13.5em #55686C, 9em 13.5em #fff, 10em 13.5em #080405, 11em 13.5em #818183, 12em 13.5em #080405, 13em 13.5em #B6B5B3, 14em 13.5em #55686C, 15em 13.5em #55686C, 16em 13.5em #fff, 17em 13.5em #B6B5B3, 18em 13.5em #080405, 19em 13.5em #FCC4B2, 20em 13.5em #FCC4B2, 21em 13.5em #5B3A2E, 5em 14.5em #5B3A2E, 6em 14.5em #B6B5B3, 6em 14.5em #B6B5B3, 7em 14.5em #B6B5B3, 8em 14.5em #B6B5B3, 9em 14.5em #B6B5B3, 10em 14.5em #FECBBC, 11em 14.5em #FECBBC, 12em 14.5em #FCC4B2, 13em 14.5em #B6B5B3, 14em 14.5em #B6B5B3, 15em 14.5em #B6B5B3, 16em 14.5em #B6B5B3, 17em 14.5em #B6B5B3, 18em 14.5em #FCC4B2, 19em 14.5em #FCC4B2, 20em 14.5em #FCC4B2, 21em 14.5em #5B3A2E, 5em 15.5em #FCC4B2, 6em 15.5em #B6B5B3, 6em 15.5em #B6B5B3, 7em 15.5em #B6B5B3, 8em 15.5em #B6B5B3, 9em 15.5em #B6B5B3, 10em 15.5em #FCC4B2, 11em 15.5em #FECBBC, 12em 15.5em #FECBBC, 13em 15.5em #B6B5B3, 14em 15.5em #B6B5B3, 15em 15.5em #B6B5B3, 16em 15.5em #B6B5B3, 17em 15.5em #B6B5B3, 18em 15.5em #FCC4B2, 19em 15.5em #FCC4B2, 20em 15.5em #CDA396, 5em 16.5em #FCC4B2, 6em 16.5em #CDA396, 7em 16.5em #FECBBC, 8em 16.5em #FECBBC, 9em 16.5em #FECBBC, 10em 16.5em #FCC4B2, 11em 16.5em #FECBBC, 12em 16.5em #FCC4B2, 13em 16.5em #FCC4B2, 14em 16.5em #FECBBC, 15em 16.5em #FECBBC, 16em 16.5em #FECBBC, 17em 16.5em #FECBBC, 18em 16.5em #FCC4B2, 19em 16.5em #FCC4B2, 20em 16.5em #CDA396, 6em 17.5em #CDA396, 7em 17.5em #FCC4B2, 8em 17.5em #FCC4B2, 9em 17.5em #FCC4B2, 10em 17.5em #CDA396, 11em 17.5em #FECBBC, 12em 17.5em #FECBBC, 13em 17.5em #FCC4B2, 14em 17.5em #CDA396, 15em 17.5em #FCC4B2, 16em 17.5em #FECBBC, 17em 17.5em #FECBBC, 18em 17.5em #FCC4B2, 19em 17.5em #FCC4B2, 6em 18.5em #FCC4B2, 7em 18.5em #FCC4B2, 8em 18.5em #FCC4B2, 9em 18.5em #FCC4B2, 10em 18.5em #FCC4B2, 11em 18.5em #CDA396, 12em 18.5em #CDA396, 13em 18.5em #CDA396, 14em 18.5em #FCC4B2, 15em 18.5em #FCC4B2, 16em 18.5em #FCC4B2, 17em 18.5em #FCC4B2, 18em 18.5em #FCC4B2, 19em 18.5em #DAAF9F, 7em 19.5em #DAAF9F, 8em 19.5em #FCC4B2, 9em 19.5em #FCC4B2, 10em 19.5em #FCC4B2, 11em 19.5em #FCC4B2, 12em 19.5em #FCC4B2, 13em 19.5em #FCC4B2, 14em 19.5em #FCC4B2, 15em 19.5em #FCC4B2, 16em 19.5em #DAAF9F, 17em 19.5em #FCC4B2, 18em 19.5em #FCC4B2, 19em 19.5em #DAAF9F, 7em 20.5em #DAAF9F, 8em 20.5em #DAAF9F, 9em 20.5em #FCC4B2, 10em 20.5em #FCC4B2, 11em 20.5em #D89283, 12em 20.5em #D89283, 13em 20.5em #D89283, 14em 20.5em #D89283, 15em 20.5em #DAAF9F, 16em 20.5em #FCC4B2, 17em 20.5em #DAAF9F, 18em 20.5em #DAAF9F, 19em 20.5em #DAAF9F, 7em 21.5em #CDA396, 8em 21.5em #DAAF9F, 9em 21.5em #DAAF9F, 10em 21.5em #FCC4B2, 11em 21.5em #FCC4B2, 12em 21.5em #FCC4B2, 13em 21.5em #FCC4B2, 14em 21.5em #FCC4B2, 15em 21.5em #FCC4B2, 16em 21.5em #FCC4B2, 17em 21.5em #DAAF9F, 18em 21.5em #DAAF9F, 8em 22.5em #CDA396, 9em 22.5em #DAAF9F, 10em 22.5em #FCC4B2, 11em 22.5em #FCC4B2, 12em 22.5em #DAAF9F, 13em 22.5em #DAAF9F, 14em 22.5em #FCC4B2, 15em 22.5em #FCC4B2, 16em 22.5em #DAAF9F, 17em 22.5em #DAAF9F, 18em 22.5em #CDA396, 9em 23.5em #CDA396, 10em 23.5em #DAAF9F, 11em 23.5em #FCC4B2, 12em 23.5em #FCC4B2, 13em 23.5em #FCC4B2, 14em 23.5em #FCC4B2, 15em 23.5em #DAAF9F, 16em 23.5em #DAAF9F, 17em 23.5em #DAAF9F, 18em 23.5em #CDA396, 9em 24.5em #CDA396, 10em 24.5em #CDA396, 11em 24.5em #DAAF9F, 12em 24.5em #DAAF9F, 13em 24.5em #DAAF9F, 14em 24.5em #DAAF9F, 15em 24.5em #DAAF9F, 16em 24.5em #BC9589, 17em 24.5em #CDA396, 18em 24.5em #CDA396, 10em 25.5em #CDA396, 11em 25.5em #BC9589, 12em 25.5em #BC9589, 13em 25.5em #BC9589, 14em 25.5em #BC9589, 15em 25.5em #BC9589, 16em 25.5em #BC9589, 17em 25.5em #CDA396, 18em 25.5em #CDA396, 9em 26.5em #5E5E5E, 10em 26.5em #262727, 11em 26.5em #DAAF9F, 12em 26.5em #DAAF9F, 13em 26.5em #DAAF9F, 14em 26.5em #DAAF9F, 15em 26.5em #DAAF9F, 16em 26.5em #DAAF9F, 17em 26.5em #CDA396, 18em 26.5em #262727, 19em 26.5em #262727, 7em 27.5em #5E5E5E, 8em 27.5em #AAACAB, 9em 27.5em #5E5E5E, 10em 27.5em #262727, 11em 27.5em #262727, 12em 27.5em #FCC4B2, 13em 27.5em #FCC4B2, 14em 27.5em #FCC4B2, 15em 27.5em #FCC4B2, 16em 27.5em #FCC4B2, 17em 27.5em #262727, 18em 27.5em #262727, 19em 27.5em #5E5E5E, 20em 27.5em #AAACAB, 21em 27.5em #5E5E5E, 22em 27.5em #AAACAB, 5em 28.5em #AAACAB, 6em 28.5em #5E5E5E, 7em 28.5em #474847, 8em 28.5em #5E5E5E, 9em 28.5em #474847, 10em 28.5em #262727, 11em 28.5em #262727, 12em 28.5em #262727, 13em 28.5em #FCC4B2, 14em 28.5em #FCC4B2, 15em 28.5em #FCC4B2, 16em 28.5em #262727, 17em 28.5em #262727, 18em 28.5em #262727, 19em 28.5em #474847, 20em 28.5em #5E5E5E, 21em 28.5em #474847, 22em 28.5em #5E5E5E, 23em 28.5em #AAACAB, 24em 28.5em #5E5E5E, 25em 28.5em #AAACAB, 4em 29.5em #AAACAB, 5em 29.5em #5E5E5E, 6em 29.5em #474847, 7em 29.5em #5E5E5E, 8em 29.5em #474847, 9em 29.5em #262727, 10em 29.5em #262727, 11em 29.5em #262727, 12em 29.5em #262727, 13em 29.5em #262727, 14em 29.5em #000, 15em 29.5em #262727, 16em 29.5em #262727, 17em 29.5em #262727, 18em 29.5em #262727, 19em 29.5em #262727, 20em 29.5em #474847, 21em 29.5em #5E5E5E, 22em 29.5em #474847, 23em 29.5em #5E5E5E, 24em 29.5em #474847, 25em 29.5em #5E5E5E, 26em 29.5em #AAACAB, 3em 30.5em #AAACAB, 4em 30.5em #5E5E5E, 5em 30.5em #474847, 6em 30.5em #5E5E5E, 7em 30.5em #474847, 8em 30.5em #5E5E5E, 9em 30.5em #262727, 9em 30.5em #262727, 10em 30.5em #262727, 11em 30.5em #474847, 12em 30.5em #5E5E5E, 12em 30.5em #5E5E5E, 13em 30.5em #000, 14em 30.5em #000, 15em 30.5em #000, 16em 30.5em #5E5E5E, 17em 30.5em #474847, 18em 30.5em #262727, 19em 30.5em #262727, 20em 30.5em #5E5E5E, 21em 30.5em #474847, 22em 30.5em #5E5E5E, 23em 30.5em #474847, 24em 30.5em #5E5E5E, 25em 30.5em #474847, 26em 30.5em #5E5E5E, 2em 31.5em #474847, 3em 31.5em #5E5E5E, 4em 31.5em #474847, 5em 31.5em #5E5E5E, 6em 31.5em #474847, 7em 31.5em #5E5E5E, 8em 31.5em #474847, 9em 31.5em #5E5E5E, 10em 31.5em #474847, 11em 31.5em #5E5E5E, 12em 31.5em #474847, 13em 31.5em #000, 14em 31.5em #000, 15em 31.5em #000, 16em 31.5em #474847, 17em 31.5em #5E5E5E, 18em 31.5em #474847, 19em 31.5em #5E5E5E, 20em 31.5em #474847, 21em 31.5em #5E5E5E, 22em 31.5em #474847, 23em 31.5em #5E5E5E, 24em 31.5em #474847, 25em 31.5em #5E5E5E, 26em 31.5em #474847, 27em 31.5em #5E5E5E;
+}
+
+@keyframes eyes {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes smile {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-5deg);
+  }
+  1% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.img-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.5em;
+  height: 1em;
+  z-index: 2;
+  box-shadow: 7em 13.5em #fff, 14em 13.5em #fff, 16em 13.5em #55686C, 9em 13.5em #55686C;
+  animation-name: eyes;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.img-wrapper:hover {
+  animation-name: rotate;
+  animation-duration: 100s;
+  animation-iteration-count: 1;
+}
+
+.img-wrapper:hover:after {
+  box-shadow: 7em 13.5em #fff, 14em 13.5em #fff, 16em 13.5em #55686C, 9em 13.5em #55686C, 10em 20.5em #D89283, 10.5em 20.5em #D89283, 11em 21.5em #D89283, 11.5em 21.5em #D89283, 12em 21.5em #D89283, 12.5em 21.5em #D89283, 13em 21.5em #D89283, 13.5em 21.5em #D89283, 14em 21.5em #D89283, 14.5em 21.5em #D89283, 15em 20.5em #D89283, 15.5em 20.5em #D89283, 11em 20.5em #fff, 11.5em 20.5em #fff, 12em 20.5em #fff, 12.5em 20.5em #fff, 13em 20.5em #fff, 13.5em 20.5em #fff, 14em 20.5em #fff, 14.5em 20.5em #fff, 16em 19.5em #FCC4B2, 16.5em 19.5em #FCC4B2, 12em 22.5em #FCC4B2, 12.5em 22.5em #FCC4B2, 13em 22.5em #FCC4B2, 9em 21.5em #FCC4B2, 9.5em 21.5em #FCC4B2, 13.5em 22.5em #FCC4B2;
+  animation-name: smile;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
