@@ -157,7 +157,6 @@ main {
   background-size: contain;
   border-radius: 0 0 60px 60px / 0 0 5px 5px;
   background-image: linear-gradient(78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px), linear-gradient(-78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px);
-  /*background-image: url('img/2barbershop-s.png'), linear-gradient(102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px), linear-gradient(-102deg, rgba(0,0,0,.1), rgba(0,0,0,.05) 10px, rgba(0,0,0,0) 20px);*/
   text-align: center;
 }
 
@@ -201,8 +200,6 @@ main {
   border-radius: 0;
   box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  /*background: rgba(217, 213, 204, .2);
-  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;*/
 }
 
 .project-item:hover:after,
