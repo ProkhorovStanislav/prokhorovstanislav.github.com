@@ -155,8 +155,8 @@ main {
   border: 2px solid #8B827B;
   background: #D9D5CC;
   background-size: contain;
-  border-radius: 0 0 60px 60px / 0 0 5px 5px;
-  background-image: linear-gradient(78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px), linear-gradient(-78deg, rgba(0,0,0,.2), rgba(0,0,0,.1) 10px, rgba(0,0,0,0) 20px);
+  border-radius: 0 0 60px 60px / 0 0 3px 3px;
+  background-image: linear-gradient(78deg, rgba(0,0,0,.15), rgba(0,0,0,.07) 10px, rgba(0,0,0,0) 20px), linear-gradient(-78deg, rgba(0,0,0,.15), rgba(0,0,0,.07) 10px, rgba(0,0,0,0) 20px);
   text-align: center;
 }
 
@@ -174,21 +174,21 @@ main {
 .project-item:after {
   content: '';
   position:absolute;
-  bottom: 25px;
+  bottom: 10px;
   z-index:-1;
-  width: 100px;
+  width: 150px;
   height: 100px;
 }
 
 .project-item:before {
-  left: 20px;
+  left: 10px;
   box-shadow: -5px 10px 10px rgba(0,0,0,.5);
-  transform: rotate(-2deg) skew(-20deg);
+  transform: rotate(-2deg) skew(-2deg);
 }
 .project-item:after{
- right: 20px;
+ right: 10px;
  box-shadow: 5px 10px 10px rgba(0,0,0,.5);
- transform: rotate(2deg) skew(20deg);
+ transform: rotate(2deg) skew(2deg);
 }
 
 .project-item:hover {
@@ -302,7 +302,7 @@ main {
   font-family: Georgia;
   font-size: 12px;
   text-indent: 5px;
-  color: #444;
+  color: #8B827B;
   text-indent: 10px;
   text-align: left;
 }
@@ -703,7 +703,7 @@ main {
   position: relative;
   display: inline-block;
   padding-left: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   color: #6C2005;
 }
 
@@ -746,4 +746,19 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
+}
+
+.send-mail__btn {
+  padding: 15px 20px;
+  border: none;
+  border-bottom: 3px solid #206D1E;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #5FBB2D;
+}
+
+.btn:active {
+  opacity: 0.3;
 }
