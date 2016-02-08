@@ -15,7 +15,7 @@
 	function request(data, fn) {
 	  var xhr = new XMLHttpRequest();
 	  var time = (new Date()).getTime();
-	  xhr.open("post", "//formspree.io/ridea@bk.ru?" + time, true);
+	  xhr.open("post", "//formspree.io/karser2012@gmail.com.ru?" + time, true);
 	  xhr.setRequestHeader("Accept", "application/json");
 	  xhr.addEventListener("readystatechange", function() {
 	    if (xhr.readyState == 4) {
