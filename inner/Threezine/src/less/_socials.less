@@ -1,0 +1,42 @@
+.socials {
+  float: right;
+  min-height: 28px;
+
+  &__link {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 4px;
+    background: #ccc;
+
+    &--facebook {
+      background: #ccc url('../images/spritesheet.png') no-repeat -31px -5px;
+    }
+
+    &--delicious {
+      background: #ccc url('../images/spritesheet.png') no-repeat -5px -5px;
+    }
+
+    &--flickr {
+      background: #ccc url('../images/spritesheet.png') no-repeat -5px -31px;
+    }
+
+    &--tumblr {
+      background: #ccc url('../images/spritesheet.png') no-repeat -57px -5px;
+    }
+
+    &--friendfeed {
+      background: #ccc url('../images/spritesheet.png') no-repeat -31px -31px;
+    }
+
+    &--twitter {
+      background: #ccc url('../images/spritesheet.png') no-repeat -57px -31px;
+    }               
+  }
+}
+
+@media (max-width: 767px) {
+  .socials {
+    padding-right: 5px;
+  }
+}

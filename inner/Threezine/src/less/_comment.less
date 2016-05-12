@@ -1,0 +1,23 @@
+.comment {
+  font-size: 11px;
+  line-height: 15px;
+  margin-bottom: 10px;
+
+  &__commentator {
+    color: #000;
+  }
+
+  &__comment-text {
+    color: @text-color;
+
+    &:hover {
+      color: @text-color;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .comment {
+    text-align: center;
+  }
+}

@@ -1,0 +1,47 @@
+.post-list-item {
+  padding-left: 5px;
+
+  &.active {
+    color: #7da1bc;
+  }
+
+  &__picture {
+    padding-right: 0;
+  }
+
+  &__heading {
+    padding: 0 10px;
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+
+  &:hover {
+    color: #7da1bc;
+  }
+}
+
+@media (max-width: 991px) {
+  .post-list-item {
+    padding-left: 10px;
+
+    &__picture {
+      padding-left: 0;
+    }
+    &__heading {
+      
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .post-list-item {
+    float: none;
+    width: 300px;
+    margin: 0 auto 21px;
+
+    &__heading {
+      padding: 3px 0 0 20px;
+      vertical-align: middle;
+    }
+  }
+}

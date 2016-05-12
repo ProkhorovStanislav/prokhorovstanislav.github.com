@@ -1,0 +1,34 @@
+.sidebar{
+
+  &--left {
+    padding-left: 0;
+  }  
+
+  &--right {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar {
+    &--left {
+      padding: 0;
+    }
+
+    &--right {
+      padding: 0;
+    }
+  }  
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    &--left {
+      padding-right: 10px;
+    }
+
+    &--right {
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,252 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Stan_Pro</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>myPortfolio</title>
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
-  <body>
+  <body class="page page--index">
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
-      <symbol id="menu-cross" viewBox="0 0 212.982 212.982"><g id="cross-Close"><path clip-rule="evenodd" d="m131.8 106.49l75.936-75.936c6.99-6.99 6.99-18.323 0-25.312-6.99-6.99-18.322-6.99-25.312 0l-75.937 75.937-75.936-75.937c-6.99-6.99-18.322-6.99-25.312 0-6.989 6.99-6.989 18.323 0 25.312l75.937 75.936-75.937 75.94c-6.989 6.99-6.989 18.323 0 25.312 6.99 6.99 18.322 6.99 25.312 0l75.937-75.937 75.937 75.937c6.989 6.99 18.322 6.99 25.312 0s6.99-18.322 0-25.312l-75.94-75.94z" fill-rule="evenodd"></path></g></symbol>
-      <symbol id="menu-burger" viewBox="0 0 92.833 92.833"><path d="m89.834 1.75h-86.834c-1.654 0-3 1.346-3 3v13.334c0 1.654 1.346 3 3 3h86.833c1.653 0 3-1.346 3-3v-13.334c0.001-1.654-1.345-3-2.999-3z"></path><path d="m89.834 36.75h-86.834c-1.654 0-3 1.346-3 3v13.334c0 1.654 1.346 3 3 3h86.833c1.653 0 3-1.346 3-3v-13.334c0.001-1.654-1.345-3-2.999-3z"></path><path d="m89.834 71.75h-86.834c-1.654 0-3 1.346-3 3v13.334c0 1.654 1.346 3 3 3h86.833c1.653 0 3-1.346 3-3v-13.334c0.001-1.655-1.345-3-2.999-3z"></path></symbol>
-      <symbol id="arrow" viewBox="0 0 474.449 474.449"><g><g><g><g><path class="arrow-style" d="M237.24,0C106.233,0,0.016,106.217,0.016,237.224S106.233,474.449,237.24,474.449
-      s237.193-106.217,237.193-237.224S368.248,0,237.24,0z M237.24,442.666c-113.273,0-205.442-92.169-205.442-205.442
-      S123.968,31.782,237.24,31.782s205.41,92.169,205.41,205.442C442.682,350.465,350.545,442.666,237.24,442.666z"></path><path class="arrow-style" d="M248.205,113.622c-3.178-3.178-7.31-4.704-11.473-4.64c-4.227-0.064-8.391,1.462-11.569,4.64
-      l-106.312,94.044c-6.229,6.229-6.229,16.368,0,22.597c6.229,6.261,16.368,6.261,22.597,0l95.22-84.255l95.22,84.255
-      c6.229,6.261,16.4,6.261,22.597,0c6.229-6.229,6.229-16.368,0-22.597L248.205,113.622z"></path><path class="arrow-style" d="M248.205,227.594c-3.178-3.178-7.31-4.704-11.473-4.64c-4.227-0.064-8.391,1.462-11.569,4.64
-      l-106.312,94.013c-6.229,6.261-6.229,16.4,0,22.597c6.229,6.261,16.368,6.261,22.597,0l95.22-84.192l95.22,84.192
-      c6.229,6.261,16.4,6.261,22.597,0c6.229-6.198,6.229-16.336,0-22.597L248.205,227.594z"></path></g></g></g></g></symbol>
-      <symbol id="vk" class="icon-vk" viewBox="0 0 96.496 96.496"><path d="m92.499 65.178c-2.873-3.446-6.254-6.387-9.453-9.51-2.886-2.815-3.068-4.448-0.748-7.697 2.532-3.546 5.255-6.956 7.81-10.486 2.385-3.299 4.823-6.589 6.078-10.539 0.796-2.513 0.092-3.623-2.485-4.063-0.444-0.077-0.903-0.081-1.355-0.081l-15.289-0.018c-1.883-0.028-2.924 0.793-3.59 2.462-0.899 2.256-1.826 4.51-2.897 6.687-2.43 4.936-5.144 9.707-8.949 13.747-0.839 0.891-1.767 2.017-3.169 1.553-1.754-0.64-2.271-3.53-2.242-4.507l-0.015-17.647c-0.34-2.521-0.899-3.645-3.402-4.135l-15.882 0.003c-2.12 0-3.183 0.819-4.315 2.145-0.653 0.766-0.85 1.263 0.492 1.517 2.636 0.5 4.121 2.206 4.515 4.849 0.632 4.223 0.588 8.463 0.224 12.703-0.107 1.238-0.32 2.473-0.811 3.629-0.768 1.817-2.008 2.187-3.637 1.069-1.475-1.012-2.511-2.44-3.525-3.874-3.809-5.382-6.848-11.186-9.326-17.285-0.716-1.762-1.951-2.83-3.818-2.859-4.587-0.073-9.175-0.085-13.762 0.004-2.76 0.052-3.583 1.392-2.459 3.894 4.996 11.113 10.557 21.917 17.816 31.759 3.727 5.051 8.006 9.51 13.534 12.67 6.265 3.582 13.009 4.66 20.112 4.328 3.326-0.156 4.325-1.021 4.479-4.336 0.104-2.268 0.361-4.523 1.48-6.561 1.098-2 2.761-2.381 4.678-1.137 0.959 0.623 1.767 1.416 2.53 2.252 1.872 2.048 3.677 4.158 5.62 6.137 2.437 2.48 5.324 3.945 8.954 3.646l14.052 0.003c2.264-0.148 3.438-2.924 2.138-5.451-0.913-1.77-2.111-3.346-3.383-4.871z"></path></symbol>
-      <symbol id="codepen" class="icon-codepen" viewBox="0 0 31.665 31.665"><g><path d="M16.878,0.415c-0.854-0.565-1.968-0.552-2.809,0.034L1.485,9.214c-0.671,0.468-1.071,1.233-1.071,2.052v9.444
-      c0,0.84,0.421,1.623,1.122,2.086l12.79,8.455c0.836,0.553,1.922,0.553,2.758,0l13.044-8.618c0.7-0.463,1.122-1.246,1.122-2.086
-      v-9.279c0-0.839-0.421-1.622-1.121-2.085L16.878,0.415z M26.621,10.645l-4.821,3.237l-4.521-3.288L17.25,4.127L26.621,10.645z
-       M13.979,4.133v6.329l-4.633,3.24l-4.621-3.099L13.979,4.133z M3.458,13.722l2.991,2.004l-2.991,2.093V13.722z M14.058,27.215
-      l-9.331-6.258l4.661-3.258l4.67,3.133V27.215z M12.286,15.674l3.021-2.113l3.519,2.313l-3.119,2.095L12.286,15.674z M17.354,27.215
-      V20.83l4.463-2.991l4.805,3.159L17.354,27.215z M27.954,17.927l-3.168-2.082l3.168-2.125V17.927z"></path></g></symbol>
-      <symbol id="github" class="icon-git" viewBox="0 0 438.549 438.549"><path d="m409.13 114.57c-19.608-33.596-46.205-60.194-79.798-79.8-33.59-19.604-70.27-29.405-110.06-29.405-39.781 0-76.472 9.804-110.06 29.408-33.596 19.605-60.192 46.204-79.8 79.8-19.607 33.6-29.41 70.28-29.41 110.06 0 47.78 13.94 90.745 41.827 128.91 27.884 38.164 63.906 64.572 108.06 79.227 5.14 0.954 8.945 0.283 11.419-1.996 2.475-2.282 3.711-5.14 3.711-8.562 0-0.571-0.049-5.708-0.144-15.417-0.098-9.709-0.144-18.179-0.144-25.406l-6.567 1.136c-4.187 0.767-9.469 1.092-15.846 1-6.374-0.089-12.991-0.757-19.842-1.999-6.854-1.231-13.229-4.086-19.13-8.559-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429-1.142-1.331-1.997-2.663-2.568-3.997-0.572-1.335-0.098-2.43 1.427-3.289s4.281-1.276 8.28-1.276l5.708 0.853c3.807 0.763 8.516 3.042 14.133 6.851 5.614 3.806 10.229 8.754 13.846 14.842 4.38 7.806 9.657 13.754 15.846 17.847 6.184 4.093 12.419 6.136 18.699 6.136s11.704-0.476 16.274-1.423c4.565-0.952 8.848-2.383 12.847-4.285 1.713-12.758 6.377-22.559 13.988-29.41-10.848-1.14-20.601-2.857-29.264-5.14-8.658-2.286-17.605-5.996-26.835-11.14-9.235-5.137-16.896-11.516-22.985-19.126-6.09-7.614-11.088-17.61-14.987-29.979-3.901-12.374-5.852-26.648-5.852-42.826 0-23.035 7.52-42.637 22.557-58.817-7.044-17.318-6.379-36.732 1.997-58.24 5.52-1.715 13.706-0.428 24.554 3.853 10.85 4.283 18.794 7.952 23.84 10.994 5.046 3.041 9.089 5.618 12.135 7.708 17.705-4.947 35.976-7.421 54.818-7.421s37.117 2.474 54.823 7.421l10.849-6.849c7.419-4.57 16.18-8.758 26.262-12.565 10.088-3.805 17.802-4.853 23.134-3.138 8.562 21.509 9.325 40.922 2.279 58.24 15.036 16.18 22.559 35.787 22.559 58.817 0 16.178-1.958 30.497-5.853 42.966-3.9 12.471-8.941 22.457-15.125 29.979-6.191 7.521-13.901 13.85-23.131 18.986-9.232 5.14-18.182 8.85-26.84 11.136-8.662 2.286-18.415 4.004-29.263 5.146 9.894 8.562 14.842 22.077 14.842 40.539v60.237c0 3.422 1.19 6.279 3.572 8.562 2.379 2.279 6.136 2.95 11.276 1.995 44.163-14.653 80.185-41.062 108.07-79.226 27.88-38.161 41.825-81.126 41.825-128.91-0.02-39.77-9.83-76.45-29.43-110.05z"></path></symbol>
-      <symbol id="facebook" class="icon-fb" viewBox="0 0 512 512"><path d="m296.3 512h-95.94v-256h-64v-88.225l64-0.029-0.104-51.976c0-71.976 19.51-115.77 104.3-115.77h70.588v88.242h-44.115c-33.016 0-34.604 12.328-34.604 35.342l-0.131 44.162h79.346l-9.354 88.225-69.95 0.04-0.06 256z"></path></symbol>
-      <symbol id="linkedin" class="icon-ldin" viewBox="0 0 430.117 430.117"><path id="linkedin-LinkedIn" d="m430.12 261.54v159.02h-92.188v-148.37c0-37.271-13.334-62.707-46.703-62.707-25.473 0-40.632 17.142-47.301 33.724-2.432 5.928-3.058 14.179-3.058 22.477v154.88h-92.219s1.242-251.28 0-277.32h92.21v39.309c-0.187 0.294-0.43 0.611-0.606 0.896h0.606v-0.896c12.251-18.869 34.13-45.824 83.102-45.824 60.67-0.01 106.16 39.63 106.16 124.81zm-377.94-251.98c-31.548 0-52.183 20.693-52.183 47.905 0 26.619 20.038 47.94 50.959 47.94h0.616c32.159 0 52.159-21.317 52.159-47.94-0.6-27.209-19.996-47.902-51.547-47.902zm-46.706 411h92.184v-277.32h-92.184v277.32z"></path></symbol>
-      <symbol id="icon-email" class="icon-email" viewBox="0 0 485.411 485.411"><path d="m0 81.824v321.76h485.41v-321.76h-485.41zm242.71 198.71l-199.1-174.84h398.19l-199.09 174.84zm-79.31-37.88l-139.53 122.53v-245.06l139.53 122.53zm18.08 15.88l61.22 53.762 61.22-53.762 138 121.19h-398.43l137.99-121.19zm140.53-15.87l139.54-122.54v245.06l-139.54-122.52z"></path></symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="google-search" x="0px" y="0px" viewBox="0 0 212.793 212.793" style="enable-background:new 0 0 212.793 212.793;" xml:space="preserve" width="40px" height="40px">
+        <path d="M145.105,24.897C111.91-8.299,58.09-8.299,24.896,24.896C-8.299,58.09-8.299,111.91,24.897,145.105  c29.005,29.005,73.756,32.662,106.736,10.978l51.646,51.646c6.753,6.753,17.7,6.752,24.452,0c6.75-6.75,6.751-17.697-0.002-24.45  l-51.646-51.646C177.767,98.653,174.109,53.902,145.105,24.897z M146.334,96.833l-10.701,0.001  c-1.267,5.442-3.425,10.716-6.464,15.601l7.567,7.567l-16.734,16.734l-7.567-7.567c-4.885,3.039-10.158,5.197-15.601,6.464  l-0.001,10.701H73.167l0.001-10.701c-5.444-1.267-10.718-3.425-15.603-6.464l-7.566,7.567l-16.735-16.734l7.567-7.567  c-3.039-4.884-5.196-10.158-6.463-15.602H23.667V73.167h10.701c1.267-5.443,3.424-10.717,6.463-15.602l-7.567-7.566l16.735-16.735  l7.566,7.567c4.885-3.039,10.158-5.196,15.602-6.463V23.667h23.666v10.701c5.443,1.267,10.718,3.424,15.602,6.463l7.567-7.567  l16.734,16.735l-7.567,7.566c3.039,4.885,5.197,10.158,6.464,15.603l10.701-0.001V96.833z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="html" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 456.804 456.804" style="enable-background:new 0 0 456.804 456.804;" xml:space="preserve">
+        <path d="M27.405,0l36.542,410.56l163.882,46.244l165.022-46.244L429.398,0H27.405z M350.025,133.904h-192.43l4.283,51.676h183.866   l-14.273,155.315l-102.499,28.26v0.287h-1.143l-103.356-28.547l-6.28-79.367h49.965l3.711,39.971l55.959,15.126l56.245-15.126   l6.283-65.097H115.625l-13.418-152.46h252.392L350.025,133.904z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="css" x="0px" y="0px" viewBox="0 0 470.699 470.699" style="enable-background:new 0 0 470.699 470.699;" xml:space="preserve" width="40px" height="40px">
+        <path d="M426.981,0H43.701C34.52,0,27.632,7.769,28.442,16.949L63.45,409.254c0.811,9.173,8.745,18.774,17.644,21.253  l138.006,38.335c8.887,2.463,23.413,2.479,32.313,0.032l138.177-38.281c8.901-2.472,16.835-11.986,17.645-21.175l35.023-392.469  C443.068,7.769,436.209,0,426.981,0z M360.51,141.611c-0.006,0.06-0.053,0.107-0.112,0.117c-0.06,0.01-0.118-0.021-0.144-0.077  L252.13,185.96c-1.54,0.631-2.418,2.264-2.098,3.897c0.322,1.633,1.754,2.811,3.419,2.811h84.103c4.474,0,8.736,1.9,11.728,5.227  c2.991,3.327,4.429,7.768,3.954,12.216l-13.141,123.273c-0.645,6.048-4.709,11.186-10.447,13.205l-89.269,31.41  c-3.362,1.184-7.027,1.193-10.397,0.025l-88.852-30.778c-5.773-2-9.871-7.153-10.52-13.228l-5.957-55.828  c-0.313-2.931,0.634-5.857,2.604-8.048c1.971-2.192,4.779-3.444,7.727-3.444h24.725c5.313,0,9.769,4.007,10.331,9.289l3.655,34.316  l61.521,21.385l61.803-21.58l7.559-71.17H129.835c-5.297,0-9.746-3.985-10.327-9.25l-3.327-30.164  c-0.508-4.601,2.088-8.982,6.366-10.745l111.837-46.109c1.269-0.523,1.99-1.868,1.724-3.214c-0.267-1.345-1.446-2.314-2.817-2.314  H115.542c-3.545,0-6.518-2.677-6.888-6.201l-3.406-32.421c-0.205-1.951,0.428-3.898,1.741-5.357  c1.313-1.458,3.184-2.291,5.146-2.291h246.379c1.973,0,3.852,0.842,5.166,2.313c1.314,1.472,1.938,3.434,1.715,5.394L360.51,141.611  z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="js" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 550.801 550.801" style="enable-background:new 0 0 550.801 550.801;" xml:space="preserve">
+        <path d="M475.084,131.997c-0.021-2.531-0.833-5.021-2.567-6.992L366.325,3.694c-0.032-0.034-0.063-0.045-0.085-0.076    c-0.633-0.707-1.371-1.295-2.151-1.804c-0.231-0.155-0.464-0.285-0.706-0.422c-0.676-0.366-1.393-0.675-2.131-0.896    c-0.2-0.053-0.38-0.135-0.58-0.188C359.87,0.119,359.037,0,358.193,0H97.2c-11.918,0-21.6,9.693-21.6,21.601v507.6    c0,11.907,9.682,21.601,21.6,21.601h356.4c11.907,0,21.6-9.693,21.6-21.601V133.202    C475.2,132.796,475.137,132.398,475.084,131.997z M251.599,469.832c0,38.043-18.225,51.311-47.548,51.311    c-6.94,0-16.055-1.182-21.998-3.164l3.375-24.374c4.158,1.393,9.503,2.384,15.448,2.384c12.68,0,20.596-5.759,20.596-26.557    v-83.996h30.122v84.396H251.599z M309.445,520.942c-15.25,0-30.296-3.966-37.829-8.121l6.138-24.965    c8.118,4.166,20.606,8.321,33.483,8.321c13.869,0,21.189-5.737,21.189-14.459c0-8.322-6.339-13.078-22.381-18.816    c-22.19-7.73-36.647-20.007-36.647-39.424c0-22.781,19.013-40.215,50.512-40.215c15.056,0,26.156,3.164,34.076,6.739    l-6.724,24.363c-5.357-2.573-14.86-6.339-27.943-6.339c-13.067,0-19.417,5.954-19.417,12.878c0,8.511,7.536,12.287,24.774,18.815    c23.567,8.723,34.668,20.999,34.668,39.814C363.34,501.926,346.096,520.942,309.445,520.942z M453.601,366.747H97.2V21.601    h250.193v110.51c0,5.967,4.841,10.8,10.8,10.8h95.407V366.747z" fill="#FFFFFF"/>
+        <path d="M174.396,126.755c0,9.336,6.637,16.928,14.79,16.928c2.304,0,4.179-2.144,4.179-4.789c0-2.647-1.88-4.785-4.179-4.785   c-3.536,0-6.426-3.299-6.426-7.354c0-4.061,2.89-7.356,6.426-7.356h0.037c0.799,0,7.971-0.182,8.026,6.557v183.658   c0,7.921,5.627,14.365,12.543,14.365h22.32c-0.008-0.042-0.008-0.085-0.013-0.116h114.03c9.091,0,16.474-8.453,16.474-18.868   c0-8.648-5.125-15.947-12.086-18.151c0.01-0.042,0.021-0.063,0.021-0.095h0.042V124.185c0-7.921-5.621-14.359-12.54-14.359H189.066   c-0.005,0-0.005,0-0.005,0C181.032,109.819,174.396,117.419,174.396,126.755z M231.488,305.101c0-3.713-1.107-6.824-2.694-9.397   h106.238c4.472,0,8.11,4.166,8.11,9.292c0,5.136-3.639,9.297-8.11,9.297h-106.13C230.426,311.787,231.488,308.739,231.488,305.101z    M227.438,216.902h97.875v8.774h-97.875V216.902z M227.438,185.177h97.875v8.775h-97.875V185.177z M227.438,152.777h97.875v8.774   h-97.875V152.777z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="github" x="0px" y="0px" width="45px" height="45px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+        <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.027,408.027   c-19.76,19.759-42.756,35.267-68.354,46.094c-6.502,2.75-13.105,5.164-19.801,7.246V423c0-20.167-6.916-35-20.75-44.5   c8.668-0.833,16.625-2,23.875-3.5s14.918-3.667,23-6.5c8.084-2.833,15.334-6.208,21.75-10.125c6.418-3.917,12.584-9,18.5-15.25   c5.918-6.25,10.875-13.333,14.875-21.25s7.168-17.417,9.5-28.5c2.334-11.083,3.5-23.292,3.5-36.625c0-25.833-8.416-47.833-25.25-66   c7.668-20,6.834-41.75-2.5-65.25l-6.25-0.75c-4.332-0.5-12.125,1.333-23.375,5.5s-23.875,11-37.875,20.5   c-19.832-5.5-40.416-8.25-61.749-8.25c-21.5,0-42,2.75-61.5,8.25c-8.833-6-17.208-10.958-25.125-14.875s-14.25-6.583-19-8   s-9.167-2.292-13.25-2.625s-6.708-0.417-7.875-0.25s-2,0.333-2.5,0.5c-9.333,23.667-10.167,45.417-2.5,65.25   c-16.833,18.167-25.25,40.167-25.25,66c0,13.333,1.167,25.542,3.5,36.625s5.5,20.583,9.5,28.5s8.958,15,14.875,21.25   s12.083,11.333,18.5,15.25s13.667,7.292,21.75,10.125s15.75,5,23,6.5s15.208,2.667,23.875,3.5c-13.667,9.333-20.5,24.167-20.5,44.5   v39.115c-7.549-2.247-14.99-4.902-22.3-7.994c-25.597-10.827-48.594-26.335-68.353-46.094   c-19.758-19.758-35.267-42.756-46.093-68.354C46.679,313.195,41,285.043,41,256s5.679-57.195,16.879-83.675   c10.827-25.597,26.335-48.594,46.093-68.353c19.758-19.759,42.756-35.267,68.353-46.093C198.805,46.679,226.957,41,256,41   s57.195,5.679,83.676,16.879c25.598,10.827,48.594,26.335,68.354,46.093c19.758,19.758,35.266,42.756,46.092,68.353   C465.32,198.805,471,226.957,471,256s-5.68,57.195-16.879,83.675C443.295,365.271,427.785,388.27,408.027,408.027z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="prepros" x="0px" y="0px" viewBox="0 0 511 511" style="enable-background:new 0 0 511 511;" xml:space="preserve" width="42px" height="42px">
+        <path d="M39.5,103c1.97,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3c-1.39-1.4-3.33-2.2-5.3-2.2   c-1.98,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3s0.8,3.91,2.2,5.3C35.59,102.2,37.53,103,39.5,103z" fill="#FFFFFF"/>
+        <path d="M63.5,103c1.97,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3c-1.39-1.4-3.33-2.2-5.3-2.2   c-1.97,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3s0.8,3.91,2.2,5.3C59.59,102.2,61.53,103,63.5,103z" fill="#FFFFFF"/>
+        <path d="M87.5,103c1.97,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3c-1.39-1.4-3.33-2.2-5.3-2.2   c-1.97,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3s0.8,3.91,2.2,5.3C83.59,102.2,85.53,103,87.5,103z" fill="#FFFFFF"/>
+        <path d="M375.5,280c-9.098,0-16.5-7.402-16.5-16.5v-24c0-17.369-14.131-31.5-31.5-31.5h-8c-4.142,0-7.5,3.358-7.5,7.5   s3.358,7.5,7.5,7.5h8c9.098,0,16.5,7.402,16.5,16.5v24c0,9.604,4.32,18.218,11.119,24c-6.799,5.782-11.119,14.396-11.119,24v24   c0,9.098-7.402,16.5-16.5,16.5h-8c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5h8c17.369,0,31.5-14.131,31.5-31.5v-24   c0-9.098,7.402-16.5,16.5-16.5c4.142,0,7.5-3.358,7.5-7.5S379.642,280,375.5,280z" fill="#FFFFFF"/>
+        <path d="M167,263.5v-24c0-9.098,7.402-16.5,16.5-16.5h8c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-8   c-17.369,0-31.5,14.131-31.5,31.5v24c0,9.098-7.402,16.5-16.5,16.5c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5,7.5,7.5   c9.098,0,16.5,7.402,16.5,16.5v24c0,17.369,14.131,31.5,31.5,31.5h8c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-8   c-9.098,0-16.5-7.402-16.5-16.5v-24c0-9.604-4.32-18.218-11.119-24C162.68,281.718,167,273.104,167,263.5z" fill="#FFFFFF"/>
+        <path d="M295.5,320c-1.97,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3s0.8,3.91,2.2,5.3c1.39,1.4,3.33,2.2,5.3,2.2   c1.98,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3C299.41,320.8,297.47,320,295.5,320z" fill="#FFFFFF"/>
+        <path d="M255.5,320c-1.97,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3c0,1.98,0.8,3.91,2.2,5.3c1.39,1.4,3.33,2.2,5.3,2.2   c1.97,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3C259.41,320.8,257.47,320,255.5,320z" fill="#FFFFFF"/>
+        <path d="M215.5,320c-1.98,0-3.91,0.8-5.3,2.2c-1.4,1.39-2.2,3.33-2.2,5.3s0.8,3.91,2.2,5.3c1.39,1.4,3.33,2.2,5.3,2.2   c1.97,0,3.91-0.8,5.3-2.2c1.4-1.39,2.2-3.33,2.2-5.3s-0.8-3.91-2.2-5.3C219.41,320.8,217.47,320,215.5,320z" fill="#FFFFFF"/>
+        <path d="M119.5,103h304c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-304c-4.142,0-7.5,3.358-7.5,7.5S115.358,103,119.5,103z" fill="#FFFFFF"/>
+        <path d="M455.5,103h16c4.142,0,7.5-3.358,7.5-7.5s-3.358-7.5-7.5-7.5h-16c-4.142,0-7.5,3.358-7.5,7.5S451.358,103,455.5,103z" fill="#FFFFFF"/>
+        <path d="M471.5,56h-432C17.72,56,0,73.72,0,95.5v320C0,437.28,17.72,455,39.5,455h432c21.78,0,39.5-17.72,39.5-39.5v-320   C511,73.72,493.28,56,471.5,56z M39.5,71h432c13.509,0,24.5,10.991,24.5,24.5V120H15V95.5C15,81.991,25.991,71,39.5,71z M471.5,440   h-432C25.991,440,15,429.009,15,415.5V135h481v280.5C496,429.009,485.009,440,471.5,440z" fill="#FFFFFF" stroke-width="20%"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="tools" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 481.763 481.763" style="enable-background:new 0 0 481.763 481.763;" xml:space="preserve">
+        <path d="M453.584,405.715L298.332,250.457c-1.454-1.46-3.009-2.755-4.61-3.967l27.497-28.954c1.406-1.416,2.736-2.905,3.96-4.436   c36.505,13.77,79.34,6.029,108.682-23.309c21.402-21.409,32.195-51.013,29.583-81.226c-0.283-3.419-2.548-6.375-5.769-7.542   c-3.228-1.179-6.845-0.375-9.274,2.045l-49.757,49.754l-50.377-12.699l-14.287-51.967l49.745-49.748   c2.441-2.433,3.239-6.053,2.063-9.277c-1.171-3.233-4.126-5.479-7.555-5.78c-30.21-2.604-59.816,8.183-81.226,29.592   c-29.317,29.317-37.078,72.129-23.323,108.619c-1.496,1.265-2.985,2.61-4.445,4.049l-40.471,38.869l-74.319-74.312   c-0.928-0.931-1.918-1.75-2.938-2.519c0.872-1.53,1.72-3.105,2.512-4.74c15.696,3.021,44.39-27.544,68.76-51.905L151.787,0   c-31.747,31.752-54.929,53.061-51.92,68.757c-7.258,3.546-13.728,7.882-18.326,12.486l-10.001,9.998   c-6.493,6.502-10.409,14.588-11.807,23.014c-0.97,1.108-1.957,2.275-2.938,3.523l-3.727,4.684   c-0.104,0.115-0.425,0.576-0.514,0.694l-3.378,4.729c-2.113,2.819-3.96,5.881-5.746,8.836c-0.659,1.097-1.33,2.196-2.015,3.292   c-0.109,0.189-0.216,0.375-0.313,0.562l-1.501,2.828c-1.814,3.402-3.697,6.924-5.308,10.799l-0.26,0.617   c-1.9,4.513-3.869,9.186-5.243,14.139l-0.665,2.143c-0.544,1.762-1.097,3.52-1.605,5.621l-1.38,6.833   c-1.029,4.273-1.375,8.488-1.676,12.221l-0.201,2.453c-0.508,3.871-0.36,7.521-0.222,10.742c0.047,1.079,0.089,2.137,0.121,3.564   c0.036,0.594,0.042,1.173,0.06,1.744c0.035,1.439,0.074,3.074,0.352,4.793l0.866,5.545c0.186,1.072,0.343,2.113,0.491,3.111   c0.331,2.252,0.671,4.581,1.342,6.792l3.632,12.602c1.12,3.83,4.758,6.366,8.739,6.088c2.107-0.147,4.001-1.058,5.411-2.471   c1.259-1.259,2.131-2.914,2.397-4.781l1.883-12.812c0.139-1.017,0.576-2.506,1.028-4.082c0.322-1.093,0.635-2.208,0.877-3.159   l1.339-4.782c0.163-0.647,0.479-1.277,0.757-1.924c0.266-0.6,0.532-1.218,0.769-1.827c0.449-1.017,0.872-2.033,1.288-3.076   c0.825-2.045,1.605-3.969,2.796-5.858c0.518-0.872,0.999-1.738,1.49-2.622c1.241-2.222,2.42-4.32,3.821-6.059   c0.088-0.103,0.168-0.218,0.26-0.34l3.159-4.356c0.647-0.819,1.374-1.593,2.081-2.373c0.502-0.55,1.005-1.103,1.64-1.83   c1.865-2.243,4.055-4.199,6.168-6.124l1.132-1.017c1.566-1.454,3.378-2.822,5.284-4.268c0.78-0.583,1.543-1.162,2.293-1.732   c0.963-0.624,1.895-1.247,2.813-1.865c1.72-1.162,3.209-2.167,4.93-3.062l3.745-2.131l3.789-1.858   c1.321-0.683,2.622-1.209,3.821-1.693c0.712-0.296,1.416-0.583,2.069-0.866c0.665-0.23,1.306-0.479,1.912-0.703   c0.812-0.296,1.513-0.58,2.465-0.828l1.022-0.23c1.114,1.803,2.42,3.517,3.987,5.083l73.515,73.518L31.647,393.822   c-0.062,0.059-0.121,0.124-0.178,0.178c-19.529,19.529-22.709,48.131-3.177,67.666c19.532,19.529,46.316,14.522,65.84-5   c0.086-0.083,0.16-0.16,0.236-0.249l138.448-145.782c0.812,0.957,1.616,1.92,2.518,2.824l155.24,155.253   c17.396,17.401,45.613,17.401,63.009,0C470.974,451.322,470.974,423.104,453.584,405.715z M73.871,440.564   c-7.191,7.199-18.855,7.199-26.052,0c-7.19-7.193-7.19-18.85,0-26.043c7.19-7.188,18.855-7.193,26.052,0   C81.055,421.715,81.055,433.371,73.871,440.564z" fill="#FFFFFF"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="responsive" x="0px" y="0px" viewBox="0 0 467.435 467.435" style="enable-background:new 0 0 467.435 467.435;" xml:space="preserve" width="40px" height="40px">
+        <path d="M421.18,35.684H140.967c-25.539,0-46.254,20.715-46.254,46.256v43.537h40.141V90.314c0-9.727,7.865-17.596,17.594-17.596   h257.252c9.729,0,17.598,7.869,17.598,17.596v165.449c0,9.727-7.869,17.596-17.598,17.596H289.834v57.719   c0,0-0.17,76.701-0.199,77.361c-0.324,8.115-2.676,15.643-6.5,22.283h83.293c9.727,0,17.594-7.869,17.594-17.596v-22.5   c0-9.728-7.867-17.596-17.594-17.596h-42.936V341.82h97.688c25.541,0,46.256-20.715,46.256-46.256V81.939   C467.435,56.398,446.721,35.684,421.18,35.684z M398.455,319.277c-7.98,0-14.434-6.471-14.434-14.445   c0-7.965,6.453-14.416,14.434-14.416c7.955,0,14.426,6.451,14.426,14.416C412.881,312.807,406.41,319.277,398.455,319.277z" fill="#FFFFFF"/>
+        <path d="M248.078,220.861l-2.119-3.84l-14.43,14.443v130.994H149.91v28.108c2.352-1.645,5.041-2.828,8.131-2.828   c7.963,0,14.432,6.455,14.432,14.416c0,7.975-6.469,14.445-14.432,14.445c-3.09,0-5.779-1.182-8.131-2.826v4.117   c0,4.9-1.014,9.527-2.643,13.861h93.682c13.951,0,25.281-11.328,25.281-25.279v-175.16h-0.492   C258.393,231.313,251.613,227.303,248.078,220.861z" fill="#FFFFFF"/>
+        <path d="M84.555,188.742h100.688l16.215-16.225l-3.953-2.184c-7.113-3.98-11.139-11.773-10.25-19.732   c0.066-0.537,0.293-1,0.4-1.521H75.133c-13.953,0-25.281,11.326-25.281,25.281v35.389h34.703V188.742z" fill="#FFFFFF"/>
+        <path d="M110.537,230.928H15.766C7.053,230.928,0,237.982,0,246.695v168.768c0,8.713,7.053,15.766,15.766,15.766h94.771   c8.715,0,15.771-7.053,15.771-15.766V246.695C126.309,237.982,119.252,230.928,110.537,230.928z M63.162,422.238   c-6.699,0-12.141-5.438-12.141-12.154c0-6.685,5.441-12.109,12.141-12.109c6.686,0,12.127,5.424,12.127,12.109   C75.289,416.801,69.848,422.238,63.162,422.238z M100.689,373.017H25.633V262.293h75.057V373.017z" fill="#FFFFFF"/>
+        <path d="M293.217,125.246c-0.834-0.861-1.969-1.307-3.139-1.307c-0.432,0-0.846,0.045-1.26,0.168l-82.723,24.342   c-1.734,0.492-2.996,1.982-3.18,3.781c-0.199,1.768,0.707,3.504,2.275,4.365l22.189,12.248l-58.855,58.889   c-6.152,6.145-6.152,16.121,0,22.266c3.07,3.061,7.098,4.596,11.123,4.596c4.027,0,8.053-1.535,11.127-4.611l58.857-58.889   l12.231,22.178c0.783,1.412,2.273,2.305,3.875,2.305c0.168,0,0.336,0,0.506-0.029c1.781-0.186,3.289-1.443,3.779-3.152   l24.314-82.756C294.813,128.059,294.352,126.367,293.217,125.246z" fill="#FFFFFF"/>
+      </symbol>
     </svg>
-    <header class="main-hdr">
-      <div class="center-wrapper">
-        <div class="heading heading--small">The online portfolio of</div>
-        <div class="heading heading--big">Stanislav Prokhorov</div>
-        <div class="heading heading--small">html&css developer</div>
+    <a class="arrow arrow--top arrow--scrolled" href=".page-intro">Вверх</a>
+    <header class="page-header clearfix">
+      <div class="index-center-wrap">
+        <nav class="main-nav">
+          <ul class="main-nav__list clearfix">
+            <li class="main-nav__cell">
+                <a href=".about" class="main-nav__link">Обо мне</a>
+            </li>
+            <li class="main-nav__cell">
+                <a href=".portfolio" class="main-nav__link">Портфолио</a>
+            </li>
+            <li class="main-nav__cell">
+                <a href=".contacts" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
-    <main>
-      <section>
-        <div class="center-wrapper">
-          <h2 class="content-header">Work</h2>
-          <div class="projects-wrapper">
-          	<div class="project-item">
-              <div class="project-item__photo-wrapper">
-                <img src="img/2barbershop-s.png" alt="Barbershop layout" class="project-item__photo">
+    <main class="page-content">
+      <section class="page-intro">
+        <div class="index-center-wrap">
+          <h1 class="page-title">Прохоров Станислав</h1>
+          <div class="page-intro__label"><span>Html</span> & <span>Css</span> developer</div>
+          <div class="page-intro__computer computer">
+            <div class="computer__display">
+              <div class="computer__console">
+                <div class="computer__icon"></div>
+                <div class="computer__text computer__text--blue computer__text--first">&lt;!DOCTYPE html&gt;<span>&nbsp;</span></div>
+                <div class="computer__text computer__text--blue computer__text--second">&lt;html&gt;<span>&nbsp;</span></div>
+                <div class="computer__text computer__text--lightblue computer__text--third">&emsp;&lt;head&gt;<span>&nbsp;</span></div>
+                <div class="computer__text computer__text--yellow computer__text--fourth">&emsp;&emsp;&lt;title&gt; <p>Welcome! :)</p> &lt;/title&gt;<span>&nbsp;</span></div>
               </div>
-              <div class="project-item__content-wrapper">
-                <div class="project-item__header project-item__header--barbershop">Barbershop</div>
-                <div class="project-item__content">Website of barbershop. Consists of 4 pages: main, catalog, catalog-item(click the first item), price-list + login form popup // (training layout).</div>
-                <div class="project-item__subheader">Involved instruments:</div>
-                <div class="project-item__involved-wrapper">
-                  <span class="project-item__involved-item">HTML5</span>
-                  <span class="project-item__involved-item">CSS3</span>
-                  <span class="project-item__involved-item">JS</span>
-                  <span class="project-item__involved-item">IE9</span>
-                </div>
-                <div class="btn-wrapper">
-                  <a class="btn" href="/barbershop" title="перейти на сайт" target="_blank">To page</a>
-                  <a class="btn btn--deactivate" href="/barbershop/barbershop.zip" title="перейти на сайт" target="_blank">.zip</a>
-                  <a class="btn" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/barbershop" title="перейти на сайт" target="_blank">To Git</a>
-                </div>
-              </div>
-          	</div>
-          	<div class="project-item">
-              <div class="project-item__photo-wrapper">
-                <img src="img/2nerds-s.png" alt="Barbershop layout" class="project-item__photo">
-              </div>
-              <div class="project-item__content-wrapper">
-                <div class="project-item__header project-item__header--nerds">Nerds</div>
-                <div class="project-item__content">Website of the company engaged in the development of sites, applications and presentations. Consists of 2 pages: main and catalog + popup "write us" (training layout)</div>
-                <div class="project-item__subheader">Involved instruments:</div>
-                <div class="project-item__involved-wrapper">
-                  <span class="project-item__involved-item">HTML5</span>
-                  <span class="project-item__involved-item">CSS3</span>
-                  <span class="project-item__involved-item">JS</span>
-                  <span class="project-item__involved-item">IE9</span>
-                </div>
-                <div class="btn-wrapper">
-                  <a class="btn" href="/nerds" title="перейти на сайт" target="_blank">To page</a>
-                  <a class="btn btn--deactivate" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/nerds.zip" title="перейти на сайт" target="_blank">.zip</a>
-                  <a class="btn" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/nerds" title="перейти на сайт" target="_blank">To Git</a>
-                </div>
-              </div>
-          	</div>
-          	<div class="project-item">
-              <div class="project-item__photo-wrapper">
-                <img src="img/2technomart-s.png" alt="Barbershop layout" class="project-item__photo">
-              </div>
-              <div class="project-item__content-wrapper">
-                <div class="project-item__header project-item__header--technomart">Technomart</div>
-                <div class="project-item__content">Website of online shop which sells power tools. Consists of 3 pages: main, catalog, contacts + popup "write us" + emulation add product/bookmark (training layout)</div>
-                <div class="project-item__subheader">Involved instruments:</div>
-                <div class="project-item__involved-wrapper">
-                  <span class="project-item__involved-item">HTML5</span>
-                  <span class="project-item__involved-item">CSS3</span>
-                  <span class="project-item__involved-item">SASS</span>
-                  <span class="project-item__involved-item">JS</span>
-                  <span class="project-item__involved-item">IE9</span>
-                  <span class="project-item__involved-item">BEM</span>
-                </div>
-                <div class="btn-wrapper">
-                  <a class="btn" href="/Techno" title="перейти на сайт" target="_blank">To page</a>
-                  <a class="btn btn--deactivate" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Techno.zip" title="перейти на сайт" target="_blank">.zip</a>
-                  <a class="btn" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Techno" title="перейти на сайт" target="_blank">To Git</a>
-                </div>
-              </div>
-          	</div>
-          	<div class="project-item">
-              <div class="project-item__photo-wrapper">
-                <img src="img/2pink-s.png" alt="Barbershop layout" class="project-item__photo">
-              </div>
-              <div class="project-item__content-wrapper">
-                <div class="project-item__header project-item__header--pink">Pink</div>
-                <div class="project-item__content">Website of team, which makes aps. Consists of 4 pages: main, competition(hard complex form)("/form.html"), blog("/blog.html"), post("/post.html") (training layout)</div>
-                <div class="project-item__subheader">Involved instruments:</div>
-                <div class="project-item__involved-wrapper">
-                  <span class="project-item__involved-item">HTML5</span>
-                  <span class="project-item__involved-item">CSS3</span>
-                  <span class="project-item__involved-item">LESS</span>
-                  <span class="project-item__involved-item">JS</span>
-                  <span class="project-item__involved-item">IE9</span>
-                  <span class="project-item__involved-item">Responsive</span>
-                  <span class="project-item__involved-item">SVG</span>
-                  <span class="project-item__involved-item">Grunt</span>
-                  <span class="project-item__involved-item">BEM</span>
-                </div>
-                <div class="btn-wrapper">
-                  <a class="btn" href="/Pink" title="перейти на сайт" target="_blank">To page</a>
-                  <a class="btn btn--deactivate" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Pink.zip" title="перейти на сайт" target="_blank">.zip</a>
-                  <a class="btn" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Pink" title="перейти на сайт" target="_blank">To Git</a>
-                </div>
-              </div>
-          	</div>
-          	<div class="project-item">
-              <div class="project-item__photo-wrapper">
-                <img src="img/2sedona-s2.png" alt="Barbershop layout" class="project-item__photo">
-              </div>
-              <div class="project-item__content-wrapper">
-                <div class="project-item__header project-item__header--sedona">Sedona</div>
-                <div class="project-item__content">Website of the tour company in the town of Sedona. Consists of 2 pages:main and hard complex form ("/form.html") (training layout)</div>
-                <div class="project-item__subheader">Involved instruments:</div>
-                <div class="project-item__involved-wrapper">
-                  <span class="project-item__involved-item">HTML5</span>
-                  <span class="project-item__involved-item">CSS3</span>
-                  <span class="project-item__involved-item">SASS</span>
-                  <span class="project-item__involved-item">JS</span>
-                  <span class="project-item__involved-item">IE9</span>
-                  <span class="project-item__involved-item">Responsive</span>
-                  <span class="project-item__involved-item">SVG</span>
-                  <span class="project-item__involved-item">Grunt</span>
-                  <span class="project-item__involved-item">BEM</span>
-                  <span class="project-item__involved-item">Retina</span>
-                </div>
-                <div class="btn-wrapper">
-                  <a class="btn" href="/Sedona/build" title="перейти на сайт" target="_blank">To page</a>
-                  <a class="btn btn--deactivate" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Sedona.zip" title="перейти на сайт" target="_blank">.zip</a>
-                  <a class="btn" href="https://github.com/ProkhorovStanislav/prokhorovstanislav.github.com/tree/master/Sedona" title="перейти на сайт" target="_blank">To Git</a>
-                </div>
-              </div>
-          	</div>
-          </div>
-        </div>
-      </section>
-      <section class="my-skills">
-        <div class="center-wrapper">
-          <h2 class="content-header content-header--skills">My skills</h2>
-          <ul class="my-skills__list">
-            <li class="my-skills__list-item">Confident coding on html5, css3;</li>
-            <li class="my-skills__list-item">Adaptive layouts;</li>
-            <li class="my-skills__list-item">Valid code;</li>
-            <li class="my-skills__list-item">Basic knowledge of JavaScript;</li>
-            <li class="my-skills__list-item">GRUNT - for automation project build;</li>
-            <li class="my-skills__list-item">LESS and SASS - css preprocessors;</li>
-            <li class="my-skills__list-item">Methodologies, using BEM;</li>
-            <li class="my-skills__list-item">Understanding principles of VCS and using Git</li>
-            <li class="my-skills__list-item">Support for browsers chrome, firefox, opera, IE9 and above;</li>
-            <li class="my-skills__list-item">Connection of non-standard fonts;</li>
-            <li class="my-skills__list-item">Using sprite for reduction quantity of http requests;</li>
-            <li class="my-skills__list-item">Optimization and minification css, html and js;</li>
-            <li class="my-skills__list-item">Understanding and using modifiable units: “em”, “rem”, “vh”, “vw”, “vm”, “%”;</li>
-            <li class="my-skills__list-item my-skills__list-item--separate">Using svg, svg-sprites and incorporation them on the page</li>
-            <li class="my-skills__list-item">Currently studying: Strong JS, jQuery</li>
-            <li class="my-skills__list-item">Going to study in the near future: GULP, Bootstrap, Wordpress, Jade</li>
-          </ul>
-        </div>
-      </section>
-      <section class="about-me">
-        <div class="center-wrapper">
-          <h2 class="content-header content-header--about-me">About me</h2>
-          <div class="picture-frame">
-            <div class="screw screw--center"></div>
-          </div>
-          <div class="text-frame">
-            <h2 class="text-frame__header">Dossier</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum earum quasi quidem aliquam quos adipisci ipsam, ipsa, recusandae eius suscipit error. Reiciendis atque reprehenderit amet, fugiat unde rerum neque repellendus!</p>
-            <div class="screw screw--left"></div>
-            <div class="screw screw--right"></div>
-          </div>
-        </div>
-      </section>
-      <section class="get-in-touch">
-        <div class="center-wrapper">
-          <h2 class="content-header content-header--get-in-touch">Get in touch</h2>
-          <form action="http://formspree.io/karser2012@gmail.com" method="post" class="send-mail">
-            <div class="send-mail__wrapper">
-              <input class="send-mail__input send-mail__input--name" type="text" name="your-name" id="enter-name" required placeholder="Enter Your name, please">
-              <input class="send-mail__input send-mail__input--email" type="email" name="your-email" id="enter-email" required placeholder="Enter Your email, please">
-              <textarea class="send-mail__input send-mail__input-textarea" name="message-text" required id="enter-message-text" placeholder="Enter message, please" rows="7"></textarea>
             </div>
-            <input type="submit" class="btn btn--send-mail" value="Send message">
-          </form>
+          </div>
+        </div>
+        <a class="page-intro__arrow arrow arrow--down" href=".about"></a>
+      </section>
+      <section class="about">
+        <div class="index-center-wrap clearfix">
+          <div class="about__title">Обо мне</div>
+          <div class="about__text">
+            <p class="about__content">Вёрсткой и изучением JavaScript занимаюсь около года. Закончил базовый и продвинутый интенсивы от HTML Academy. Верстаю адаптивно, кроссбраузерно и максимально близко к макету.</p>
+            <p class="about__content">Стремлюсь к тому, чтобы вёрстка была "чистой", валидной и понятной, в своих проектах придерживаюсь БЭМ. Также стараюсь минимизировать время загрузки страницы снижая количество HTTP-запросов и по максимуму используя возможности HTML5 и CSS3. Дружу с SVG и иконочными шрифтами.</p> 
+            <p class="about__content"> Мой стандартный набор инструментов: консоль cmder, Sublime+Emmet, SASS/LESS, Grunt/Gulp, Git. В последнее время активно приобщаюсь к среде разработки PhpStorm и серверной платформе Open Server. В процессе изучения фреймворк Bootstrap и html-препроцессор Jade</p>
+          </div>
+          <div class="about__person person">
+            <span class="person__eyes"></span>
+          </div>
         </div>
       </section>
-
+      <section class="skills-section">
+        <div class="index-center-wrap">
+          <div class="skills">
+            <div class="skills__center">
+                <span class="skills__label">мои навыки</span>
+            </div>
+            <div class="skills__round"></div>
+            <div class="skills__item skills__item--first">
+              <svg class="skills__icon skills__icon--html">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#html" width="40" height="40"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">HTML</div>
+                <div>Аккуратная семантичная вёрстка, выполненная с любовью и вниманием.</div>
+              </div>
+            </div>
+           <div class="skills__item skills__item--second">
+              <svg class="skills__icon skills__icon--css">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#css" width="40" height="40"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">CSS</div>
+                <div>Стилизация HTML &ndash; элементов в соответствии с макетом в лучших традициях Pixel Perfect.</div>
+              </div>
+           </div>
+           <div class="skills__item skills__item--third">
+              <svg class="skills__icon skills__icon--js">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#js" width="45" height="45"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">JS и JQuery</div>
+                <div>Как подключение и кастомизация плагинов, так и написание собственных скриптов.</div>
+              </div>
+           </div>
+            <div class="skills__item skills__item--fourth">
+              <svg class="skills__icon skills__icon--github">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github" width="45" height="45"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">Git</div>
+                <p>Активное использование систем контроля версий (Git, Bitbucket)</p>
+              </div>
+            </div>
+            <div class="skills__item skills__item--fifth">
+              <svg class="skills__icon skills__icon--prepros">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#prepros" width="42" height="42"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">Препроцессоры</div>
+                <p>Искренняя любовь к препроцессорам Sass и Less.</p>
+              </div>
+            </div>
+            <div class="skills__item skills__item--sixth">
+              <svg class="skills__icon skills__icon--tools">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#tools" width="40" height="40"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">Системы сборки</div>
+                <p>Установка и настройка сборщиков Grunt и Gulp, подключение нужных плагинов.</p>
+              </div>
+            </div>
+             <div class="skills__item skills__item--seventh">
+              <svg class="skills__icon skills__icon--responsive">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#responsive" width="40" height="40"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">Адаптивная и отзывчивая вёрстка</div>
+                <p>Подготовка макетов под различные типы устройств.</p>
+              </div>
+             </div>
+             <div class="skills__item skills__item--eighth">
+              <svg class="skills__icon skills__icon--google" >
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google-search" width="40" height="40"></use>
+              </svg>
+              <div class="skills__round-in"></div>
+              <div class="skills__round-shadow"></div>
+              <div class="skills__line"></div>
+              <div class="skills__description">
+                <div class="skills__title">Умение находить нужную информацию</div>
+                <p>Как в Рунете, так и в англоязычных просторах Сети.</p>
+              </div>
+             </div>
+        </div>
+      </section>
+      <section class="portfolio">
+        <div class="index-center-wrap">
+          <div class="portfolio__page-title page-title page-title--gray page-title--small">Примеры работ <span class="portfolio__label">[beta]</span></div>
+          <div class="portfolio__wrap">
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href="">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Lol</div>
+            </div>
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href="" target="_blank">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Lol</div>
+            </div>
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href="" target="_blank">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Pink</div>
+            </div>
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href="" target="_blank">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Lol</div>
+            </div>
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href="" target="_blank">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Lol</div>
+            </div>
+            <div class="portfolio__item portfolio__item--">
+              <div class="portfolio__overlay">
+                <a class="btn btn--site" href=""  target="_blank">перейти</a>
+                <a class="btn btn--git" href="" target="_blank">GitHub</a>
+              </div>
+              <div class="portfolio__title">Lol</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="index-center-wrap">
+          <div class="contacts__title">Связаться со мной</div>
+          <div class="contacts__envelope envelope">
+            <div class="envelope__side envelope__side--top"></div>
+            <div class="envelope__side envelope__side--left"></div>
+            <div class="envelope__side envelope__side--right"></div>
+            <div class="envelope__side envelope__side--bottom"></div>
+            <div class="envelope__card">
+              <div class="envelope__content">
+                <div class="envelope__text">
+                  <div class="envelope__title">Помимо указанных в подвале сайта контактов можно:</div>
+                    <ul class="contacts-list">
+                      <li class="contacts-list__cell contacts-list__cell--phone">Позвонить мне по номеру <a class="contacts-list__link" href="tel:+79657729877">+7 (965) 772-98-77</a></li>
+                      <li class="contacts-list__cell contacts-list__cell--mail">Написать письмо на <a class="contacts-list__link" href="mailto:karser2012@gmail.com">karser2012@gmail.com</a></li>
+                      <li class="contacts-list__cell contacts-list__cell--codepen">Посмотреть мой профиль на <a class="contacts-list__link" href="" target="_blank">Codepen</a></li>
+                    </ul>
+                  Буду рад сотрудничеству!
+                </div>
+              </div>
+            </div>
+            <div class="btn btn--envelope">Контакты</div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer class="main-ftr">
-      <div class="social">
-        <a href="https://vk.com/leipreachan" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#vk"></use>
-          </svg>
-        </a>
-        <a href="http://codepen.io/Stan_Pro" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#codepen"></use>
-          </svg>
-        </a>
-        <a href="https://github.com/ProkhorovStanislav" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#github"></use>
-          </svg>
-        </a>
-        <a href="#" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#linkedin"></use>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100004345427093" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook"></use>
-          </svg>
-        </a>
-        <a href="mailto:karser2012@gmail.com" class="social__link">
-          <svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-email"></use>
-          </svg>
-        </a>
+    <footer class="page-footer clearfix">
+      <div class="index-center-wrap">
+        <div class="page-footer__copyright">&copy; Stan Prokhorov, 2016</div>
+        <div class="page-footer__socials socials">
+          <a href="" class="socials__btn socials__btn--vk" target="_blank">ВКонтакте</a>
+          <a href="" class="socials__btn socials__btn--skype" target="_blank">Skype</a>
+          <a href="" class="socials__btn socials__btn--github" target="_blank">GitHub</a>
+        </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/scripts.js"></script>
   </body>
 </html>

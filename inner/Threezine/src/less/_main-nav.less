@@ -1,0 +1,31 @@
+.main-nav {
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 0 !important; 
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.07);
+
+  &__link {
+    font-family: @font-family-additional;
+    font-size: 19px;
+    line-height: 24px;
+    color:  #5c5c5c;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    &__link {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .main-nav {
+    margin-bottom: 10px;
+  }
+}

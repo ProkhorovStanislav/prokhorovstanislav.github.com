@@ -1,0 +1,37 @@
+.post-list {
+  margin-bottom: 0;
+
+  &__item {
+    position: relative;
+    display: block;
+    min-height: 50px;
+    margin-bottom: 21px;
+    font-family: @font-family-additional;
+    font-size: 17px;
+    color: @text-color;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 10px;
+      bottom: -11px;
+      width: 100% - 10px;
+      border-top: 1px dashed #c2c2c2;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      &:after {
+        content: none;
+      }
+    }
+  }
+}  
+
+@media (max-width: 767px) {
+  .post-list {
+    padding: 0;
+  }
+}

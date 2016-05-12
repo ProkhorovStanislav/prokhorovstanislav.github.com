@@ -1,0 +1,30 @@
+.twitter-item {
+  margin-bottom: 5px;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 11px;
+  line-height: 15px;
+
+  &__hash-tags {
+    color:  #2e2e2e;
+  }
+
+  &__text {
+    color: @text-color;
+  }
+
+  &__link {
+    color: #2e2e2e;
+  }
+
+  &__name {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .twitter-item {
+    text-align: center;
+  }
+}

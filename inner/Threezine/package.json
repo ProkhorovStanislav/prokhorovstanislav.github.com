@@ -1,0 +1,15 @@
+{
+  "name": "goodInc",
+  "private": true,
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-combine-media-queries": "^1.0.19",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.7.0",
+    "load-grunt-tasks": "^3.3.0"
+  }
+}
