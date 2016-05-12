@@ -556,7 +556,7 @@ body {
 
 .portfolio {
   position: relative;
-  padding: 93px 0 45px;
+  padding: 93px 0 50px;
   background: #3DD0AC;
 }
 
@@ -577,23 +577,15 @@ body {
   display: -o-flex;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -30px;
 }
 
 .portfolio__item {
   position: relative;
-  -webkit-flex-basis: calc(30% - 44px);
-  -moz-flex-basis: calc(30% - 44px);
-  -ms-flex-basis: calc(30% - 44px);
-  -o-flex-basis: calc(30% - 44px);
-  flex-basis: calc(30% - 44px);
-  -webkit-flex-grow: 1;
-  -moz-flex-grow: 1;
-  -ms-flex-grow: 1;
-  -o-flex-grow: 1;
-  flex-grow: 1;
+  width: 260px;
   height: 250px;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  margin: 0 15px 20px;
   padding: 15px;
   border: 7px solid rgba(243, 243, 243, .5);
   border-radius: 15px;
@@ -672,26 +664,26 @@ body {
   left: 0px;
 }
 
-.portfolio__item-- {
+.portfolio__item--nerds {
   background-image: url("../img/nerds-showcase.png");
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 86% 76%;
 }
 
-.portfolio__item-- {
+.portfolio__item--technomart {
   background-image: url("../img/technomart-showcase.png");
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-size: 86% 76%;
 }
 
-.portfolio__item-- {
+.portfolio__item--sedona {
   background: url("../img/sedona-showcase.png") no-repeat 50% 100%;
   background-size: 87% 76%;
 }
 
-.portfolio__item--{
+.portfolio__item--pink {
   background: url("../img/pink-showcase.png") no-repeat 50% 100%;
   background-size: 87% 76%;
 }
@@ -1517,128 +1509,102 @@ body {
   }
 }
 
-// @keyframes typing {
-//   from { width: 100% }
-//   to { width:0 }
-// }
+@keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
 
-// @keyframes blink-caret {
-//   from{ border-left: #666 solid .1em }
-//   to{ border-left: transparent solid .1em }
-// }
-// @keyframes blink-caret-infinite {
-//   from, to{ border-left: #666 solid .1em }
-//   50%{ border-left: transparent solid .1em }
-// }
+@keyframes blink-caret {
+  from{ border-left: #666 solid .1em }
+  to{ border-left: transparent solid .1em }
+}
+@keyframes blink-caret-infinite {
+  from, to{ border-left: #666 solid .1em }
+  50%{ border-left: transparent solid .1em }
+}
 
-// @-webkit-keyframes typing {
-//   from { width: 100% }
-//   to { width:0 }
-// }
+@-webkit-keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
 
-// @-webkit-keyframes blink-caret {
-//   from{ border-left: #666 solid .1em }
-//   to{ border-left: transparent solid .1em }
-// }
-// @-webkit-keyframes blink-caret-infinite {
-//   from, to{ border-left: #666 solid .1em }
-//   50%{ border-left: transparent solid .1em }
-// }
+@-webkit-keyframes blink-caret {
+  from{ border-left: #666 solid .1em }
+  to{ border-left: transparent solid .1em }
+}
+@-webkit-keyframes blink-caret-infinite {
+  from, to{ border-left: #666 solid .1em }
+  50%{ border-left: transparent solid .1em }
+}
 
-// @-moz-keyframes typing {
-//   from { width: 100% }
-//   to { width:0 }
-// }
+@-moz-keyframes typing {
+  from { width: 100% }
+  to { width:0 }
+}
 
-// @-moz-keyframes blink-caret {
-//   from{ border-left: #666 solid .1em }
-//   to{ border-left: transparent solid .1em }
-// }
-// @-moz-keyframes blink-caret-infinite {
-//   from, to{ border-left: #666 solid .1em }
-//   50%{ border-left: transparent solid .1em }
-// }
+@-moz-keyframes blink-caret {
+  from{ border-left: #666 solid .1em }
+  to{ border-left: transparent solid .1em }
+}
+@-moz-keyframes blink-caret-infinite {
+  from, to{ border-left: #666 solid .1em }
+  50%{ border-left: transparent solid .1em }
+}
 
-// @keyframes eyes {
-//   0% {
-//     opacity: 1;
-//   }
-//   40%, 50%, 100% {
-//     opacity: 0;
-//   }
-// }
 
-// @-webkit-keyframes eyes {
-//   0% {
-//     opacity: 1;
-//   }
-//   40%, 50%, 100% {
-//     opacity: 0;
-//   }
-// }
+@keyframes card_animation {
+  0%{
+    transform: translatey(0px);
+    transition: 1s ease-in-out;
+  }
+  50%{
+    transform: translatey(-300px);
+    transition: 1s ease-in-out;
+  }
+  51%{
+    transform: translatey(-300px);
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    transition: 1s ease-in-out;
+  }
+}
 
-// @-moz-keyframes eyes {
-//   0% {
-//     opacity: 1;
-//   }
-//   40%, 50%, 100% {
-//     opacity: 0;
-//   }
-// }
+@-webkit-keyframes card_animation {
+  0%{
+    transform:translatey(0px);
+    transition: 1s ease-in-out;
+  }
+  50%{
+    transform:translatey(-340px);
+    transition: 1s ease-in-out;
+  }
+  51%{
+    transform:translatey(-340px);
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    transition: 1s ease-in-out;
+  }
+}
 
-// @keyframes card_animation {
-//   0%{
-//     transform: translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-//   50%{
-//     transform: translatey(-300px);
-//     transition: 1s ease-in-out;
-//   }
-//   51%{
-//     transform: translatey(-300px);
-//     transition: 1s ease-in-out;
-//   }
-//   100%{
-//     transform:translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-// }
-
-// @-webkit-keyframes card_animation {
-//   0%{
-//     transform:translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-//   50%{
-//     transform:translatey(-340px);
-//     transition: 1s ease-in-out;
-//   }
-//   51%{
-//     transform:translatey(-340px);
-//     transition: 1s ease-in-out;
-//   }
-//   100%{
-//     transform:translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-// }
-
-// @-moz-keyframes card_animation {
-//   0%{
-//     transform:translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-//   50%{
-//     transform:translatey(-340px);
-//     transition: 1s ease-in-out;
-//   }
-//   51%{
-//     transform:translatey(-340px);
-//     transition: 1s ease-in-out;
-//   }
-//   100%{
-//     transform:translatey(0px);
-//     transition: 1s ease-in-out;
-//   }
-// }
+@-moz-keyframes card_animation {
+  0%{
+    transform:translatey(0px);
+    transition: 1s ease-in-out;
+  }
+  50%{
+    transform:translatey(-340px);
+    transition: 1s ease-in-out;
+  }
+  51%{
+    transform:translatey(-340px);
+    transition: 1s ease-in-out;
+  }
+  100%{
+    transform:translatey(0px);
+    transition: 1s ease-in-out;
+  }
+}
