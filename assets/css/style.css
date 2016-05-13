@@ -500,7 +500,8 @@ body {
 
 .about__content {
   margin-top: 0;
-  line-height: 1.5;;
+  line-height: 1.5;
+  text-indent: 40px;
 }
 
 .about__person {
@@ -688,16 +689,24 @@ body {
   background-size: 87% 76%;
 }
 
-.portfolio__item-- {
-  background-image: url("../img/");
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
+.portfolio__item--barbershop {
+  background: url("../img/barbershop-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
-.portfolio__item-- {
-  background: url("") no-repeat 50% 100%;
-  background-size: ;
+.portfolio__item--motion {
+  background: url("../img/motion-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--threezine {
+  background: url("../img/threezine-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--portfolio {
+  background: url("../img/portfolio-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
 }
 
 .portfolio__title {
