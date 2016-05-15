@@ -610,10 +610,12 @@ body {
 
 .portfolio__overlay-right {
   position: absolute;
-  top: -100%;
+  top: -184px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 184px;
+  padding: 15px 5px;
+  text-align: center;
   background: rgb(243, 243, 243);
   -webkit-transition: all 300ms ease-out;
   -moz-transition: all 300ms ease-out;
@@ -621,6 +623,45 @@ body {
   -o-transition: all 300ms ease-out;
   transition: all 300ms ease-out;
   border-radius: 8px;
+}
+
+.portfolio__technology-subtitle {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #777;
+  border-bottom: 1px dashed #28A485;
+}
+
+.portfolio__technology {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  line-height: 25px;
+  color: #777;
+}
+
+.portfolio__technology:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  left: 10px;
+  top: 8px;
+  background: #28A485;
+  transform: rotate(-45deg);
+}
+
+.portfolio__technology:after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  height: 4px;
+  left: 8px;
+  top: 10px;
+  transform: rotate(45deg);
+  background: #28A485;
 }
 
 .btn {
@@ -675,15 +716,15 @@ body {
   top: 61%;
 }
 
-.btn--tech {
+.btn--technologies {
   top: 86%;
 }
 
-.btn--tech:active {
+.btn--technologies:active {
   top: 87%;
 }
 
-.btn--tech:active + .portfolio__overlay-right {
+.btn--technologies:active + .portfolio__overlay-right {
   top: 0px;
 }
 
@@ -733,11 +774,6 @@ body {
 .portfolio__item--portfolio {
   background: url("../img/portfolio-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
-}
-
-.portfolio__tech {
-  display: inline-block;
-  color: #777;
 }
 
 .portfolio__title {
