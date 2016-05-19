@@ -614,7 +614,7 @@ body {
   left: 0;
   width: 100%;
   height: 184px;
-  padding: 15px 5px;
+  padding: 5px;
   text-align: center;
   background: rgb(243, 243, 243);
   -webkit-transition: all 300ms ease-out;
