@@ -185,16 +185,16 @@ body {
 
 .computer__display {
   position: relative;
-   border-top-left-radius: 20px;
-   border-top-right-radius: 20px;
-   transform: translateX(-50%);
-   box-shadow: 0 0 0 14px #464C52;
-   z-index: 3;
-   overflow: hidden;
-   position: relative;
-   left: 50%;
-   width: 100%;
-   height: 96%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 14px #464C52;
+  // z-index: 3;
+  overflow: hidden;
+  // position: relative;
+  left: 50%;
+  width: 100%;
+  height: 96%;
 }
 
 .computer__display::before,
@@ -204,8 +204,8 @@ body {
   width: 100%;
   height: 7%;
   z-index: 2;
-  border-top-left-radius: 3% 50%;
-  border-top-right-radius: 3% 50%;
+  // border-top-left-radius: 3% 50%;
+  // border-top-right-radius: 3% 50%;
 }
 
 .computer__display::before {
@@ -218,7 +218,7 @@ body {
   background: #ccc;
   width: 70%;
   transform: rotate(-90deg);
-  left: -33.4%;;
+  left: -33.4%;
 }
 
 .computer__console {
@@ -397,7 +397,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   transform: rotate(180deg);
-  z-index: 25;;
+  z-index: 25;
   box-shadow: 0 0 0 14px rgba(243, 243, 243, .7);
 }
 
@@ -425,12 +425,6 @@ body {
   right: 37%;
   transform: rotate(-143deg);
   height: 26px;
-}
-
-
-.arrow--top::before,
-.arrow--top::after {
-
 }
 
 .arrow--top::before {
@@ -608,12 +602,12 @@ body {
   border-radius: 8px;
 }
 
-.portfolio__overlay-right {
+.portfolio__overlay-top {
   position: absolute;
-  top: -184px;
+  top: -78%;
   left: 0;
   width: 100%;
-  height: 184px;
+  height: 78%;
   padding: 5px;
   text-align: center;
   background: rgb(243, 243, 243);
@@ -724,7 +718,7 @@ body {
   top: 87%;
 }
 
-.btn--technologies:active + .portfolio__overlay-right {
+.btn--technologies:active + .portfolio__overlay-top {
   top: 0px;
 }
 
