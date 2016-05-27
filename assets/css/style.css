@@ -285,7 +285,7 @@ body {
   font-weight: normal;
 }
 
-.computer__text span {
+.computer__text .cursor {
   position: absolute;
   top: 0px;
   right: -1px;
@@ -311,12 +311,16 @@ body {
   top: 31%;
 }
 
+.computer__text--fifth {
+  top: 38%;
+}
+
 .computer__text p {
   color:#666;
   display:inline-block;
 }
 
-.computer__text--first span {
+.computer__text--first .cursor {
   width: 100%;
   animation: typing 2s steps(15, end), blink-caret 1s step-end;
   animation-fill-mode: forwards;
@@ -325,7 +329,7 @@ body {
     -moz-animation: typing 2s steps(15, end), blink-caret 1s step-end;
   -moz-animation-fill-mode: forwards;
 }
-.computer__text--second span {
+.computer__text--second .cursor {
   width: 100%;
   border-left: .1em #FEFEFE solid;
   animation: typing 1s steps(6, end), blink-caret 1s step-end;
@@ -338,7 +342,7 @@ body {
   -moz-animation-delay:2s;
   -moz-animation-fill-mode: forwards;
 }
-.computer__text--third span {
+.computer__text--third .cursor {
     width: 100%;
     border-left: .1em #FEFEFE solid;
 
@@ -352,19 +356,34 @@ body {
   -moz-animation-delay:3s;
   -moz-animation-fill-mode: forwards;
 }
-.computer__text--fourth span {
+.computer__text--fourth .cursor {
   width: 100%;
   border-left: .1em #FEFEFE solid;
-  animation: typing 4.5s steps(30, end), blink-caret-infinite 1s step-end infinite;
+  animation: typing 4s steps(30, end), blink-caret 1s step-end;
   animation-delay:4s;
   animation-fill-mode: forwards;
-    -webkit-animation: typing 4.5s steps(30, end), blink-caret-infinite 1s step-end infinite;
+    -webkit-animation: typing 4s steps(30, end), blink-caret 1s step-nd;
   -webkit-animation-delay:4s;
   -webkit-animation-fill-mode: forwards;
-    -moz-animation: typing 4.5s steps(30, end), blink-caret-infinite 1s step-end infinite;
+    -moz-animation: typing 4s steps(30, end), blink-caret 1s step-end;
   -moz-animation-delay:4s;
   -moz-animation-fill-mode: forwards;
 }
+
+.computer__text--fifth .cursor {
+  width: 100%;
+  border-left: .1em #FEFEFE solid;
+  animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+    -webkit-animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+  -webkit-animation-delay:8s;
+  -webkit-animation-fill-mode: forwards;
+    -moz-animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+  -moz-animation-delay:8s;
+  -moz-animation-fill-mode: forwards;
+}
+
 
 .page-intro__arrow {
   position: absolute;
