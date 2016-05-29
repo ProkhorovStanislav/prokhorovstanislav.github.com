@@ -218,7 +218,7 @@ body {
   background: #ccc;
   width: 70%;
   transform: rotate(-90deg);
-  left: -33.4%;;
+  left: -33.4%;
 }
 
 .computer__console {
@@ -290,7 +290,7 @@ body {
   top: 0px;
   right: -1px;
   background: #FEFEFE;
-  border-left: transparent;
+
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -318,6 +318,7 @@ body {
 
 .computer__text--first span {
   width: 100%;
+  border-left: .1em #FEFEFE solid;
   animation: typing 2s steps(15, end), blink-caret 1s step-end;
   animation-fill-mode: forwards;
     -webkit-animation: typing 2s steps(15, end), blink-caret 1s step-end;
