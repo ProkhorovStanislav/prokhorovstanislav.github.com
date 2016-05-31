@@ -374,13 +374,13 @@ body {
 .computer__text--fifth .cursor {
   width: 100%;
   border-left: .1em #FEFEFE solid;
-  animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+  animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
   animation-delay: 8s;
   animation-fill-mode: forwards;
-    -webkit-animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+    -webkit-animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
   -webkit-animation-delay:8s;
   -webkit-animation-fill-mode: forwards;
-    -moz-animation: typing 6s steps(62, end), blink-caret-infinite 1s step-end infinite;
+    -moz-animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
   -moz-animation-delay:8s;
   -moz-animation-fill-mode: forwards;
 }
