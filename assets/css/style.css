@@ -2,9 +2,9 @@
     font-family: "Lato";
     src: url("../fonts/lato-light.ttf");
     src: local("Lato Light"), local("Lato-Light"),
-         url("../fonts/lato-ligth.eot?#iefix") format("embedded-opentype"),
-         url("../fonts/lato-ligth.ttf") format("truetype"),
-         url("../fonts/lato-ligth.woff") format("woff");
+         url("../fonts/lato-light.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/lato-light.ttf") format("truetype"),
+         url("../fonts/lato-light.woff") format("woff");
     font-weight: 300;
 }
 
