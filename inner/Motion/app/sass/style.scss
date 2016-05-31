@@ -474,7 +474,7 @@ body {
     color:  #61af66;
     font-size: 25px;
     text-align: center;
-    text-shadow: 0px 1px 1px #ffffff;
+    text-shadow: 0 1px 1px #ffffff;
   }
 
   &__position {
@@ -572,8 +572,7 @@ body {
   }
 
   &__title {
-    padding-top: 15px;
-    padding: 5px;   
+    padding: 15px 5px 5px;
     font-size: 40px;
     color:  #616161;
     text-align: center;
