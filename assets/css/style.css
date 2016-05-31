@@ -360,13 +360,13 @@ body {
 .computer__text--fourth .cursor {
   width: 100%;
   border-left: .1em #FEFEFE solid;
-  animation: typing 4s steps(30, end), blink-caret 1s step-end;
+  animation: typing 4s steps(30, end), blink-caret 3s step-end;
   animation-delay:4s;
   animation-fill-mode: forwards;
-    -webkit-animation: typing 4s steps(30, end), blink-caret 1s step-nd;
+    -webkit-animation: typing 4s steps(30, end), blink-caret 3s step-end;
   -webkit-animation-delay:4s;
   -webkit-animation-fill-mode: forwards;
-    -moz-animation: typing 4s steps(30, end), blink-caret 1s step-end;
+    -moz-animation: typing 4s steps(30, end), blink-caret 3s step-end;
   -moz-animation-delay:4s;
   -moz-animation-fill-mode: forwards;
 }
@@ -374,13 +374,13 @@ body {
 .computer__text--fifth .cursor {
   width: 100%;
   border-left: .1em #FEFEFE solid;
-  animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
+  animation: typing 6s steps(56, end), blink-caret-infinite 1s step-end infinite;
   animation-delay: 8s;
   animation-fill-mode: forwards;
-    -webkit-animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
+    -webkit-animation: typing 6s steps(56, end), blink-caret-infinite 1s step-end infinite;
   -webkit-animation-delay:8s;
   -webkit-animation-fill-mode: forwards;
-    -moz-animation: typing 6s steps(63, end), blink-caret-infinite 1s step-end infinite;
+    -moz-animation: typing 6s steps(56, end), blink-caret-infinite 1s step-end infinite;
   -moz-animation-delay:8s;
   -moz-animation-fill-mode: forwards;
 }
