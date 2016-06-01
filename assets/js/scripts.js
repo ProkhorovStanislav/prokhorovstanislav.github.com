@@ -14,7 +14,7 @@ $(document).ready(function(){
 
         if (scroll >= introHeight) {
             header.addClass("page-header--scrolled");
-            arrowTop.addClass("js-arrow--scrolled")
+            arrowTop.addClass("js-arrow--scrolled");
         }
         else {
            header.removeClass("page-header--scrolled");
