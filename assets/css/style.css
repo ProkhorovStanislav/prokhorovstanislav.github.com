@@ -131,13 +131,12 @@ body {
 }
 
 .page-title {
-  margin: 0;
+  margin: 0 0 8px;
   font-size: 50px;
   line-height: 70px;
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 8px;
 }
 
 .page-title--gray {
@@ -738,16 +737,12 @@ body {
 }
 
 .portfolio__item--nerds {
-  background-image: url("../img/nerds-showcase_2.png");
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
+  background: url("../img/nerds-showcase_2.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
 .portfolio__item--technomart {
-  background-image: url("../img/technomart-showcase_2.png");
-  background-position: 50% 100%;
-  background-repeat: no-repeat;
+  background: url("../img/technomart-showcase_2.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
@@ -1217,8 +1212,7 @@ body {
 .contacts__envelope {
   width: 600px;
   height: 350px;
-  margin: 0 auto;
-  margin-top: 240px;;
+  margin: 240px auto 0;
 }
 
 .envelope {
@@ -1270,8 +1264,7 @@ body {
 }
 
 .contacts-list {
-  margin: 0;
-  margin-bottom: 34px;
+  margin: 0 0 34px;
   padding: 0;
   list-style: none;
   text-align: left;
@@ -1411,9 +1404,7 @@ body {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: #B8B8B8;
-  background-image: url("../img/sprite.png");
-  background-repeat: no-repeat;
+  background: #B8B8B8 url("../img/sprite.png") no-repeat;
   text-indent: -9999px;
   white-space: nowrap;
   vertical-align: middle;
