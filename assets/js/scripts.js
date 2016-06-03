@@ -23,8 +23,6 @@ $(document).ready(function(){
 
         if (scroll > totalHeight) {
             item.animate({
-                width: "70px",
-                height: "68px",
                 opacity: 1
             }, 20);
         }

@@ -836,6 +836,8 @@ body {
 
 .skills__item {
   position: absolute;
+  width: 70px;
+  height: 68px;
   border-radius: 50%;
   z-index: 5;
   background-repeat: no-repeat;
