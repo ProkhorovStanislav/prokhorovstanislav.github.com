@@ -1,0 +1,136 @@
+/* MIXINS */
+.float(@dir, @width) {
+  float: @dir;
+  max-width: @width;
+}
+
+.font-ubuntu(@param) {
+  font-family: "Ubuntu", Arial, sans-serif;
+  font-weight: @param;
+}
+
+.font-vg(@param) {
+  font-family: "VAGRoundedTL", Arial, sans-serif;
+  font-size: @param;
+}
+
+.fz(@param) {
+  font-size: @param;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-black {
+  color: #000;
+}
+
+.c-yellow {
+  color: #ffd909;
+}
+
+.list-style {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.background-size(@param) {
+  -webkit-background-size: @param;
+  background-size: @param;
+}
+
+.text-out {
+  text-indent: -9999px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.inlineblock (@val: top) {
+  display: inline-block;
+  vertical-align: @val;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+      content: "";
+      display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.border-radius (@radius: 5px) {
+  border-radius: @radius;
+  background-clip:  padding-box;
+}
+
+.box-shadow (@string) {
+  box-shadow: @string;
+}
+
+.text-shadow (@string) {
+  text-shadow: @string;
+}
+
+.transition (@transition) {
+  transition: @transition;
+}
+
+.transform (@transform) {
+  transform:  @transform;
+}
+
+.opacity(@opacity: 1) {
+  opacity: @opacity;
+}
+
+.size(@square) {
+    @unit: 'px';
+    .process(@square) when (ispixel(@square)), (isem(@square)), (ispercentage(@square)), (iskeyword(@square)) {
+      width: @square;
+      height: @square;
+    }
+
+    .process(@square) when not (ispixel(@square)) and not (isem(@square)) and not (ispercentage(@square)) and not (isstring(@square)) and not (iskeyword(@square)) {
+      width: ~`@{square} + @{unit}`;
+      height: ~`@{square} + @{unit}`;
+    }
+
+    .process(@square);
+}
+
+.size(@width, @height) {
+  @unit: 'px';
+  .process(@width, @height) when (ispixel(@width)), (isem(@width)), (ispercentage(@width)), (iskeyword(@width)) {
+    .kittens(@height) when (ispixel(@height)), (isem(@height)), (ispercentage(@height)), (iskeyword(@height)) {
+      width: @width;
+      height: @height;
+    }
+    .kittens(@height) when not (ispixel(@height)) and not (isem(@height)) and not (ispercentage(@height)) and not (iskeyword(@height)) {
+      width: @width;
+      height: ~`@{height} + @{unit}`;
+    }
+    .kittens(@height);
+  }
+
+  .process(@width, @height) when (ispixel(@height)), (isem(@height)), (ispercentage(@height)), (iskeyword(@height)) {
+    .kittens(@width) when (ispixel(@width)), (isem(@width)), (ispercentage(@width)), (iskeyword(@width)) {}
+    .kittens(@width) when not (ispixel(@width)) and not (isem(@width)) and not (ispercentage(@width)) and not (iskeyword(@width)) {
+      width: ~`@{width} + @{unit}`;
+      height: @height;
+    }
+    .kittens(@width);
+  }
+
+  .process(@width, @height) when not (ispixel(@width)) and not (isem(@width)) and not (ispercentage(@width)) and not (iskeyword(@width)) and not (ispixel(@height)) and not (isem(@height)) and not (ispercentage(@height)) and not (iskeyword(@height))  {
+    width: ~`@{width} + @{unit}`;
+    height: ~`@{height} + @{unit}`;
+  }
+
+  .process(@width, @height);
+}

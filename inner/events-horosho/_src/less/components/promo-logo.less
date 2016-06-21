@@ -1,0 +1,54 @@
+.promo-logo {
+  max-width: 365px;
+  margin-bottom: 78px;
+
+  &__events {
+    width: 365px;
+    height: 148px;
+    margin-left: -60px;
+    .text-out;
+    background: url("../img/events-logo.png") no-repeat 0 0;
+  }
+
+  &__decorated-text {
+    max-width: 290px;
+    margin-top: -2px;
+    font-family: "Circe", Arial, sans-serif;
+    .c-white;
+    .fz(25px);
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 3px;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      margin-bottom: 4px;
+      vertical-align: middle;
+    }
+
+    &::before {
+      width: 12px;
+      height: 12px;
+      margin-right: 11px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    &::after {
+      width: 84px;
+      height: 11px;
+      margin-left: 13px;
+      background: url("../img/sprite.png") no-repeat 0 0;
+    }
+  }
+
+  &__text {
+    font-family: "VAGRoundedTL", arial, sans-serif;
+    .fz(62.5px);
+    line-height: 1.1;
+    .c-white;
+    text-transform: uppercase;
+  }
+}

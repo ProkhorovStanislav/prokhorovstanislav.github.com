@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  width: 160px;
+  padding: 8px 0 11px;
+  .font-ubuntu(400);
+  border-radius: 26px;
+  background: #fa3475;
+  .c-white;
+  text-align: center;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url("../img/sprite.png") no-repeat 0 -30px;
+  }
+
+  &--wider {
+    width: 248px;
+    padding: 16px 0 18px;
+    .font-ubuntu(500);
+
+    &::after {
+      content: none;
+    }
+  }
+}

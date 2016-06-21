@@ -1,0 +1,46 @@
+.main-nav {
+  width: 1015px;
+  margin: 0 auto 87px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, .5);
+
+  &__list {
+    //font-size: 0;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+
+    &:not(:first-of-type) {
+      padding-left: 38px;
+    }
+
+    &:not(:last-of-type) {
+      padding-right: 55px;
+    }
+
+    &:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 6px;
+      height: 6px;
+      margin-top: -3px;
+      border-radius: 50%;
+      background: #fbe844;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px 0 11px;
+    .c-white;
+    .font-ubuntu(600);
+    .fz(12px);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

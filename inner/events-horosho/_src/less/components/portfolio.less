@@ -1,0 +1,135 @@
+.portfolio {
+  counter-reset: list;
+
+  &__item {
+    min-height: 455px;
+    position: relative;
+    padding: 30px 0 33px;
+    .c-white;
+    box-sizing: border-box;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      z-index: 1;
+    }
+
+    &:nth-child(odd)::before {
+      left: 0;
+    }
+
+    &:nth-child(even) .portfolio__content {
+      float: right;
+      padding-top: 6px;
+      padding-left: 45px;
+    }
+
+    &:nth-child(even)::before {
+      right: 0;
+    }
+
+    &--steam {
+      min-height: 567px;
+      background: #6b8b93 url("../img/portfolio-item-bg--steam.jpg") no-repeat center center;
+      .background-size(cover);
+
+    }
+
+    &--horror {
+      background: #5e4e3d url("../img/portfolio-item-bg--horror.jpg") no-repeat center center;
+      .background-size(cover);
+
+      & .portfolio__title {
+        padding-top: 27px;
+        padding-left: 108px;
+      }
+    }
+
+    &--show {
+      background: #cba89d url("../img/portfolio-item-bg--show.jpg") no-repeat center center;
+      .background-size(cover);
+
+      & .portfolio__title {
+        padding-top: 4px;
+        padding-left: 110px;
+      }
+
+      & .portfolio__title::before {
+        top: 14px;
+        left: -1px;
+      }
+
+      & .portfolio__text {
+        margin-bottom: 81px;
+      }
+    }
+
+    &--tour {
+      background: #03466d url("../img/portfolio-item-bg--tour.jpg") no-repeat center center;
+      .background-size(cover);
+
+      & .portfolio__title {
+        margin-bottom: 18px;
+        padding-left: 106px;
+      }
+
+      & .portfolio__text {
+        margin-bottom: 93px;
+      }
+    }
+  }
+
+  &__title {
+    position: relative;
+    max-width: 350px;
+    margin-bottom: 20px;
+    padding-left: 92px;
+    .font-vg(24px);
+
+
+    &::before {
+      content: "0" counter(list);
+      position: absolute;
+      top: 8px;
+      left: -3px;
+      width: 90px;
+      .font-vg(72px);
+      line-height: 36px;
+      .c-yellow;
+      counter-increment: list;
+    }
+
+    & span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__content {
+    position: relative;
+    max-width: 485px;
+    padding-right: 47px;
+    box-sizing: border-box;
+    z-index: 2;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    .font-ubuntu(400);
+    .fz(16px);
+    text-indent: 35px;
+    line-height: 1.4;
+
+    & p {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    & p + p {
+      padding-right: 20px;
+    }
+  }
+}
