@@ -11,20 +11,23 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <div class="container-center clearfix">
-          <div class="logo">Event-агентство Хорошо</div>
-          <div class="page-header__phone">8&nbsp;800&nbsp;123&nbsp;45&nbsp;67</div>
-        </div>
+        <div class="logo">Event-агентство Хорошо</div>
+        <div class="page-header__phone">8&nbsp;800&nbsp;123&nbsp;45&nbsp;67</div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav clearfix">
+        <div class="main-nav__toggle">
+          <span class="main-nav__close">
+            Меню
+          </span>
+        </div>
         <div class="container-center">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a><span class="main-nav__close-list"></span></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Что мы делаем?</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Почему мы</a></li>
             <li class="main-nav__item"><a href="#" class="main-nav__link">Что мы сделали?</a></li>
@@ -121,5 +124,7 @@
         </div>
       </section>
     </div>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

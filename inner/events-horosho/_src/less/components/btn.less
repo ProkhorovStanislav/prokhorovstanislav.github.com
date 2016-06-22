@@ -19,10 +19,26 @@
     background: url("../img/sprite.png") no-repeat 0 -30px;
   }
 
+  @media (max-width: 1020px) {
+    width: 180px;
+    margin: 0 auto;
+    padding: 13px 16px;
+    font-size: 20px;
+
+    &::after {
+      height: 23px;
+      background-position: 0 -27px;
+    }
+  }
+
   &--wider {
     width: 248px;
     padding: 16px 0 18px;
     .font-ubuntu(500);
+
+    @media (max-width: 1020px) {
+      margin: 0 auto;
+    }
 
     &::after {
       content: none;

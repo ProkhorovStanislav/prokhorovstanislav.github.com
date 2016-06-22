@@ -16,6 +16,17 @@
       height: 100%;
       background: rgba(0, 0, 0, .4);
       z-index: 1;
+
+      @media (max-width: 1020px) {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    @media (max-width: 1020px) {
+      & + & {
+        padding-top: 80px;
+      }
     }
 
     &:nth-child(odd)::before {
@@ -26,6 +37,10 @@
       float: right;
       padding-top: 6px;
       padding-left: 45px;
+
+      @media (max-width: 1020px) {
+        padding: 0;
+      }
     }
 
     &:nth-child(even)::before {
@@ -37,6 +52,13 @@
       background: #6b8b93 url("../img/portfolio-item-bg--steam.jpg") no-repeat center center;
       .background-size(cover);
 
+      & .portfolio__title {
+        @media (max-width: 430px) {
+          padding-left: 125px;
+          text-align: left;
+        }
+      }
+
     }
 
     &--horror {
@@ -46,6 +68,15 @@
       & .portfolio__title {
         padding-top: 27px;
         padding-left: 108px;
+
+        @media (max-width: 1020px) {
+          padding: 0;
+        }
+
+        @media (max-width: 430px) {
+          padding-left: 123px;
+          text-align: left;
+        }
       }
     }
 
@@ -56,11 +87,24 @@
       & .portfolio__title {
         padding-top: 4px;
         padding-left: 110px;
+
+        @media (max-width: 1020px) {
+          padding: 0;
+        }
+
+        @media (max-width: 430px) {
+          padding-left: 123px;
+          text-align: left;
+        }
       }
 
       & .portfolio__title::before {
         top: 14px;
         left: -1px;
+
+        @media (max-width: 430px) {
+          left: 25px;
+        }
       }
 
       & .portfolio__text {
@@ -75,6 +119,16 @@
       & .portfolio__title {
         margin-bottom: 18px;
         padding-left: 106px;
+
+        @media (max-width: 1020px) {
+          margin-bottom: 50px;
+          padding: 0;
+        }
+
+        @media (max-width: 430px) {
+          padding-left: 135px;
+          text-align: left;
+        }
       }
 
       & .portfolio__text {
@@ -90,6 +144,17 @@
     padding-left: 92px;
     .font-vg(24px);
 
+    @media (max-width: 1020px) {
+      max-width: none;
+      margin-bottom: 50px;
+      padding: 0;
+      text-align: center;
+    }
+
+
+    @media (max-width: 430px) {
+      margin-bottom: 85px;
+    }
 
     &::before {
       content: "0" counter(list);
@@ -101,6 +166,17 @@
       line-height: 36px;
       .c-yellow;
       counter-increment: list;
+
+      @media (min-width: 431px) and (max-width: 1020px) {
+        position: static;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: middle;
+      }
+
+      @media (max-width: 430px) {
+        left: 25px;
+      }
     }
 
     & span {
@@ -114,6 +190,12 @@
     padding-right: 47px;
     box-sizing: border-box;
     z-index: 2;
+
+    @media (max-width: 1020px) {
+      max-width: none;
+      width: 100%;
+      padding: 0;
+    }
   }
 
   &__text {
@@ -129,6 +211,19 @@
 
     & p + p {
       padding-right: 20px;
+
+      @media (max-width: 430px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1020px) {
+      max-width: 620px;
+      margin: 0 auto 40px;
+      padding: 0 10px;
+      text-align: center;
+      font-size: 21px;
+      font-weight: 300;
     }
   }
 }

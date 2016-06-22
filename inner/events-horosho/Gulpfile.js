@@ -17,7 +17,7 @@ var gulp = require('gulp'),
 	src = {
 		css: '_src/less/**/*',
 		less: '_src/less/style.less',
-		js: '_src/js/modules/*',
+		js: '_src/js',
 		img: '_src/img/**/*',
         jadePages: '_src/jade/pages/*.jade',
         jadeBlocks: '_src/jade/blocks/*.jade',

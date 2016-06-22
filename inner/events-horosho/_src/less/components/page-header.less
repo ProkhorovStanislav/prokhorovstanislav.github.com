@@ -1,17 +1,29 @@
 .page-header {
-  height: 100vh;
   min-height: 782px;
+  padding-bottom: 30px;
   background: #2f2f35 url("../img/header-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
+  box-sizing: border-box;
+
+  @media (max-width: 430px) {
+    min-height: auto;
+  }
 
   &__top {
-    margin-bottom: 23px;
+    display: flex;
+    max-width: 963px;
+    margin: 0 auto 23px;
     padding: 30px 25px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 933px) {
+      justify-content: space-around;
+    }
   }
 
   &__phone {
-    .float(right, 200px);
     padding-top: 18px;
     .font-ubuntu(600);
     .c-white;
@@ -24,5 +36,19 @@
     .font-ubuntu(300);
     .fz(24px);
     .c-white;
+
+    @media (max-width: 1020px) {
+      margin: 0 auto 40px;
+      text-align: center;
+    }
+
+    @media (max-width: 1020px) {
+      padding: 0 10px;
+    }
+
+    @media (max-width: 430px) {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
   }
 }
