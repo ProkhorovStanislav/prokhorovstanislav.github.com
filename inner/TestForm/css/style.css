@@ -1,0 +1,188 @@
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("../fonts/PT_Sans-Narrow-Web-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "PT Sans Narrow Bold";
+    src: url("../fonts/PT_Sans-Narrow-Web-Bold.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    font-family: "PT Sans Narrow Bold", "Arial", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.delivery {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 95%;
+    max-width: 500px;
+    min-height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background: #f9f6f3;
+    box-shadow: 0 0 6px 1px #663d15;
+}
+
+fieldset {
+    border: 2px solid #663d15;
+    border-radius: 10px;
+
+}
+
+.form-wrapper {
+
+    padding: 0 20px;
+}
+
+.form-item {
+    max-width: 250px;
+    margin: 0 auto 10px;
+}
+
+.form-title {
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    background: #f9f6f3;
+}
+
+.form-item__heading {
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="tel"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    padding: 7px 15px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: none;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 130px;
+    padding: 5px 10px;
+    margin: 15px auto 15px;
+    font-size: 17px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+    border-color: #663d15;
+}
+
+input[type="submit"]:hover {
+    border-color: #663d15;
+    background: #663d15;
+}
+
+.error-box {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    text-transform: none;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 20px;
+    }
+
+    .delivery {
+        width: 700px;
+        max-width: 900px;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 0 7px 3px #663d15;
+        border-radius: 20px;
+    }
+
+    .form-item {
+        width: 45%;
+        max-width: 800px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .form-item--name {
+        width: 100%;
+    }
+
+    fieldset {
+        border: 4px solid #663d15;
+        border-radius: 20px;
+    }
+
+    .form-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 40px;
+    }
+
+    .form-title {
+        padding: 20px;
+        font-size: 40px;
+    }
+
+    .form-item__heading {
+        padding: 10px 20px;
+        font-size:20px;
+        text-align: left;
+    }
+
+    input[type="text"],
+    input[type="tel"] {
+        padding: 10px 20px;
+        font-size: 17px;
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        width: 200px;
+        padding: 10px 20px;
+        margin: 30px auto 0;
+        font-size: 25px;
+    }
+
+    .error-box {
+        font-size: 15px;
+    }
+}
