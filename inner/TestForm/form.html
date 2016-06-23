@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TestForm</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="delivery">
+    <form id="deliveryForm" class="delivery-form" action="#" method="post">
+      <fieldset>
+        <legend class="form-title" align="center">Доставка</legend>
+        <div class="form-wrapper">
+          <div class="form-item form-item--name">
+            <label class="form-item__heading" for="user-name">Полное имя:</label>
+            <input type="text" name="User-name" id="user-name" placeholder="Иванов Иван Иванович" required>
+            <div class="error-box"></div>
+          </div>
+          <div class="form-item form-item--phone">
+            <label class="form-item__heading" for="user-phone">Контактный телефон:</label>
+            <input type="tel" id="user-phone" name="User-phone" pattern="[0-9_-+]{16}" title="(096)999-99-99" placeholder="+7(XXX)XXX-XX-XX" required>
+            <div class="error-box"></div>
+          </div>
+          <div class="form-item form-item--email">
+            <label class="form-item__heading" for="user-email">Email:</label>
+            <input type="text" name="User-email" id="user-email" placeholder="xxx@xx.xx" required>
+            <div class="error-box"></div>
+          </div>
+          <div class="form-item form-item--city">
+            <label class="form-item__heading" for="user-city">Город доставки:</label>
+            <input type="text" name="User-city" id="user-city" placeholder="Москва" required>
+          </div>
+          <div class="form-item form-item--adress">
+            <label class="form-item__heading" for="user-address">Адрес доставки:</label>
+            <input type="text" name="User-addrress" id="user-address" placeholder="Ленинский проспект, д.1" required>
+            <div class="error-box"></div>
+          </div>
+        </div>
+        <input type="submit" value="Отправить">
+      </fieldset>
+    </form>
+  </div>
+  <script src="js/vendors/jquery-3.0.0.min.js"></script>
+  <script src="js/vendors/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
