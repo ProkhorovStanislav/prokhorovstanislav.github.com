@@ -728,8 +728,12 @@ body {
   top: 87%;
 }
 
-.btn--technologies:active + .portfolio__overlay-top {
-  top: 0;
+/*.btn--technologies:active + .portfolio__overlay-top {*/
+  /*animation: techno_animation 4s 1 ease-in-out;*/
+/*}*/
+
+.ololo {
+  animation: techno_animation 5s ease-in;
 }
 
 .portfolio__item:hover .portfolio__overlay-left {
@@ -763,6 +767,11 @@ body {
 
 .portfolio__item--motion {
   background: url("../img/motion-showcase_2.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--events {
+  background: url("../img/events-showcase_2.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
@@ -1359,7 +1368,7 @@ body {
   animation-delay:.45s;
   transition: 1.5s;
   transition-delay:1s;
-  z-index: 25;;
+  z-index: 25;
 }
 
 .btn--envelope {
@@ -1617,6 +1626,63 @@ body {
 @-moz-keyframes blink-caret-infinite {
   from, to{ border-left: #666 solid .1em }
   50%{ border-left: transparent solid .1em }
+}
+
+@keyframes techno_animation {
+  0%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
+  20%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  80%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
+}
+
+@-moz-keyframes techno_animation {
+  0%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
+  20%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  80%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
+}
+
+@-webkit-keyframes techno_animation {
+  0%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
+  20%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  80%{
+    top: 0;
+    transition: 1s ease-in-out;
+  }
+  100%{
+    top: -78%;
+    transition: 1s ease-in-out;
+  }
 }
 
 

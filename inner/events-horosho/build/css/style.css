@@ -774,7 +774,7 @@ body {
 @media (max-width: 1020px) {
   .clients__wrap {
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
 }
 .clients__thanks {

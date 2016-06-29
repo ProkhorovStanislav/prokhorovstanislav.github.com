@@ -1,7 +1,7 @@
 (function() {
     var toggleMenu = $('.main-nav__toggle'),
         closeNav =  $('.main-nav__close-list'),
-        navList = $('.main-nav__list')
+        navList = $('.main-nav__list'),
         mainNav = $('.main-nav');
 
         toggleMenu.click(function() {
