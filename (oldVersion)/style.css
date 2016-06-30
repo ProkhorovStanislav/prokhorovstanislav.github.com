@@ -4,6 +4,7 @@
 }
 
 body {
+  min-width: 1200px;
   padding-top: 8px;
   padding-bottom: 3px;
   background: #E1E0DE;

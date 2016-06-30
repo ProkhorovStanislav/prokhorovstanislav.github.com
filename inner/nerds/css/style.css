@@ -66,6 +66,7 @@
 
 body {
   position: relative;
+  min-width: 900px;
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
@@ -238,7 +239,7 @@ h3 {
 
 .slide-text {
   width: 480px;
-  padding: ;
+  padding: 0;
   color: #283136;
 }
 

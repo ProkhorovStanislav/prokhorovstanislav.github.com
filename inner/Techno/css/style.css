@@ -352,7 +352,6 @@ input::-webkit-inner-spin-button {
 	display: inline-block;
 	vertical-align: top;
 	width: 270px;
-	background-image: url("");
 	cursor: pointer;
 }
 

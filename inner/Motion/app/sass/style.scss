@@ -73,6 +73,7 @@ $font-additional: 'MyriadProRegular';
 
 body {
   font-family: $font-main;
+  min-width: 1220px;
 }
 
 .clearfix::before,
