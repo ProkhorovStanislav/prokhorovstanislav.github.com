@@ -26,8 +26,9 @@
       justify-content: center;
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 530px) {
       display: block;
+      text-align: center;
     }
   }
 
@@ -38,6 +39,10 @@
     .c-black;
     text-align: left;
     line-height: 1;
+
+    @media (max-width: 530px) {
+      text-align: center;
+    }
   }
 
   &__item {
@@ -45,7 +50,7 @@
     margin-bottom: 65px;
 
     @media (max-width: 1020px) {
-
+      flex-basis: 33.3%;
     }
 
     &:nth-child(3n) {
@@ -53,6 +58,10 @@
 
       @media (max-width: 1020px) {
         text-align: left;
+      }
+
+      @media (max-width: 530px) {
+        text-align: center;
       }
       
       .clients__thanks {
@@ -81,6 +90,16 @@
       @media (max-width: 1020px) {
         margin-right: 30px;
       }
+
+      @media (max-width: 530px) {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 530px) {
+      display: inline-block;
+      width: 260px;
+      margin: 0 auto 65px;
     }
 
     & img {
