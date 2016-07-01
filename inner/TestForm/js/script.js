@@ -4,6 +4,7 @@
     var name =$("#user-name");
     var phone = $("#user-phone");
     var email = $("#user-email");
+    var city = $("#user-city");
     var allInputs = $("input#user-name, input#user-phone, input#user-email, input#user-city, input#user-address");
     var rv_name = /^[А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+ [А-ЯЁа-яёA-Za-z]+$/;
     var rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+$/;
@@ -52,6 +53,10 @@
                     }
                     break;
 
+                //Проверка города
+
+                // case 'user-city':
+
 
                 //Проверка адреса
 
@@ -76,6 +81,35 @@
                     .css('color','red')
             }
         });
+
+        // city.autocomplete({
+        //     // source: function(request, response) {
+        //         $.ajax({
+        //             url:"http://planeta-sport.ru/bitrix/components/bitrix/sale.ajax.locations/search.php",
+        //             dataType: "jsonp",
+        //             jsonpCallback: "getData",
+        //             success: function (data) {
+        //                 alert("Success");
+        //             }
+        //         });
+        //     //         data:{
+        //     //             featureClass: "p",
+        //     //             style: full,
+        //     //             maxRows: 12,
+        //     //             name_startWith: request.term
+        //     //         },
+        //     //         success: function(data){
+        //     //             response($.map(data.geonames, function(item){
+        //     //                 return{
+        //     //                     label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+        //     //                     value: item.name
+        //     //                 }
+        //     //             }));
+        //     //         }
+        //     //     });
+        //     // },
+        //     minLength: 2
+        // });
 
         phone.mask("+7(999)999-99-99");
 
