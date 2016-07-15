@@ -82,34 +82,34 @@
             }
         });
 
-        // city.autocomplete({
-        //     // source: function(request, response) {
-        //         $.ajax({
-        //             url:"http://planeta-sport.ru/bitrix/components/bitrix/sale.ajax.locations/search.php",
-        //             dataType: "jsonp",
-        //             jsonpCallback: "getData",
-        //             success: function (data) {
-        //                 alert("Success");
-        //             }
-        //         });
-        //     //         data:{
-        //     //             featureClass: "p",
-        //     //             style: full,
-        //     //             maxRows: 12,
-        //     //             name_startWith: request.term
-        //     //         },
-        //     //         success: function(data){
-        //     //             response($.map(data.geonames, function(item){
-        //     //                 return{
-        //     //                     label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
-        //     //                     value: item.name
-        //     //                 }
-        //     //             }));
-        //     //         }
-        //     //     });
-        //     // },
-        //     minLength: 2
-        // });
+        city.autocomplete({
+            // source: function(request, response) {
+            //     $.ajax({
+            //         url:"http://planeta-sport.ru/bitrix/components/bitrix/sale.ajax.locations/search.php",
+            //         dataType: "jsonp",
+            //         jsonpCallback: "getData",
+            //         success: function (data) {
+            //             alert("Success");
+            //         }
+            //     });
+            //         data:{
+            //             featureClass: "p",
+            //             style: full,
+            //             maxRows: 12,
+            //             name_startWith: request.term
+            //         },
+            //         success: function(data){
+            //             response($.map(data.geonames, function(item){
+            //                 return{
+            //                     label: item.name + (item.adminName1 ? ", " + item.adminName1 : "") + ", " + item.countryName,
+            //                     value: item.name
+            //                 }
+            //             }));
+            //         }
+            //     });
+            // },
+            // minLength: 2
+        });
 
         phone.mask("+7(999)999-99-99");
 
