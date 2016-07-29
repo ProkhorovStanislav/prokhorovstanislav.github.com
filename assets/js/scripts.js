@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     var header = $(".page-header"),
         arrowTop = $(".arrow--top"),
         navLink = $(".main-nav__link"),
@@ -8,7 +8,7 @@ $(document).ready(function(){
         aboutHeight = $(".about").outerHeight(),
         totalHeight = introHeight + aboutHeight - 300,
         envelopeBtn = $(".btn--envelope"),
-        portfolioItem = $(".portfolio__item");
+        portfolioItem = $(".portfolio__item"),
         technoBtn = $(".btn--technologies");
 
     $(window).scroll(function(){
@@ -38,12 +38,12 @@ $(document).ready(function(){
 
     technoBtn.click(function(){
         var srrt = $(this).siblings(".portfolio__overlay-top");
-        srrt.addClass("ololo");
+        srrt.addClass("btn-techno-active");
         portfolioItem.mouseleave( function() {
             var gbg = $(this).find(".portfolio__overlay-top");
-            gbg.removeClass("ololo");
+            gbg.removeClass("btn-techno-active");
         });
-        setTimeout(function() {srrt.removeClass("ololo")}, 5000);
+        setTimeout(function() {srrt.removeClass("btn-techno-active")}, 5000);
     });
     
     navLink.on("click", toGetPoint);
