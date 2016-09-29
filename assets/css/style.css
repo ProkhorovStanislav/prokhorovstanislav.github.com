@@ -696,7 +696,7 @@ body {
   background: #33DBB1;
 }
 
-.btn:active {
+.btn:active:not(btn--disabled) {
   border-bottom: 3px solid #00C58E;
   -webkit-transition: all .1s ease;
   -moz-transition: all .1s ease;
@@ -728,6 +728,9 @@ body {
   top: 87%;
 }
 
+.btn--disabled {
+  opacity: 0.5;
+}
 /*.btn--technologies:active + .portfolio__overlay-top {*/
   /*animation: techno_animation 4s 1 ease-in-out;*/
 /*}*/
@@ -777,6 +780,16 @@ body {
 
 .portfolio__item--threezine {
   background: url("../img/threezine-showcase_2.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--nokian {
+  background: url("../img/nokian-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--allergia {
+  background: url("../img/allergia-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
@@ -1024,7 +1037,6 @@ body {
 .skills__item--eighth .skills__round-in {
   background: #00ACE0;
 }
-
 
 .skills__item:hover .skills__round-in {
   display: block;
