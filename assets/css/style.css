@@ -696,7 +696,7 @@ body {
   background: #33DBB1;
 }
 
-.btn:active:not(btn--disabled) {
+.btn:not(.btn--disabled):active {
   border-bottom: 3px solid #00C58E;
   -webkit-transition: all .1s ease;
   -moz-transition: all .1s ease;
@@ -717,6 +717,10 @@ body {
 }
 
 .btn--git:active {
+  top: 61%;
+}
+
+.btn--git:not(.btn--disabled):active {
   top: 61%;
 }
 
