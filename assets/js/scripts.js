@@ -9,7 +9,11 @@ $(document).ready(function() {
         totalHeight = introHeight + aboutHeight - 300,
         envelopeBtn = $(".btn--envelope"),
         portfolioItem = $(".portfolio__item"),
-        technoBtn = $(".btn--technologies");
+        technoBtn = $(".btn--technologies"),
+        toggleBtn = $('.js-toggle-item'),
+        ACTIVE = 'is-active',
+        HIDDEN = 'is-hidden';
+
 
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
@@ -45,10 +49,14 @@ $(document).ready(function() {
         });
         setTimeout(function() {srrt.removeClass("btn-techno-active")}, 5000);
     });
-    
+
     navLink.on("click", toGetPoint);
     arrow.on("click", toGetPoint);
     arrowTop.on("click", toGetPoint);
+    toggleBtn.on("click", (function(event){
+        toToggle(event);
+        toChangeContent(event);
+    }));
 
     function toGetPoint() {
         var scroll = $(this).attr("href");
@@ -56,6 +64,26 @@ $(document).ready(function() {
             $("html, body").animate({ scrollTop: $(scroll).offset().top }, 600);
         }
         return false;
+    }
+
+    function toToggle(event) {
+        toggleBtn.removeClass(ACTIVE);
+        var pressedToggleBtn = $(event.target);
+        pressedToggleBtn.addClass(ACTIVE);
+    }
+    function toChangeContent(event) {
+        var pressedBtn = $(event.target);
+        var toggleBlocks = $('.js-toggle-content');
+        var pressedBtnName = pressedBtn.data('toggle-title');
+        toggleBlocks.each(function(index, item){
+            item = $(item);
+            if ( item.data('toggle-content') == pressedBtnName) {
+                item.removeClass(HIDDEN);
+            } else {
+                item.addClass(HIDDEN);
+            }
+        })
+
     }
 
 });

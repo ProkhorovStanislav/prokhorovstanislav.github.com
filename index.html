@@ -72,7 +72,7 @@
       <section class="page-intro" id="page-intro">
         <div class="index-center-wrap">
           <h1 class="page-title">Прохоров Станислав</h1>
-          <div class="page-intro__label"><span>Html</span> & <span>Css</span> разработчик</div>
+          <div class="page-intro__label"><span>Frontend</span> - <span>developer</span></div>
           <div class="page-intro__computer computer">
             <div class="computer__display">
               <div class="computer__console">
@@ -92,10 +92,10 @@
         <div class="index-center-wrap clearfix">
           <div class="about__title">Обо мне</div>
           <div class="about__text">
-            <p class="about__content">Вёрсткой и изучением JavaScript занимаюсь около года. Завершил базовый и продвинутый интенсивы от HTML Academy. Верстаю адаптивно, кроссбраузерно и максимально близко к макету.</p>
+            <p class="about__content">Вёрсткой и изучением JavaScript занимаюсь два года. Опыт работы 8 месяцев в компании White Label Production. Завершил базовый и продвинутый интенсивы от HTML Academy. Верстаю адаптивно, кроссбраузерно и максимально близко к макету.</p>
             <p class="about__content">Стремлюсь к тому, чтобы вёрстка была "чистой", валидной и понятной. В своих проектах придерживаюсь БЭМ. Стараюсь минимизировать время загрузки страницы снижая количество HTTP-запросов и по максимуму используя возможности HTML5 и CSS3. Работаю с SVG и иконочными шрифтами.</p>
-            <p class="about__content">Базовые операции в JS и jQuery(поиск элементов по DOM, манипулирование классами и свойствами, добавление контента, отслеживание и обработка событий, циклы, массивы) затруднений не вызывают.</p>
-            <p class="about__content"> Мой стандартный набор инструментов: консоль cmder, Sublime+Emmet, SASS/LESS, Grunt/Gulp, Git. Использую среду разработки PhpStorm и серверную платформу Open Server. В процессе изучения фреймворк Bootstrap и html-препроцессор Jade. В краткосрочных планах освоение CMS.</p>
+            <p class="about__content">Базовые операции в JS и jQuery(поиск элементов по DOM, манипулирование классами и свойствами, добавление-удаление контента, , ajax-запросы, отслеживание и обработка событий, работа с объектами) затруднений не вызывают.</p>
+            <p class="about__content"> Мой стандартный набор инструментов: PhpStorm, iTerm, Cmder, Sublime+Emmet, SASS/LESS/Stylus, Gulp/Grunt, Git. Использую серверные платформы Open Server и Apache. Использовал фреймворк Bootstrap, html-препроцессор Jade(Pug) и шаблонизатор Twig. Работал с cms Bitrix, знаком с wordpress.</p>
           </div>
           <div class="about__person person">
             <span class="person__eyes"></span>
@@ -106,7 +106,7 @@
         <div class="index-center-wrap">
           <div class="skills">
             <div class="skills__center">
-                <span class="skills__label">мои навыки</span>
+                <span class="skills__label"> Мои навыки</span>
             </div>
             <div class="skills__round"></div>
             <div class="skills__item skills__item--first">
@@ -141,8 +141,8 @@
               <div class="skills__round-shadow"></div>
               <div class="skills__line"></div>
               <div class="skills__description">
-                <div class="skills__title">JS и JQuery</div>
-                <div>Как подключение и кастомизация плагинов, так и написание собственных несложных скриптов.</div>
+                <div class="skills__title">JS Vanilla и JQuery</div>
+                <div>Как подключение и кастомизация плагинов, так и написание собственных скриптов.</div>
               </div>
             </div>
             <div class="skills__item skills__item--fourth">
@@ -166,7 +166,7 @@
               <div class="skills__line"></div>
               <div class="skills__description">
                 <div class="skills__title">Препроцессоры</div>
-                <p>Оптимизация повседневной рутины посредством Sass и Less</p>
+                <p>Оптимизация рутины стилизации посредством Sass, Less, Stylus</p>
               </div>
             </div>
             <div class="skills__item skills__item--sixth">
@@ -178,7 +178,7 @@
               <div class="skills__line"></div>
               <div class="skills__description">
                 <div class="skills__title">Системы сборки</div>
-                <p>Установка и настройка сборщиков Grunt и Gulp, подключение нужных плагинов.</p>
+                <p>Установка и настройка сборщиков Gulp и Grunt, подключение нужных плагинов.</p>
               </div>
             </div>
              <div class="skills__item skills__item--seventh">
@@ -190,7 +190,7 @@
               <div class="skills__line"></div>
               <div class="skills__description">
                 <div class="skills__title">Адаптивная и отзывчивая вёрстка</div>
-                <p>Подготовка макетов под различные типы устройств.</p>
+                <p>Верстка под различные типы устройств.</p>
               </div>
             </div>
             <div class="skills__item skills__item--eighth">
@@ -211,7 +211,101 @@
       <section class="portfolio" id="portfolio">
         <div class="index-center-wrap">
           <div class="portfolio__page-title page-title page-title--gray page-title--small">Примеры работ <span class="portfolio__label">[beta]</span></div>
-          <div class="portfolio__wrap">
+          <div class="portfolio__toggle">
+            <div class="portfolio__toggle-item js-toggle-item is-active" data-toggle-title="commerce">Коммерческие проекты</div>
+            <div class="portfolio__toggle-item js-toggle-item" data-toggle-title="training">Учебные проекты</div>
+          </div>
+          <div class="portfolio__wrap js-toggle-content" data-toggle-content="commerce">
+            <div class="portfolio__item portfolio__item--amtime">
+              <div class="portfolio__overlay-left">
+                <a class="btn btn--site" href="http://wlbl.ru/amtime/" target="_blank">Перейти</a>
+                <span class="btn btn--git btn--disabled">GitHub</span>
+                <span class="btn btn--technologies">Технологии</span>
+                <div class="portfolio__overlay-top">
+                  <div class="portfolio__technology-subtitle">Технологии:</div>
+                  <span class="portfolio__technology">HTML5</span>
+                  <span class="portfolio__technology">CSS3</span>
+                  <span class="portfolio__technology">BEM</span>
+                  <span class="portfolio__technology">Stylus</span>
+                  <span class="portfolio__technology">Gulp</span>
+                  <span class="portfolio__technology">Twig</span>
+                  <span class="portfolio__technology">SVG</span>
+                  <span class="portfolio__technology">Jquery + Plugins</span>
+                </div>
+              </div>
+              <div class="portfolio__title">Amtime</div>
+            </div>
+            <div class="portfolio__item portfolio__item--school">
+              <div class="portfolio__overlay-left">
+                <a class="btn btn--site" href="http://school.dom-rasputina.ru/" target="_blank">Перейти</a>
+                <span class="btn btn--git btn--disabled">GitHub</span>
+                <span class="btn btn--technologies">Технологии</span>
+                <div class="portfolio__overlay-top">
+                  <div class="portfolio__technology-subtitle">Технологии:</div>
+                  <span class="portfolio__technology">HTML5</span>
+                  <span class="portfolio__technology">CSS3</span>
+                  <span class="portfolio__technology">BEM</span>
+                  <span class="portfolio__technology">Stylus</span>
+                  <span class="portfolio__technology">Gulp</span>
+                  <span class="portfolio__technology">Twig</span>
+                  <span class="portfolio__technology">SVG</span>
+                  <span class="portfolio__technology">Jquery + Plugins</span>
+                </div>
+              </div>
+              <div class="portfolio__title">Школа салона "Дом Распутина"</div>
+            </div>
+            <div class="portfolio__item portfolio__item--rasputin">
+              <div class="portfolio__overlay-left">
+                <a class="btn btn--site" href="http://dom-rasputina.ru/" target="_blank">Перейти</a>
+                <span class="btn btn--git btn--disabled">GitHub</span>
+                <span class="btn btn--technologies">Технологии</span>
+                <div class="portfolio__overlay-top">
+                  <div class="portfolio__technology-subtitle">Технологии:</div>
+                  <span class="portfolio__technology">HTML5</span>
+                  <span class="portfolio__technology">CSS3</span>
+                  <span class="portfolio__technology">BEM</span>
+                  <span class="portfolio__technology">Stylus</span>
+                  <span class="portfolio__technology">Gulp</span>
+                  <span class="portfolio__technology">Twig</span>
+                  <span class="portfolio__technology">SVG</span>
+                  <span class="portfolio__technology">Jquery + Plugins</span>
+                </div>
+              </div>
+              <div class="portfolio__title">Салон красоты "Дом Распутина"</div>
+            </div>
+            <div class="portfolio__item portfolio__item--nokian">
+              <div class="portfolio__overlay-left">
+                <a class="btn btn--site" href="http://nokian-promo.ru" target="_blank">Перейти</a>
+                <span class="btn btn--git btn--disabled">GitHub</span>
+                <span class="btn btn--technologies">Технологии</span>
+                <div class="portfolio__overlay-top">
+                  <div class="portfolio__technology-subtitle">Технологии:</div>
+                  <span class="portfolio__technology">HTML5</span>
+                  <span class="portfolio__technology">CSS3</span>
+                  <span class="portfolio__technology">BEM</span>
+                  <span class="portfolio__technology">IE9</span>
+                </div>
+              </div>
+              <div class="portfolio__title">Nokian</div>
+            </div>
+            <div class="portfolio__item portfolio__item--allergy">
+              <div class="portfolio__overlay-left">
+                <a class="btn btn--site" href="http://net-allergia.ru/index.html" target="_blank">Перейти</a>
+                <span class="btn btn--git btn--disabled">GitHub</span>
+                <span class="btn btn--technologies">Технологии</span>
+                <div class="portfolio__overlay-top">
+                  <div class="portfolio__technology-subtitle">Технологии:</div>
+                  <span class="portfolio__technology">HTML5</span>
+                  <span class="portfolio__technology">CSS3</span>
+                  <span class="portfolio__technology">BEM</span>
+                  <span class="portfolio__technology">IE9</span>
+                </div>
+              </div>
+              <div class="portfolio__title">Allergy</div>
+            </div>
+            <span class="portfolio__additional-info"><sup>*</sup> Сюда не включены несколько проектов находящихся под NDA, разместить которые <strong>в открытом доступе</strong> я не могу</span>
+          </div>
+          <div class="portfolio__wrap js-toggle-content is-hidden" data-toggle-content="training">
             <div class="portfolio__item portfolio__item--motion">
               <div class="portfolio__overlay-left">
                 <a class="btn btn--site" href="http://prokhorovstanislav.github.io/inner/Motion/dist">Перейти</a>
@@ -325,36 +419,6 @@
               </div>
               <div class="portfolio__title">Technomart</div>
             </div>
-            <div class="portfolio__item portfolio__item--nokian">
-              <div class="portfolio__overlay-left">
-                <a class="btn btn--site" href="http://nokian-promo.ru" target="_blank">Перейти</a>
-                <span class="btn btn--git btn--disabled">GitHub</span>
-                <span class="btn btn--technologies">Технологии</span>
-                <div class="portfolio__overlay-top">
-                  <div class="portfolio__technology-subtitle">Технологии:</div>
-                  <span class="portfolio__technology">HTML5</span>
-                  <span class="portfolio__technology">CSS3</span>
-                  <span class="portfolio__technology">BEM</span>
-                  <span class="portfolio__technology">IE9</span>
-                </div>
-              </div>
-              <div class="portfolio__title">Nokian</div>
-            </div>
-            <div class="portfolio__item portfolio__item--allergy">
-              <div class="portfolio__overlay-left">
-                <a class="btn btn--site" href="http://net-allergia.ru/index.html" target="_blank">Перейти</a>
-                <span class="btn btn--git btn--disabled">GitHub</span>
-                <span class="btn btn--technologies">Технологии</span>
-                <div class="portfolio__overlay-top">
-                  <div class="portfolio__technology-subtitle">Технологии:</div>
-                  <span class="portfolio__technology">HTML5</span>
-                  <span class="portfolio__technology">CSS3</span>
-                  <span class="portfolio__technology">BEM</span>
-                  <span class="portfolio__technology">IE9</span>
-                </div>
-              </div>
-              <div class="portfolio__title">Allergy</div>
-            </div>
             <div class="portfolio__item portfolio__item--barbershop">
               <div class="portfolio__overlay-left">
                 <a class="btn btn--site" href="http://prokhorovstanislav.github.io/inner/barbershop"  target="_blank">Перейти</a>
@@ -431,7 +495,7 @@
     </main>
     <footer class="page-footer clearfix">
       <div class="index-center-wrap">
-        <div class="page-footer__copyright">&copy; Stan Pro, 2016</div>
+        <div class="page-footer__copyright">&copy; Stan Pro, 2017</div>
         <div class="page-footer__socials socials">
           <a href="https://vk.com/leipreachan" class="socials__btn socials__btn--vk" target="_blank">ВКонтакте</a>
           <a href="skype:ildfast_ulv?chat" class="socials__btn socials__btn--skype" target="_blank">Skype</a>
