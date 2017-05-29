@@ -148,7 +148,7 @@ body {
 }
 
 .page-intro__label {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -793,8 +793,8 @@ body {
   left: 0;
 }
 
-.portfolio__item--amtime {
-  background: url("../img/nerds-showcase_2.png") no-repeat 50% 100%;
+.portfolio__item--about-amtime {
+  background: url("../img/about-amtime-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
