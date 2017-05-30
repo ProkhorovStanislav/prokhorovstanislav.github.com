@@ -38,7 +38,7 @@ $(document).ready(function() {
         event.preventDefault();
         $(".envelope__side--top").addClass("js-envelope__side--opened");
         $(".envelope__card").addClass("js-envelope__card--open");
-    });
+        setTimeout(function() { $(".envelope__card").css('z-index', 25) }, 1500);});
 
     technoBtn.click(function(){
         var srrt = $(this).siblings(".portfolio__overlay-top");
