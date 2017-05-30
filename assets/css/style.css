@@ -148,7 +148,7 @@ body {
 }
 
 .page-intro__label {
-  margin-bottom: 75px;
+  margin-bottom: 60px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -156,7 +156,7 @@ body {
 }
 
 .page-intro__label span {
-  padding-top: 3px;
+  padding: 3px 0 2px;
   border-bottom: 1px dashed rgba(255, 255, 255, .7);
   text-transform: uppercase;
   transition: all .2s linear 0s;
@@ -164,10 +164,11 @@ body {
 }
 
 .page-intro__label span:hover {
-  padding: 3px 15px 0;
+  padding: 3px 15px 2px;
   border-bottom: none;
   background: rgba(255, 255, 255, 1);
   color: #3DD0AC;
+  letter-spacing: 10px;
 }
 
 .page-intro__computer {
@@ -582,11 +583,56 @@ body {
   color: #fff;
 }
 
+.portfolio__toggle {
+  margin: 0 auto 50px;
+  font-size: 0;
+  text-align: center;
+}
+
+.portfolio__toggle-item {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #3DD0AC;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.portfolio__toggle-item.is-active {
+  background: #fff;
+  color: #3DD0AC;
+}
+
+.portfolio__toggle-item:first-child {
+  border-top-left-radius: 15px;
+}
+
+.portfolio__toggle-item:last-child {
+  border-top-right-radius: 15px;
+}
+
+.portfolio__additional-info {
+  width: 80%;
+  margin: 0 auto 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.portfolio__additional-info--accent {
+  font-weight: 700;
+}
+
 .portfolio__wrap {
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.portfolio__wrap.is-hidden {
+  display: none;
 }
 
 .portfolio__item {
@@ -696,7 +742,7 @@ body {
   background: #33DBB1;
 }
 
-.btn:active {
+.btn:not(.btn--disabled):active {
   border-bottom: 3px solid #00C58E;
   -webkit-transition: all .1s ease;
   -moz-transition: all .1s ease;
@@ -720,6 +766,10 @@ body {
   top: 61%;
 }
 
+.btn--git:not(.btn--disabled):active {
+  top: 61%;
+}
+
 .btn--technologies {
   top: 86%;
 }
@@ -728,16 +778,36 @@ body {
   top: 87%;
 }
 
+.btn--disabled {
+  opacity: 0.5;
+}
 /*.btn--technologies:active + .portfolio__overlay-top {*/
   /*animation: techno_animation 4s 1 ease-in-out;*/
 /*}*/
 
-.ololo {
+.btn-techno-active {
   animation: techno_animation 5s ease-in;
 }
 
 .portfolio__item:hover .portfolio__overlay-left {
   left: 0;
+}
+
+.portfolio__item--about-amtime {
+  background: url("../img/about-amtime-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--rasputin {
+  padding-top: 5px;
+  background: url("../img/nerds-showcase_2.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--school {
+  padding-top: 5px;
+  background: url("../img/nerds-showcase_2.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
 }
 
 .portfolio__item--nerds {
@@ -777,6 +847,16 @@ body {
 
 .portfolio__item--threezine {
   background: url("../img/threezine-showcase_2.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--nokian {
+  background: url("../img/nokian-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--allergy {
+  background: url("../img/allergy-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 
@@ -1024,7 +1104,6 @@ body {
 .skills__item--eighth .skills__round-in {
   background: #00ACE0;
 }
-
 
 .skills__item:hover .skills__round-in {
   display: block;
