@@ -793,6 +793,16 @@ body {
   left: 0;
 }
 
+.portfolio__item--benjamin {
+  background: url("../img/benjamin-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
+.portfolio__item--amtime {
+  background: url("../img/amtime-showcase.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
 .portfolio__item--about-amtime {
   background: url("../img/about-amtime-showcase.png") no-repeat 50% 100%;
   background-size: 86% 76%;
