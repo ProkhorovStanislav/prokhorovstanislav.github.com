@@ -845,6 +845,11 @@ body {
   background-size: 86% 76%;
 }
 
+.portfolio__item--battleship {
+  background: url("../img/battleship_show-case.png") no-repeat 50% 100%;
+  background-size: 86% 76%;
+}
+
 .portfolio__item--motion {
   background: url("../img/motion-showcase_2.png") no-repeat 50% 100%;
   background-size: 86% 76%;
