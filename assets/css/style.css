@@ -716,6 +716,17 @@ body {
   background: #28A485;
 }
 
+.portfolio__technology--text {
+  padding-left: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.portfolio__technology--text:before,
+.portfolio__technology--text:after {
+  display: none;
+}
+
 .btn {
   position: absolute;
   left: 50%;
@@ -846,7 +857,12 @@ body {
 }
 
 .portfolio__item--battleship {
-  background: url("../img/battleship_show-case.png") no-repeat 50% 100%;
+   background: url("../img/battleship_show-case.png") no-repeat 50% 100%;
+   background-size: 86% 76%;
+}
+
+.portfolio__item--todo-mvc {
+  background: url("../img/ToDoMVC_show-case.png") no-repeat 50% 100%;
   background-size: 86% 76%;
 }
 

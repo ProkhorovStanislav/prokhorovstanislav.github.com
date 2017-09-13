@@ -434,10 +434,6 @@
         <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
     </footer>
     <script>
-        // Full spec-compliant TodoMVC with localStorage persistence
-        // and hash-based routing in ~120 effective lines of JavaScript.
-
-        // localStorage persistence
 
         var config = {
             apiKey: "AIzaSyBdYXDuNFu_14bRQjMa-q6uxu2yrc4F3LI",
@@ -451,19 +447,7 @@
         var db = firebaseApp.database();
         var listRef = db.ref('list');
 
-//        // visibility filters
-//        var filters = {
-//            all: function (todos) {
-//                return todos;
-//            },
-//            active: function (todos) {
-//                return todos;
-//            },
-//            completed: function (todos) {
-//                return todos;
-//            }
-//        };
-
+        // visibility filters
         var filters = {
             all: function (todos) {
                 return todos
@@ -493,7 +477,6 @@
                 todos: listRef || []
             },
 
-            // watch todos change for localStorage persistence
             watch: {
                 todos: {
                     handler: function (todos) {
@@ -503,8 +486,6 @@
                 }
             },
 
-            // computed properties
-            // http://vuejs.org/guide/computed.html
             computed: {
                 filteredTodos: function () {
                     return filters[this.visibility](this.todos)
@@ -530,8 +511,6 @@
                 }
             },
 
-            // methods that implement data logic.
-            // note there's no DOM manipulation here at all.
             methods: {
                 addTodo: function () {
                     var value = this.newTodo && this.newTodo.trim()
