@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Products list</title>
+  </head>
+  <body class="page">
+    <div class="modal">
+      <div class="modal__content">
+        <div class="order-card">
+          <h2 class="order-card__title">Ваши заказы</h2>
+          <form class="products">
+            <div class="products__header products-header">
+              <div class="products-header__item">Продукт</div>
+              <div class="products-header__item">Название</div>
+              <div class="products-header__item">Состав</div>
+              <div class="products-header__item">Количество</div>
+              <div class="products-header__item">
+                <button type="button" class="btn js-remove-all">Удалить все</button>
+              </div>
+            </div>
+            <ul class="products__list js-products">
+              <li class="products__list-item product js-product-item">
+                <div class="product__img">
+                  <img src="assets/images/img-product.png" alt="pizza image">
+                </div>
+                <div class="product__name"><span>Пицца Пепперони на тонком тесте</span></div>
+                <div class="product__composition"><span>Пепперони, моцарелла, томаты, разные штуки, и другие разные штуки</span></div>
+                <div class="product__counter counter">
+                  <div class="counter__btn counter__btn--decrement js-decrement-btn">Уменьшить на 1</div>
+                  <input type="number" class="counter__value js-value" value="3" step="1" min="1" max="9">
+                  <div class="counter__btn counter__btn--increment js-increment-btn">Увеличить на 1</div>
+                </div>
+                <div class="product__btn">
+                  <button type="button" class="btn js-remove-item">Удалить</button>
+                </div>
+              </li>
+              <li class="products__list-item product js-product-item">
+                <div class="product__img">
+                  <img src="assets/images/img-product.png" alt="pizza image">
+                </div>
+                <div class="product__name"><span>Пицца Пепперони на тонком тесте</span></div>
+                <div class="product__composition"><span>Пепперони, моцарелла, томаты, разные штуки, и другие разные штуки</span></div>
+                <div class="product__counter counter">
+                  <div class="counter__btn counter__btn--decrement js-decrement-btn">Уменьшить на 1</div>
+                  <input type="number" class="counter__value js-value" value="4" step="1" min="1" max="9">
+                  <div class="counter__btn counter__btn--increment js-increment-btn">Увеличить на 1</div>
+                </div>
+                <div class="product__btn">
+                  <button type="button" class="btn js-remove-item">Удалить</button>
+                </div>
+              </li>
+              <li class="products__list-item product js-product-item">
+                <div class="product__img">
+                  <img src="assets/images/img-product.png" alt="pizza image">
+                </div>
+                <div class="product__name"><span>Пицца Пепперони на тонком тесте</span></div>
+                <div class="product__composition"><span>Пепперони, моцарелла, томаты, разные штуки, и другие разные штуки</span></div>
+                <div class="product__counter counter">
+                  <div class="counter__btn counter__btn--decrement js-decrement-btn">Уменьшить на 1</div>
+                  <input type="number" class="counter__value js-value" value="5" step="1" min="1" max="9">
+                  <div class="counter__btn counter__btn--increment js-increment-btn">Увеличить на 1</div>
+                </div>
+                <div class="product__btn">
+                  <button type="button" class="btn js-remove-item">Удалить</button>
+                </div>
+              </li>
+            </ul>
+            <div class="products__btn">
+              <button type="submit" class="btn js-send-form">Отправить заказ</button>
+            </div>
+          </form>
+          <div class="orders">
+            <ul class="orders__list">
+              <li id="3208957205790" class="orders__list-item order">
+                <div class="order__number">№3208957205790</div>
+                <div class="order__progress js-progress" data-progress="40">
+                  <div class="order__scale">
+                    <div class="order__bar js-bar"></div>
+                  </div>
+                    <div class="order__persents js-persents"><span class="js-persents-value">0</span>%</div>
+                </div>
+              </li>
+              <li id="3208957205791" class="orders__list-item order">
+                <div class="order__number">№3208957205791</div>
+                <div class="order__progress js-progress" data-progress="80">
+                  <div class="order__scale">
+                    <div class="order__bar js-bar"></div>
+                  </div>
+                    <div class="order__persents js-persents"><span class="js-persents-value">0</span>%</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal__close js-btn-close-modal"></div>
+      </div>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
